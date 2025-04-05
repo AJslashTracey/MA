@@ -4,7 +4,7 @@
 
 \title{Feinkonzept}
 \author{Juri S.}
-\date{Aprli}
+\date{April 2025}
 
 \begin{document}
 
