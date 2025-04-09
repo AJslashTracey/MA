@@ -22,11 +22,9 @@
 %----------------------------------------------------------
 % FOOTER INFORMATION
 %----------------------------------------------------------
-\institution{Institution Name}
 \footinfo{Matura Project}
 \theday{April 2025}
 \leadauthor{S.}
-\course{Creative Commons CC BY 4.0}
 
 %----------------------------------------------------------
 % If you remove or comment out this entire block, the abstract is gone:
@@ -74,9 +72,7 @@ I develop modules to analyze data for trade signals, whether it's technical
 indicators (e.g., EMA, MACD) or more advanced methods (machine learning). 
 
 
-\subsection{Efficient Market Hypothesis}
-Is it possible to abstract money from the market, because if I would find an edge,
-wouldn't it already be exploited so priced in?
+
 
 
 \subsection{Order Management}
@@ -128,6 +124,7 @@ be profitable in real markets.
   \item External datasources for out-of-sample testing
 \end{itemize}
 
+
 \subsection{What is Bitcoin}
 A form of digital currency that uses blockchain technology to support transactions between users on a decentralized network.
 
@@ -151,23 +148,19 @@ arranged in the marketplace:
   \item Outline which indicators I’ll be using
 \end{itemize}
 
-\subsection{Outlining My System Design (Extra Points)}
+\section{Efficient Market Hypothesis}
+
+Is it possible to abstract money from the market? The \textbf{EMH} states that markets fully price in all information, making it impossible to beat the market.
+
 \begin{itemize}
-  \item Programming language of choice (why?)
-  \item Setting up system in modular parts
-  \item Safety measures
-  \item Reliability of external APIs
-  \item Broker I'm planning to use
-  \item Latency considerations
-  \item Order management details
-  \item Define running period for Matura levy, and timeline up to final presentation
+    \item Market have \textbf{temporary inefficiens}, the goal is to exploit those before they go away. Especiallly with in the crypto market where a lot of margin calls occure (forced sells/buys)
+    \item Simple moving average cross over strategies might be widely known, there might be more \textbf{complex stratgies} (hiden edge)
+    \item \textbf{Behavioral Factors} also play a big role, the Efficient Market Hypothesis assumes rational players, yet many traders execute based on emotions biases. A disciplined can exploit this behavioral inefficiencie.
 \end{itemize}
 
-\section{Conclusion}
-This Feinkonzept provides a high-level plan for developing and deploying 
-an automated trading system. Each section—goals, design, backtesting, 
-and implementation—helps ensure both theoretical soundness and practical 
-feasibility.
+
+
+
 
 %----------------------------------------------------------
 \end{document}

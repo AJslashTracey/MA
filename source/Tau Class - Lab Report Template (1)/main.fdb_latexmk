@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1743937246.00702 "main.bcf" "main.bbl" "main" 1744144334.90813 0
-  "main.bcf" 1744144334.63558 108045 bcb05891c7881fd0185d52d712a83f0f "pdflatex"
+["biber main"] 1743937246.00702 "main.bcf" "main.bbl" "main" 1744187619.3474 0
+  "main.bcf" 1744187619.18409 108045 bcb05891c7881fd0185d52d712a83f0f "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1744144332.41304 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/source/Tau Class - Lab Report Template (1)/main.tex" "main.pdf" "main" 1744144334.90846 0
-  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/source/Tau Class - Lab Report Template (1)/main.tex" 1744144329.74333 6368 a2850e893d8378e807e25bbf5c54e6b7 ""
+["pdflatex"] 1744187616.98863 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/source/Tau Class - Lab Report Template (1)/main.tex" "main.pdf" "main" 1744187619.34771 0
+  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/source/Tau Class - Lab Report Template (1)/main.tex" 1744187614.32937 6249 67eeb202e14d861afe2d76959765fd73 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc" 1610747736 7007 7bfc8f72039f2cce6ca911c3c71db584 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc" 1610747736 2923 6a3d03919e8648554154ee58dc078229 ""
@@ -41,6 +41,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2text.tfm" 1610747736 28540 097ba14dab39294b86bfe4de12d2fe0b ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/stix2-type1/t1-stix2textsc.tfm" 1610747736 28348 81425d9b56ec860c57b0a461ce328cb2 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/stix2-type1/ts1-stix2text.tfm" 1610747736 1460 ab4098db9455eb1e01cadc3c0fc30c5f ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb" 1610747736 537414 936ea934798617b12bdc2368f1bc9ddd ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb" 1610747736 452561 61eccfe7853019df7c3d332e353ab0f8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb" 1610747736 526217 45f43131563c350dac0de98a3a4109a9 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb" 1136849748 35941 f27169cc74234d5bd5e4cca5abafaabb ""
@@ -316,10 +317,10 @@
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "figures/newplot.png" 1743886179.40871 446175 58a0c5fdd33245066094fb919eb671ed ""
   "figures/orderbook.png" 1743932552.97815 19229 540d849fd5a57b251605e814ac70feff ""
-  "main.aux" 1744144334.62931 9574 55c0d426b28dacecb195b97df734b7ac "pdflatex"
+  "main.aux" 1744187619.17845 8602 f388615a5459357ed56327a27c4c788f "pdflatex"
   "main.bbl" 1743937248.43997 466 76d65a242ec496c9b4361af646ff12cb "biber main"
-  "main.run.xml" 1744144334.63668 2395 639899e201ab14e1584d1585af2f211c "pdflatex"
-  "main.tex" 1744144329.74333 6368 a2850e893d8378e807e25bbf5c54e6b7 ""
+  "main.run.xml" 1744187619.18494 2395 639899e201ab14e1584d1585af2f211c "pdflatex"
+  "main.tex" 1744187614.32937 6249 67eeb202e14d861afe2d76959765fd73 ""
   "tau-class/tau.cls" 1743880856 15343 95930c1840b02fe1351c8877b3ac6f2c ""
   "tau-class/taubabel.sty" 1743880856 2369 a1bf684fde36e78a6391539fd38a7968 ""
   "tau-class/tauenvs.sty" 1743880856 3183 d5bbfc779d2505e5da39eeff038cc6e0 ""

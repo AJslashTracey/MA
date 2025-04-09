@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  8 APR 2025 22:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  9 APR 2025 10:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1446,42 +1446,42 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-LaTeX Font Info:    Trying to load font information for T1+stix2 on input line 41.
+LaTeX Font Info:    Trying to load font information for T1+stix2 on input line 39.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/stix2-type1/t1stix2.fd
 File: t1stix2.fd 2018/04/02 v2.0.0-latex stix2 T1 font definitions
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for LS1/stix2/m/n on input line 41.
-LaTeX Font Info:    Trying to load font information for LS1+stix2 on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for LS1/stix2/m/n on input line 39.
+LaTeX Font Info:    Trying to load font information for LS1+stix2 on input line 39.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/stix2-type1/ls1stix2.fd
 File: ls1stix2.fd 2018/04/02 v2.0.0-latex stix2 LS1 font definitions
 )
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for LS2/stix2/m/n on input line 41.
-LaTeX Font Info:    Trying to load font information for LS2+stix2 on input line 41.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for LS2/stix2/m/n on input line 39.
+LaTeX Font Info:    Trying to load font information for LS2+stix2 on input line 39.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/stix2-type1/ls2stix2.fd
 File: ls2stix2.fd 2018/04/02 v2.0.0-latex stix2 LS2 font definitions
 )
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count531
@@ -1549,9 +1549,9 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Command `\dddot' is already robust on input line 41.
-LaTeX Info: Command `\ddddot' is already robust on input line 41.
-Package hyperref Info: Link coloring ON on input line 41.
+LaTeX Info: Command `\dddot' is already robust on input line 39.
+LaTeX Info: Command `\ddddot' is already robust on input line 39.
+Package hyperref Info: Link coloring ON on input line 39.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -1565,111 +1565,111 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 41.
-Package biblatex Info: Reference segment=0 on input line 41.
+Package biblatex Info: Reference section=0 on input line 39.
+Package biblatex Info: Reference segment=0 on input line 39.
 Package microtype Info: Patching varwidth to enable character protrusion.
 \MT@vwid@leftmargin=\dimen400
 \MT@vwid@rightmargin=\dimen401
-LaTeX Info: Redefining \microtypecontext on input line 41.
-Package microtype Info: Applying patch `item' on input line 41.
-Package microtype Info: Applying patch `toc' on input line 41.
-Package microtype Info: Applying patch `eqnum' on input line 41.
-Package microtype Info: Applying patch `footnote' on input line 41.
-Package microtype Info: Applying patch `verbatim' on input line 41.
-LaTeX Info: Redefining \microtypesetup on input line 41.
+LaTeX Info: Redefining \microtypecontext on input line 39.
+Package microtype Info: Applying patch `item' on input line 39.
+Package microtype Info: Applying patch `toc' on input line 39.
+Package microtype Info: Applying patch `eqnum' on input line 39.
+Package microtype Info: Applying patch `footnote' on input line 39.
+Package microtype Info: Applying patch `verbatim' on input line 39.
+LaTeX Info: Redefining \microtypesetup on input line 39.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 41.
+LaTeX Info: Redefining \showhyphens on input line 39.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 43.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 41.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 17.09995pt on input line 43.
+(Font)              scaled to size 17.09995pt on input line 41.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 43.
+(Font)              scaled to size 8.54997pt on input line 41.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.54997pt on input line 43.
-LaTeX Font Info:    Trying to load font information for LS1+stix2scr on input line 43.
+(Font)              scaled to size 8.54997pt on input line 41.
+LaTeX Font Info:    Trying to load font information for LS1+stix2scr on input line 41.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/stix2-type1/ls1stix2scr.fd
 File: ls1stix2scr.fd 2018/04/02 v2.0.0-latex stix2 script LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS2+stix2ex on input line 43.
+LaTeX Font Info:    Trying to load font information for LS2+stix2ex on input line 41.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/stix2-type1/ls2stix2ex.fd
 File: ls2stix2ex.fd 2018/04/02 v2.0.0-latex stix2 extentions LS2 font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for LS1+stix2frak on input line 43.
+LaTeX Font Info:    Trying to load font information for LS1+stix2frak on input line 41.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/stix2-type1/ls1stix2frak.fd
 File: ls1stix2frak.fd 2018/04/02 v2.0.0-latex stix2 fraktur LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS1+stix2bb on input line 43.
+LaTeX Font Info:    Trying to load font information for LS1+stix2bb on input line 41.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/stix2-type1/ls1stix2bb.fd
 File: ls1stix2bb.fd 2018/04/02 v2.0.0-latex stix2 blackboard LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS2+stix2cal on input line 43.
+LaTeX Font Info:    Trying to load font information for LS2+stix2cal on input line 41.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/stix2-type1/ls2stix2cal.fd
 File: ls2stix2cal.fd 2018/04/02 v2.0.0-latex stix2 calligraphic LS2 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS1+stix2sf on input line 43.
+LaTeX Font Info:    Trying to load font information for LS1+stix2sf on input line 41.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/stix2-type1/ls1stix2sf.fd
 File: ls1stix2sf.fd 2018/04/02 v2.0.0-latex stix2 sans-serif LS1 font definitions
 )
-LaTeX Font Info:    Trying to load font information for LS2+stix2tt on input line 43.
+LaTeX Font Info:    Trying to load font information for LS2+stix2tt on input line 41.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/stix2-type1/ls2stix2tt.fd
 File: ls2stix2tt.fd 2018/04/02 v2.0.0-latex stix2 typewriter LS2 font definitions
 )
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 5.69998pt on input line 43.
-LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 43.
+(Font)              scaled to size 5.69998pt on input line 41.
+LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 41.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 50.
+(Font)              scaled to size 9.49997pt on input line 48.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 50.
+(Font)              scaled to size 9.49997pt on input line 48.
 Package lettrine.sty Info: Targeted height = 15.846pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 0.0pt ({\color {taucolor}\bfseries \fontsize {26pt}{28pt}\selectfont {}});
-(lettrine.sty)             reported on input line 52.
+(lettrine.sty)             reported on input line 50.
 
-Underfull \hbox (badness 5288) in paragraph at lines 52--57
+Underfull \hbox (badness 5288) in paragraph at lines 50--55
 [][][] \T1/stix2/m/n/9 (+20) I start by de-cid-ing what kind of trad-ing I want to pur-
  []
 
 <figures/newplot.png, id=7, 2179.14125pt x 1394.20876pt>
 File: figures/newplot.png Graphic file (type png)
 <use figures/newplot.png>
-Package pdftex.def Info: figures/newplot.png  used on input line 67.
+Package pdftex.def Info: figures/newplot.png  used on input line 65.
 (pdftex.def)             Requested size: 217.33635pt x 139.04611pt.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.59998pt on input line 68.
+(Font)              scaled to size 7.59998pt on input line 66.
 
 
-LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line 125.
+LaTeX Font Info:    Trying to load font information for TS1+stix2 on input line 121.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/stix2-type1/ts1stix2.fd
 File: ts1stix2.fd 2018/04/02 v2.0.0-latex stix2 TS1 font definitions
 )
@@ -1679,14 +1679,14 @@ Package microtype Info: Character `textflorin ' is missing
 <figures/orderbook.png, id=9, 1117.17375pt x 752.8125pt>
 File: figures/orderbook.png Graphic file (type png)
 <use figures/orderbook.png>
-Package pdftex.def Info: figures/orderbook.png  used on input line 141.
+Package pdftex.def Info: figures/orderbook.png  used on input line 138.
 (pdftex.def)             Requested size: 217.33635pt x 146.4475pt.
 
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 162.
+(Font)              scaled to size 6.64998pt on input line 159.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.64998pt on input line 162.
+(Font)              scaled to size 6.64998pt on input line 159.
 [1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc}
 
 
@@ -1700,9 +1700,9 @@ See the caption package documentation for explanation.
 
 
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 173.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 166.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.64998pt on input line 173.
+(Font)              scaled to size 6.64998pt on input line 166.
 [2
 
 ] 
@@ -1717,18 +1717,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 68971 strings out of 473190
- 1513169 string characters out of 5715801
- 2672952 words of memory out of 5000000
- 91201 multiletter control sequences out of 15000+600000
- 747646 words of font info for 235 fonts, out of 8000000 for 9000
+ 68963 strings out of 473190
+ 1513069 string characters out of 5715801
+ 2672923 words of memory out of 5000000
+ 91199 multiletter control sequences out of 15000+600000
+ 747332 words of font info for 233 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 137i,12n,143p,1093b,1767s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (2 pages, 570484 bytes).
+ 137i,12n,143p,1093b,1748s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Italic.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (2 pages, 713821 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 69799 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 134 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
+ 69783 words of extra memory for PDF output out of 74296 (max. 10000000)
 
