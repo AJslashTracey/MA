@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1743937246.00702 "main.bcf" "main.bbl" "main" 1744187619.3474 0
-  "main.bcf" 1744187619.18409 108045 bcb05891c7881fd0185d52d712a83f0f "pdflatex"
+["biber main"] 1743937246.00702 "main.bcf" "main.bbl" "main" 1745071931.9669 0
+  "main.bcf" 1745071931.65342 108045 bcb05891c7881fd0185d52d712a83f0f "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1744187616.98863 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/source/Tau Class - Lab Report Template (1)/main.tex" "main.pdf" "main" 1744187619.34771 0
-  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/source/Tau Class - Lab Report Template (1)/main.tex" 1744187614.32937 6249 67eeb202e14d861afe2d76959765fd73 ""
+["pdflatex"] 1745071929.02531 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/source/Tau Class - Lab Report Template (1)/main.tex" "main.pdf" "main" 1745071931.96798 0
+  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/source/Tau Class - Lab Report Template (1)/main.tex" 1745071925.96601 6473 80ea7e2eb70785bdc298ca69dab36d00 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-t1.enc" 1610747736 7007 7bfc8f72039f2cce6ca911c3c71db584 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/stix2-type1/stix2-ts1.enc" 1610747736 2923 6a3d03919e8648554154ee58dc078229 ""
@@ -15,8 +15,6 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvb8t.tfm" 1136768653 6628 34c39492c0adc454c1c199922bba8363 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm" 1136768653 4712 9ef4d7d106579d4b136e1529e1a4533c ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm" 1136768653 7040 b2bd27e2bfe6f6948cbc3239cae7444f ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm" 1136768653 4964 f223217e5e1f85fa3742fb0480aba9e8 ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvro8t.tfm" 1136768653 7292 d408122871055bbc541d7280c154e210 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
@@ -46,10 +44,8 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/stix2-type1/STIX2Text-Regular.pfb" 1610747736 526217 45f43131563c350dac0de98a3a4109a9 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb" 1136849748 35941 f27169cc74234d5bd5e4cca5abafaabb ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb" 1136849748 44648 23115b2a545ebfe2c526c3ca99db8b95 ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb" 1136849748 48169 b4fd9d908b9ee8c65d4305ad39071c5e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/helvetic/phvb8t.vf" 1136768653 2340 0efed6a948c3c37d870e4e7ddb85c7c3 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/helvetic/phvr8t.vf" 1136768653 2344 44ff28c9ef2fc97180cd884f900fee71 ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/helvetic/phvro8t.vf" 1136768653 2348 717f0e01beff9c30c0df4945e471886f ""
   "/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/babel-english/english.ldf" 1496785618 7008 9ff5fdcc865b01beca2b0fe4a46231d4 ""
@@ -315,12 +311,11 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1743709780 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1743709729 3345743 a3ced839d75efeff1f35965e5076c360 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "figures/newplot.png" 1743886179.40871 446175 58a0c5fdd33245066094fb919eb671ed ""
   "figures/orderbook.png" 1743932552.97815 19229 540d849fd5a57b251605e814ac70feff ""
-  "main.aux" 1744187619.17845 8602 f388615a5459357ed56327a27c4c788f "pdflatex"
+  "main.aux" 1745071931.64601 8282 009be90685a339fb0cddf18124690566 "pdflatex"
   "main.bbl" 1743937248.43997 466 76d65a242ec496c9b4361af646ff12cb "biber main"
-  "main.run.xml" 1744187619.18494 2395 639899e201ab14e1584d1585af2f211c "pdflatex"
-  "main.tex" 1744187614.32937 6249 67eeb202e14d861afe2d76959765fd73 ""
+  "main.run.xml" 1745071931.65479 2395 639899e201ab14e1584d1585af2f211c "pdflatex"
+  "main.tex" 1745071925.96601 6473 80ea7e2eb70785bdc298ca69dab36d00 ""
   "tau-class/tau.cls" 1743880856 15343 95930c1840b02fe1351c8877b3ac6f2c ""
   "tau-class/taubabel.sty" 1743880856 2369 a1bf684fde36e78a6391539fd38a7968 ""
   "tau-class/tauenvs.sty" 1743880856 3183 d5bbfc779d2505e5da39eeff038cc6e0 ""

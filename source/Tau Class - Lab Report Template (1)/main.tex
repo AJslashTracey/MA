@@ -60,16 +60,11 @@ implementation complexity.
 I gather both real-time and historical market data to feed my bot, ensuring 
 I have enough coverage for backtesting and live operations.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\columnwidth]{figures/newplot.png}
-    \caption{Current Data set visualization}
-    \label{fig:Dataset}
-\end{figure}
+
 
 \subsection{Signal Processing}
 I develop modules to analyze data for trade signals, whether it's technical 
-indicators (e.g., EMA, MACD) or more advanced methods (machine learning). 
+indicators (e.g., EMA, Orderbook Delta) or more advanced methods (machine learning). 
 
 
 
@@ -93,11 +88,12 @@ and to log trades for auditing performance over time.
 
 Before going live, I test my strategy on historical data to refine it and 
 uncover potential flaws. I also run a simulated (paper-trading) environment 
-to confirm the bot’s logic without risking real funds. 
+to confirm the bot’s logic and that my strategy doesn't suffer from overfit without risking real funds. My plan is to test more than one strategy in the live test with paper money in case my main strategy doesn't work at all.
 
 \subsection{Performance Thresholds}
-For example, a Sharpe ratio below 1.5 might be more realistic, whereas 
-anything above that could indicate overfitting or unrealistic assumptions.
+To avoid misleading results, I apply realistic performance expetations and compare my strategy to a random buy sell strategy.
+A sharpen ratio below 1.5 is considered as realistic for short- to mid-term strategies in volatile markets like crypto.
+A draw down above 30 percent is considered critical and requires either risk adjustments or moving on to another strategy. 
 
 %----------------------------------------------------------
 \section{Implementation \& Operation}
