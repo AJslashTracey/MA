@@ -1,0 +1,28 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Automated Money Making?}{2}{}%
+\contentsline {subsection}{\numberline {1.2}Goals \& Requirements}{2}{}%
+\contentsline {section}{\numberline {2}Market Mechanics}{2}{}%
+\contentsline {subsection}{\numberline {2.1}What is Bitcoin}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Auction Theory}{2}{}%
+\contentsline {subsection}{\numberline {2.3}Efficient Market Hypothesis}{2}{}%
+\contentsline {subsection}{\numberline {2.4}Trading Strategies}{2}{}%
+\contentsline {section}{\numberline {3}My System Design}{2}{}%
+\contentsline {subsection}{\numberline {3.1}System Architecture}{2}{}%
+\contentsline {subsection}{\numberline {3.2}Data Sources}{2}{}%
+\contentsline {subsection}{\numberline {3.3}Signal Processing}{2}{}%
+\contentsline {subsection}{\numberline {3.4}Risk Management}{2}{}%
+\contentsline {subsection}{\numberline {3.5}Strategy explained}{2}{}%
+\contentsline {section}{\numberline {4}Result comparison}{2}{}%
+\contentsline {subsection}{\numberline {4.1}Backtesting Results}{2}{}%
+\contentsline {subsection}{\numberline {4.2}Live Testing Period}{2}{}%
+\contentsline {subsection}{\numberline {4.3}Performance Analysis}{2}{}%
+\contentsline {section}{\numberline {5}Evaluation}{2}{}%
+\contentsline {subsection}{\numberline {5.1}Strategy Evaluation}{2}{}%
+\contentsline {subsection}{\numberline {5.2}Market Efficiency Implications}{2}{}%
+\contentsline {section}{\numberline {6}Conclusions and Outlook}{2}{}%
+\contentsline {subsection}{\numberline {6.1}Summary of Findings}{2}{}%
+\contentsline {subsection}{\numberline {6.2}Future Improvements}{2}{}%
+\contentsline {section}{\numberline {7}Self Reflection}{2}{}%
+\contentsline {subsection}{\numberline {7.1}Challenges}{2}{}%
+\contentsline {subsection}{\numberline {7.2}Learnings}{2}{}%
+\contentsfinish 
