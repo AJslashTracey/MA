@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1745401658.44187 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/test.tex" "test.pdf" "test" 1745401658.93958 0
-  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/test.tex" 1745401657.65895 1520 19fd52b2380c4de930a539b3ca98d3f6 ""
+["pdflatex"] 1745402155.00227 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/test.tex" "test.pdf" "test" 1745402155.51332 0
+  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/test.tex" 1745402154.22074 1569 aa6fa55ea8bf91bc12aa314e46a8afdc ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -32,9 +32,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1743709780 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1743709729 3345743 a3ced839d75efeff1f35965e5076c360 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "test.aux" 1745401658.9009 2995 165dc20992e607b9823e7c68c84a87c5 "pdflatex"
-  "test.tex" 1745401657.65895 1520 19fd52b2380c4de930a539b3ca98d3f6 ""
-  "test.toc" 1745401658.90245 1858 03e66bfe82129b6ba5a13783d66b9c64 "pdflatex"
+  "test.aux" 1745402155.47369 3123 eabdb99639ef7eb2d5855a9ecb116fe8 "pdflatex"
+  "test.tex" 1745402154.22074 1569 aa6fa55ea8bf91bc12aa314e46a8afdc ""
+  "test.toc" 1745402155.47448 1945 73e9356e05f59b133c80788f6b10d096 "pdflatex"
   (generated)
   "test.aux"
   "test.log"
