@@ -45,16 +45,27 @@
 % \linenumbers
 
 %----------------------------------------------------------
-\section{Define My Goals \& Requirements}
+\section{ My Goals \& Requirements}
 
-\taustart{} I start by deciding what kind of trading I want to pursue—momentum, 
-arbitrage, or another strategy. I set clear targets for profits and acceptable 
-losses, and choose the markets I'll focus on (crypto, stocks, or forex). 
-I also consider performance requirements like speed, reliability, and 
-implementation complexity.
+My primary goal is to develop and test a trading strategy that can be deployed on real markets with minimal risk of capital loss. During the live testing phase, the focus is not on maximizing profit, but on verifying the robustness, stability, and correct execution of the system under real-time conditions.
 
-%----------------------------------------------------------
-\section{Outline My System Design}
+I concentrate solely on Bitcoin, as it combines high liquidity with around-the-clock market access and excellent data availability. Crypto exchanges provide free access to high-resolution data, including order book snapshots and liquidation feeds, which are crucial for the types of strategies I intend to develop.
+
+Key requirements for my system include:
+\begin{itemize}
+  \item Capital preservation during live testing
+  \item Modular architecture for easy debugging and updates
+  \item Reliable execution via API (Hyperliquid)
+  \item Real-time performance monitoring and logging
+  \item Strategy transparency and ease of evaluation
+\end{itemize}
+
+%\subsection*{inefficiencies in crypto}
+%Frequent inefficiencies due to high leverage causing liquidations which can cause inefficienc market movements, in addition to this the futures market within crypto makes up a bigger percentage than the futures market inside of the total volume than inside of the stocks and forex market.
+
+
+
+\section{ My System Design}
 
 \subsection{Data Sources}
 I gather both real-time and historical market data to feed my bot, ensuring 
@@ -90,51 +101,40 @@ Before going live, I test my strategy on historical data to refine it and
 uncover potential flaws. I also run a simulated (paper-trading) environment 
 to confirm the bot’s logic and that my strategy doesn't suffer from overfit without risking real funds. My plan is to test more than one strategy in the live test with paper money in case my main strategy doesn't work at all.
 
-\subsection{Performance Thresholds}
-To avoid misleading results, I apply realistic performance expetations and compare my strategy to a random buy sell strategy.
-A sharpen ratio below 1.5 is considered as realistic for short- to mid-term strategies in volatile markets like crypto.
-A draw down above 30 percent is considered critical and requires either risk adjustments or moving on to another strategy. 
+
 
 %----------------------------------------------------------
 \section{Implementation \& Operation}
 
-I choose a programming language (e.g., Python) for its extensive libraries 
-and community support. I build the system in modular parts so I can update 
-individual sections without overhauling the entire setup. Finally, I 
-integrate security measures like API encryption and strict access 
-controls, while staying aware of regulatory requirements.
+My language of choice will be Python, where the main reason is that it enables me to build the entire pipeline — from data collection and backtesting to execution and visualization — in a single language, without needing to switch between multiple technologies.
+\subsection{Time Period of Running Bot}
 
-\noindent
-This plan covers key areas: strategy, system design, testing, and secure 
-live operation, giving me a roadmap for a trading bot that could potentially 
-be profitable in real markets.
+The bot will run live from \textbf{June 16 to July 14, 2025} (weeks 25–28). During this four-week period, I will test the strategy under real market conditions using real capital.
+
+The goal is not to maximize profit, but to validate the system’s stability, execution logic, and risk management. I will:
+\begin{itemize}
+  \item Monitor trade execution and system behavior
+  \item Log trades, market data, and performance metrics
+  \item Compare live results with backtest performance
+\end{itemize}
+
+This phase ensures that the strategy functions reliably before further optimization or longer-term deployment.
+
 
 %----------------------------------------------------------
 \section{Feinkonzept Notes (Additional Topics)}
 
-\subsection{Data Creation}
-\begin{itemize}
-  \item Data sources
-  \item Creating a good timeseries dataset
-  \item Hosting data creation process
-  \item External datasources for out-of-sample testing
-\end{itemize}
+
 
 
 \subsection{What is Bitcoin}
-A form of digital currency that uses blockchain technology to support transactions between users on a decentralized network.
 
-\subsection{How is the Price of Bitcoin Determined (Auction Principle)}
+Here I’ll briefly explain what Bitcoin is, so it’s clear what asset my algorithm trades. Bitcoin is a decentralized digital currency with a fixed supply of 21 million coins. It runs on a public blockchain and allows peer-to-peer transactions without banks or intermediaries.
 
-Below is an example “orderbook” image illustrating how bids and asks are 
-arranged in the marketplace:
+People buy Bitcoin as a hedge against inflation, for speculation, or long-term investment. 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\columnwidth]{figures/orderbook.png}
-    \caption{Example orderbook visualization, showing bid/ask levels.}
-    \label{fig:orderbook}
-\end{figure}
+
+
 
 \subsection{Backtesting Details}
 \begin{itemize}
@@ -145,18 +145,22 @@ arranged in the marketplace:
 \end{itemize}
 
 \section{Efficient Market Hypothesis}
-
+\subsection{EMH explained}
 Is it possible to abstract money from the market? The \textbf{EMH} states that markets fully price in all information, making it impossible to beat the market.
 
+\subsection{Why do I think I'm able to abstract money from the market?}
 \begin{itemize}
-    \item Market have \textbf{temporary inefficiens}, the goal is to exploit those before they go away. Especiallly with in the crypto market where a lot of margin calls occure (forced sells/buys)
-    \item Simple moving average cross over strategies might be widely known, there might be more \textbf{complex stratgies} (hiden edge)
-    \item \textbf{Behavioral Factors} also play a big role, the Efficient Market Hypothesis assumes rational players, yet many traders execute based on emotions biases. A disciplined can exploit this behavioral inefficiencie.
+  \item Markets have \textbf{temporary inefficiencies}; the goal is to exploit these before they disappear. This is especially true in crypto, where frequent liquidations (forced sells/buys) create short-term dislocations.
+  \item Simple moving average crossover strategies are widely known; there may be more \textbf{complex strategies} with hidden edges.
+  \item \textbf{Behavioral factors} play a major role. The EMH assumes rational players, yet many traders act emotionally. A disciplined system can exploit these behavioral inefficiencies.
 \end{itemize}
 
 
+\subsection{Evaluation}
+Was I able to abstract money from the market? What was my edge allowing me to abstract money from the markets? If not where would I have to change things? 
 
 
 
 %----------------------------------------------------------
 \end{document}
+
