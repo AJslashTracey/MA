@@ -1,0 +1,6 @@
+PWD c:\Users\juris\OneDrive\Documenten\GitHub\MA\MA\source\Tau Class - Lab Report Template (1)
+INPUT C:\Users\juris\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\juris\OneDrive\Documenten\GitHub\MA\MA\source\Tau Class - Lab Report Template (1)\main.tex
+OUTPUT main.log
+INPUT .\tau-class\tau.cls
+INPUT tau-class\tau.cls
