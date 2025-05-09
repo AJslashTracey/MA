@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  9 MAY 2025 15:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  9 MAY 2025 17:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -272,8 +272,7 @@ Package tocloft Info: The document has section divisions on input line 51.
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count300
 \l__pdf_internal_box=\box54
-)
-No file updatedFeinConzept.aux.
+) (./updatedFeinConzept.aux)
 \openout1 = `updatedFeinConzept.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -294,7 +293,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
-(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count301
 \scratchdimen=\dimen170
@@ -314,11 +313,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring OFF on input line 13.
+ (./updatedFeinConzept.out) (./updatedFeinConzept.out)
 \@outlinefile=\write3
 \openout3 = `updatedFeinConzept.out'.
 
-
-No file updatedFeinConzept.toc.
+ (./updatedFeinConzept.toc)
 \tf@toc=\write4
 \openout4 = `updatedFeinConzept.toc'.
 
@@ -327,436 +326,47 @@ No file updatedFeinConzept.toc.
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:21: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 ...tures volume now routinely exceeds \$50 
-                                                  bn per day, yet
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-Overfull \hbox (8.96599pt too wide) in paragraph at lines 21--30
-\OT1/cmr/m/n/12 Our al-go-rithm ex-ploits these micro[]structure in-ef-fi-cien-cies with an \OT1/cmr/bx/n/12 order[]book
+Overfull \hbox (12.37772pt too wide) in paragraph at lines 43--49
+\OT1/cmr/m/n/12 spond-ing trade prints are col-lected via the Hy-per-liq-uid API (March--May2025).
  []
 
 
-Overfull \hbox (23.5085pt too wide) in paragraph at lines 21--30
-\OT1/cmr/bx/n/12 im-bal-ance + mo-men-tum fil-ter \OT1/cmr/m/n/12 and has pro-duced \OT1/cmr/bx/n/12 Sharpe 1.7 \OT1/cmr/m/n/12 and \OT1/cmr/bx/n/12 max draw-
+
+[2]
+Overfull \hbox (16.05412pt too wide) in paragraph at lines 68--70
+[]\OT1/cmr/m/n/12 Each can-di-date is eval-u-ated with walk[]forward back[]tests to avoid look[]ahead
  []
 
 
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:36: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.36 1–2 
-             \% in under a minute. Depth‑weighted bid – ask deltas lea...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:37: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 by 5–15 
-                 seconds in 64 \% of observed events.
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:37: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 by 5–15 seconds in 64 
-                                 \% of observed events.
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-Overfull \hbox (11.29646pt too wide) in paragraph at lines 40--42
- []\OT1/cmr/bx/n/12 Why now.[] \OT1/cmr/m/n/12 Reg-u-lated U.S. ETFs an-chored in-sti-tu-tional spot de-mand in 2024,
+Overfull \hbox (51.5832pt too wide) in paragraph at lines 85--96
+[] 
  []
 
 
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:45: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 (\(\approx0.4\%\)) with a 0.035 
-                                       \% taker fee yields an
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:59: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.59 Long position, \textbf{+1 \% take‑profit}
-                                                  , \textbf{–0.8 \% stop...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:59: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.59 ...�profit}, \textbf{–0.8 \% stop‑loss}
-                                                  
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:60: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.60 (RR 1 
-              : 0.8).
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:60: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.60 (RR 1 : 
-                  0.8).
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:61: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.61 Hyperliquid taker fee 0.035 
-                                   \% per side included.
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:68: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.68 Total Return & 4.8\% & 13.6\% & –8.8 
-                                              pp\\
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:70: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.70 Max Drawdown & 6.5\% & 22.3\% & –15.8 
-                                                pp\\
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-
-[2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:76: Misplaced alignment tab character &.
-l.76 ...tation:* lower absolute return than buy &
-                                                   hold, but
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:86: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.86         \$1 
-                   000 notional; 24/7 logging and Slack alerts.
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:100: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.100 ...SL and emergency kill‑switch at –3 
-                                                  \%.
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:102: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.102         round‑trip 38 
-                                ms.
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:110: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.110 25 trades/month, EV 0.25 
-                                  \% per trade ⇒ \textbf{\(\sim6\%\) monthly
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:110: LaTeX Error: Unicode character ⇒ (U+21D2)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.110 25 trades/month, EV 0.25 \% per trade ⇒
-                                                   \textbf{\(\sim6\%\) monthly
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:111: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.111 return} on allocated capital, with <8 
-                                              \% drawdown.
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-
-[3]
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:119: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.119 (with risk capped at 1 
-                               × notional).
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:119: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.119 (with risk capped at 1 × 
-                                    notional).
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:125: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.125   \item \textbf{Resource request:} \$2 
-                                               000 trading capital +
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:143: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.143 31 
-           Mar – 30 Apr 2025.
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:143: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.143 31 Mar 
-                 – 30 Apr 2025.
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:143: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.143 31 Mar – 
-                       30 Apr 2025.
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:143: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.143 31 Mar – 30 
-                            Apr 2025.
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-Overfull \hbox (63.52031pt too wide) in paragraph at lines 141--144
-\OT1/cmr/m/n/12 Raw order[]book snap-shots from Hy-per-liq-uid API, 1[]second fre-quency, 31Mar{30Apr 2025. 
- []
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:146: LaTeX Error: Unicode character   (U+2009)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 Vectorbt 0.25, stop/target with trailing 
-                                                  = True, fees 0.035 \%.
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:146: LaTeX Error: Unicode character   (U+2009)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 ...t 0.25, stop/target with trailing = 
-                                                  True, fees 0.035 \%.
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex:146: LaTeX Error: Unicode character   (U+202F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.146 ... with trailing = True, fees 0.035 
-                                                  \%.
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
+[3{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 [4] (./updatedFeinConzept.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-Package rerunfilecheck Warning: File `updatedFeinConzept.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `updatedFeinConzept.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  AA2DA7C2CA64552BCF10D64115323AA4;1406.
+Package rerunfilecheck Info: File `updatedFeinConzept.out' has not changed.
+(rerunfilecheck)             Checksum: 60E3EF5F36D2992F88248BC64095E752;1534.
  ) 
 Here is how much of TeX's memory you used:
- 9510 strings out of 473190
- 146480 string characters out of 5715801
- 550728 words of memory out of 5000000
- 32645 multiletter control sequences out of 15000+600000
- 565467 words of font info for 59 fonts, out of 8000000 for 9000
+ 9519 strings out of 473190
+ 146735 string characters out of 5715801
+ 549792 words of memory out of 5000000
+ 32654 multiletter control sequences out of 15000+600000
+ 565814 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,311b,504s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on updatedFeinConzept.pdf (4 pages, 111649 bytes).
+ 75i,7n,79p,311b,509s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on updatedFeinConzept.pdf (4 pages, 74185 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
- 29 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 115 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
