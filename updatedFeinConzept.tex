@@ -60,16 +60,22 @@ relevant} and therefore worth testing in a trading rule.
 
 
 
-\subsection{Risk \& Position Sizing}
+\subsection{Risk \& Position Size}
 
-Stop‑loss / take‑profit distances will be tuned via grid‑search.
-Maximum capital at risk per trade is capped at 1 \% of account equity.
+I will test a few stop‑loss and take‑profit settings and pick the safest
+ones.  Each trade is kept small enough so that no more than a tiny
+fraction of the account can be lost if things go wrong.  An automatic
+check blocks any order that would risk too much.
 
-\subsection{Live Deployment}
+\subsection{Automation and Test Run}
 
-The best performing rule set will be deployed with real capital
-(\$500) for four weeks. All trades, latency metrics and
-PnL are logged automatically.
+First, the whole bot will run in \emph{paper mode} (no real money) for a
+few days to make sure signals, orders and logs work correctly.  If that
+test passes, the bot will switch to a small real‑money account for a
+four‑week trial.  Every trade, delay and profit or loss is saved
+automatically, and a safety script can stop trading if preset limits are
+hit.
+
 
 %────────────────────────────────────────────────────────
 \section{Project Timeline}
@@ -96,21 +102,11 @@ This timeline could change and is just a rough estimate.
   \item Clean, annotated Python code for data handling, back‑testing and
         live execution.
   \item A statistical report comparing candidate signals.
-  \item Final thesis (~30 pages) detailing methodology, live results and
+  \item Final thesis  detailing methodology, live results and
         critical reflection.
 \end{itemize}
 
 %────────────────────────────────────────────────────────
-\section*{Change Log}
 
-\begin{tabular}{ll}
-\toprule
-\textbf{Date} & \textbf{Changes} \\
-\midrule
-2024-03-19 & Initial draft \\
-2024-03-20 & Refined methodology section \\
-2024-03-21 & Updated timeline and removed redundant sections \\
-\bottomrule
-\end{tabular}
 
 \end{document}

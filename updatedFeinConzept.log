@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  9 MAY 2025 17:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  9 MAY 2025 17:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -333,7 +333,7 @@ Overfull \hbox (12.37772pt too wide) in paragraph at lines 43--49
 
 
 [2]
-Overfull \hbox (51.5832pt too wide) in paragraph at lines 77--88
+Overfull \hbox (51.5832pt too wide) in paragraph at lines 83--94
 [] 
  []
 
@@ -345,21 +345,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `updatedFeinConzept.out' has not changed.
-(rerunfilecheck)             Checksum: 76466DC078008189CCE69BD3389BABE2;1261.
+(rerunfilecheck)             Checksum: 78A56FCC0A1B5A2DE599BF793D2B1C8C;1297.
  ) 
 Here is how much of TeX's memory you used:
- 9515 strings out of 473190
- 146689 string characters out of 5715801
- 548792 words of memory out of 5000000
+ 9514 strings out of 473190
+ 146679 string characters out of 5715801
+ 549792 words of memory out of 5000000
  32652 multiletter control sequences out of 15000+600000
  565814 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,7n,79p,311b,441s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on updatedFeinConzept.pdf (3 pages, 73274 bytes).
+Output written on updatedFeinConzept.pdf (3 pages, 72641 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
+ 100 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
