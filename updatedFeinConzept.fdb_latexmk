@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1746805551.89791 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex" "updatedFeinConzept.pdf" "updatedFeinConzept" 1746805552.40733 0
-  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex" 1746805551.67072 5283 945c9f94c89f7c5d4df9abc87cea0f4d ""
+["pdflatex"] 1746806209.04754 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex" "updatedFeinConzept.pdf" "updatedFeinConzept" 1746806210.76891 0
+  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex" 1746806205.86345 4870 2bd9937ca5eaa0c9dbc8b9e21b1f7533 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -75,10 +75,10 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1743709780 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1743709729 3345743 a3ced839d75efeff1f35965e5076c360 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "updatedFeinConzept.aux" 1746805552.36431 1462 91430390f196e8e7153cd68cc46ca677 "pdflatex"
-  "updatedFeinConzept.out" 1746805552.36483 1534 60e3ef5f36d2992f88248bc64095e752 "pdflatex"
-  "updatedFeinConzept.tex" 1746805551.67072 5283 945c9f94c89f7c5d4df9abc87cea0f4d ""
-  "updatedFeinConzept.toc" 1746805552.36502 849 317355cfecc0ca40167e6c52f269723b "pdflatex"
+  "updatedFeinConzept.aux" 1746806210.71459 1225 0b7851e6ccb6b777c55ce79ef5097316 "pdflatex"
+  "updatedFeinConzept.out" 1746806210.71527 1261 76466dc078008189cce69bd3389babe2 "pdflatex"
+  "updatedFeinConzept.tex" 1746806205.86345 4870 2bd9937ca5eaa0c9dbc8b9e21b1f7533 ""
+  "updatedFeinConzept.toc" 1746806210.71553 694 16c9e0569d5c80fc10b46f901c55d218 "pdflatex"
   (generated)
   "updatedFeinConzept.aux"
   "updatedFeinConzept.log"

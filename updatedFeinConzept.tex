@@ -18,11 +18,11 @@
 %────────────────────────────────────────────────────────
 \section{Problem Statement}
 
-The Bitcoin market is liquid but still exhibits short‑term inefficiencies
+The Bitcoin market is liquid but I think it still includes short‑term inefficiencies
 caused by leverage, liquidations and order‑flow imbalances.  
 The aim of this thesis is to \textbf{develop, validate and live‑test a
 realistic algorithmic strategy} that can exploit such any kind of market inefficiencies
- within the available project timeline.
+ within the available project timeline, if there even are any kind of inefficiencies.
 
 %────────────────────────────────────────────────────────
 \section{Research Objectives}
@@ -50,23 +50,15 @@ and back‑testing, and \emph{Plotly} for interactive visualisation.
 
 \subsection{Exploratory Data Analysis}
 
-Initial work will focus on descriptive statistics of depth‑weighted
-bid/ask deltas, volatility clustering and liquidation events.  
-Rolling correlations and lead–lag plots help decide which variables are
-worth modelling.
+The first step is to look at the data in plain terms: plot the bid‑ and
+ask‑side deltas, check how often and how strongly they move, and see
+whether large changes line up with later price moves.  Simple tools
+such as line charts, histograms, and rolling correlations will show
+which signals look promising.  The goal is not to prove a theory at
+this stage, but to spot patterns that are \textbf{statistically
+relevant} and therefore worth testing in a trading rule.
 
-\subsection{Signal Development}
 
-Several candidate signals will be tested, e.g.
-
-\begin{itemize}
-  \item Order‑flow‑imbalance (OFI) quantiles
-  \item Depth‑specific delta momentum
-  \item Combined price–volume features
-\end{itemize}
-
-Each candidate is evaluated with walk‑forward back‑tests to avoid
-look‑ahead bias.
 
 \subsection{Risk \& Position Sizing}
 
@@ -94,6 +86,9 @@ Editing, final layout, submission           & KW 34 – KW 36 (19 Aug – 5 Sep)
 \bottomrule
 \end{tabular}
 
+
+This timeline could change and is just a rough estimate.
+
 %────────────────────────────────────────────────────────
 \section{Expected Deliverables}
 
@@ -106,21 +101,16 @@ Editing, final layout, submission           & KW 34 – KW 36 (19 Aug – 5 Sep)
 \end{itemize}
 
 %────────────────────────────────────────────────────────
-\section{Risk Management}
+\section*{Change Log}
 
-\begin{itemize}
-  \item \textbf{Market risk:} fixed stop‑loss and kill‑switch at
-        –3 \% account equity.
-  \item \textbf{Over‑fitting:} walk‑forward validation and
-        out‑of‑sample hold‑out.
-  \item \textbf{Operational risk:} cloud server with automatic restart
-        and daily data backup.
-\end{itemize}
-
-%────────────────────────────────────────────────────────
-
-
-%────────────────────────────────────────────────────────
-
+\begin{tabular}{ll}
+\toprule
+\textbf{Date} & \textbf{Changes} \\
+\midrule
+2024-03-19 & Initial draft \\
+2024-03-20 & Refined methodology section \\
+2024-03-21 & Updated timeline and removed redundant sections \\
+\bottomrule
+\end{tabular}
 
 \end{document}
