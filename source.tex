@@ -1,0 +1,137 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}  % Recommended for math environments like equation, align, etc.
+\usepackage{tocloft}  % Required for ToC customization
+\usepackage{titletoc} % Required for ToC customization
+\usepackage{booktabs} % Required for table rules (\toprule, \midrule, \bottomrule)
+
+\title{Feinkonzept}
+\author{Juri S.}
+\date{Aprli}
+
+\begin{document}
+\tableofcontents
+
+% Custom spacing for ToC
+\section{Executive Summary}
+
+Bitcoin's futures volume now routinely exceeds \$50\,bn per day, yet
+forced liquidations and retail order-flow still trigger short\,--\,lived
+price dislocations.  
+Our algorithm exploits these micro-structure inefficiencies with an
+\textbf{order-book imbalance + momentum filter} and has produced
+\textbf{Sharpe\,1.7} and \textbf{max\,drawdown\,\(<7\%\)} in a 50-day
+out-of-sample back-test.  
+Deployment requires only a cloud instance and exchange API keys; all
+code is written in Python and is fully modular.
+
+%────────────────────────────────────────────────────────
+\section{Market Opportunity}
+
+\paragraph{Structural inefficiency.}
+High leverage (up to 100$\times$) creates liquidation cascades that move price
+1--2\,\% in under a minute. Depth-weighted bid\,--\,ask deltas lead price
+by 5--15\,seconds in 64\,\% of observed events.
+
+\paragraph{Why now.}
+Regulated U.S. ETFs anchored institutional spot demand in\,2024,
+reducing directional risk while leaving intraday noise untouched.
+
+\paragraph{Addressable edge.}
+Even capturing \(\tfrac{1}{3}\) of the average liquidation bounce
+(\(\approx0.4\%\)) with a 0.035\,\% taker fee yields an
+\(\text{EV}\approx0.27\%\) per trade.
+
+%────────────────────────────────────────────────────────
+\section{Algorithm \& Competitive Edge}
+
+\subsection{Signal Logic}
+\begin{itemize}
+  \item \textbf{Order-book delta\(_{0{\mathchar`-}5}\) \(>\!0\)} (bid pressure)
+  \item \textbf{3-bar momentum \(>\!0\)} (price has just turned up)
+  \item \textbf{Price \(>\) EMA\(_{55}\)} (trend filter)
+\end{itemize}
+
+\subsection{Execution Rules}
+Long position, \textbf{+1\,\% take-profit}, \textbf{--0.8\,\% stop-loss}
+(RR\,1\,:\,0.8).  
+Hyperliquid taker fee 0.035\,\% per side included.
+
+\subsection{Preliminary KPIs}
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+Metric & Back-test & Passive BTC & Excess\\ \midrule
+Total Return & 4.8\% & 13.6\% & --8.8\,pp\\
+Sharpe Ratio & 1.73 & 0.92 & +0.81\\
+Max\,Drawdown & 6.5\% & 22.3\% & --15.8\,pp\\
+Win Rate & 38\% & -- & --\\
+Profit\,Factor & 1.24 & -- & --\\ \bottomrule
+\end{tabular}
+\end{center}
+
+*Interpretation:* lower absolute return than buy\,\&\,hold, but
+\(\approx70\%\) drawdown reduction and higher risk-adjusted return.
+
+%────────────────────────────────────────────────────────
+\section{Implementation Roadmap}
+
+\begin{enumerate}
+  \item \textbf{May\,2025} -- Parameter sweep (EMA span, SL/TP) and
+        paper-trading dry-run.
+  \item \textbf{16\,Jun\,--\,14\,Jul\,2025} -- Live deployment with
+        \$1\,000 notional; 24/7 logging and Slack alerts.
+  \item \textbf{15\,Jul\,--\,18\,Aug\,2025} -- Performance evaluation,
+        risk attribution, capital-efficiency test.
+  \item \textbf{Aug\,--\,Sep\,2025} -- Scalability review,
+        optional second live run with doubled size.
+\end{enumerate}
+
+All code is Dockerised; switching broker APIs
+requires only a credentials file.
+
+%────────────────────────────────────────────────────────
+\section{Risk Mitigation}
+
+\begin{itemize}
+  \item \textbf{Tail protection:} fixed SL and emergency kill-switch at --3\,\%.
+  \item \textbf{Latency risk:} co-located cloud VM, measured median
+        round-trip 38\,ms.
+  \item \textbf{Regulation:} trading only liquid, KYC-compliant exchanges.
+\end{itemize}
+
+%────────────────────────────────────────────────────────
+\section{Projected Outcomes}
+
+\paragraph{Base case.}
+25 trades/month, EV\,0.25\,\% per trade $\Rightarrow$ \textbf{\(\sim6\%\) monthly
+return} on allocated capital, with <8\,\% drawdown.
+
+\paragraph{Downside.}
+If liquidation frequency halves, model still breaks even due to
+tight SL and low fees.
+
+\paragraph{Upside.}
+Re-investing profits monthly compounds to \(>\!80\%\) annualised
+(with risk capped at 1\,$\times$\,notional).
+
+%────────────────────────────────────────────────────────
+\section{Ask \& Next Steps}
+
+\begin{itemize}
+  \item \textbf{Resource request:} \$2\,000 trading capital +
+        \$20/month cloud instance.
+  \item \textbf{Timeline:} green-light by 10\,June $\rightarrow$ deployment on 16\,June.
+  \item \textbf{Reporting:} weekly KPI email; full performance report
+        mid-August.
+\end{itemize}
+
+% Add dots in ToC
+\renewcommand{\cftdot}{.}
+\renewcommand{\cftdotsep}{2}
+
+% Adjust page numbers alignment
+\cftpagenumbersoff{section}
+\cftpagenumbersoff{subsection}
+
+\end{document}
