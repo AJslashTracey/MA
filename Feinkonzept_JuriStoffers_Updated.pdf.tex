@@ -2,9 +2,13 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{booktabs}
-\usepackage{hyperref}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
 \usepackage{tocloft}
+\usepackage[table]{xcolor}
 \setlength{\cftbeforesecskip}{6pt}
+
+% Define repository URLs
+\newcommand{\datasetrepo}{https://github.com/AJslashTracey/OBDeltaData}
 
 \title{Automated Bitcoin Trading – Feinkonzept}
 \author{Juri S.}
@@ -16,13 +20,6 @@
 \newpage
 
 %────────────────────────────────────────────────────────
-\section{Problem Statement}
-
-The Bitcoin market is liquid but I think it still includes short‑term inefficiencies
-caused by leverage, liquidations and order‑flow imbalances.  
-The aim of this thesis is to \textbf{develop, validate and live‑test a
-realistic algorithmic strategy} that can exploit such any kind of market inefficiencies
- within the available project timeline, if there even are any kind of inefficiencies.
 
 %────────────────────────────────────────────────────────
 \section{Research Objectives}
@@ -38,44 +35,30 @@ realistic algorithmic strategy} that can exploit such any kind of market ineffic
 \end{enumerate}
 
 %────────────────────────────────────────────────────────
-\section{Data \& Tools}
 
-Depth‑weighted order‑book snapshots at a \textbf{1‑minute resolution}
-and corresponding trade prints are collected via the Hyperliquid API
-(March\,--\,May\,2025).  All analysis is performed in Python using
-\emph{pandas} for data handling, \emph{vectorbt} for parameter sweeps
-and back‑testing, and \emph{Plotly} for interactive visualisation.
 %────────────────────────────────────────────────────────
-\section{Methodology}
+\section{Contents of Thesis}
+
+\subsection{Market Mechanics}
+
+Here I explain what Bitcoin is and what the value of Bitcoin represents. I then cover the basics of auction theory and why it is important for understanding how markets work. Finally, I discuss the efficient market hypothesis and its relevance to algorithmic trading.
 
 \subsection{Exploratory Data Analysis}
 
-The first step is to look at the data in plain terms: plot the bid‑ and
-ask‑side deltas, check how often and how strongly they move, and see
-whether large changes line up with later price moves.  Simple tools
-such as line charts, histograms, and rolling correlations will show
-which signals look promising.  The goal is not to prove a theory at
-this stage, but to spot patterns that are \textbf{statistically
-relevant} and therefore worth testing in a trading rule.
-
+Here I describe the process of exploring the data. I look at the data in plain terms, plot the bid- and ask-side deltas, check how often and how strongly they move, and see whether large changes line up with later price moves. I also use simple tools such as line charts and histograms to spot patterns that seem to be statistically relevant.
 
 
 \subsection{Risk \& Position Size}
 
-I will test a few stop‑loss and take‑profit settings and pick the safest
-ones.  Each trade is kept small enough so that no more than a tiny
-fraction of the account can be lost if things go wrong.  An automatic
-check blocks any order that would risk too much.
+Here I explain how I handle risk and position size. How I
+calculate the position size and how I set the stop loss and take
+profit levels. How I came up with the numbers and how I adjusted them.
+
+\newpage
 
 \subsection{Automation and Test Run}
 
-First, the whole bot will run in \emph{paper mode} (no real money) for a
-few days to make sure signals, orders and logs work correctly.  If that
-test passes, the bot will switch to a small real‑money account for a
-four‑week trial.  Every trade, delay and profit or loss is saved
-automatically, and a safety script can stop trading if preset limits are
-hit.
-
+Here I describe how I automate the trading process. I explain how the bot is set up to run automatically, how signals are processed, and how orders are sent to the exchange. I also cover how I monitor the system, log trades and errors, and set up alerts for any issues. Finally, I explain how I run a test phase (paper trading) to make sure everything works as expected before using real money.
 
 %────────────────────────────────────────────────────────
 \section{Project Timeline}
@@ -92,17 +75,17 @@ Editing, final layout, submission           & KW 34 – KW 36 (19 Aug – 5 Sep)
 \bottomrule
 \end{tabular}
 
-
-This timeline could change and is just a rough estimate.
+\noindent\colorbox{blue!15}{\parbox{\textwidth}{\textcolor{black}{\textit{This timeline could change and is just a rough estimate.\\}}}}
 
 %────────────────────────────────────────────────────────
-\section{Expected Deliverables}
+\section{Expected Delivery}
 
 \begin{itemize}
-  \item Clean, annotated Python code for data handling, back‑testing and
-        live execution.
-  \item A statistical report comparing candidate signals.
-  \item Final thesis  detailing methodology, live results and
+  \item Python code for data handling, back-testing and
+        live execution in a GitHub repository.
+  \item Example datasets already available at \href{\datasetrepo}{OBDeltaData}.
+  \item A statistical report comparing other strategies I tested and other signals I considered.
+  \item Final thesis detailing methodology, live results and
         critical reflection.
 \end{itemize}
 

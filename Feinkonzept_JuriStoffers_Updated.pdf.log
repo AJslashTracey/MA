@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  10 MAY 2025 20:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  10 MAY 2025 20:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex
-(/Users/juristoffers/Desktop/GitHub/Untitled/MA/updatedFeinConzept.tex
+**/Users/juristoffers/Desktop/GitHub/Untitled/MA/Feinkonzept_JuriStoffers_Updated.pdf.tex
+(/Users/juristoffers/Desktop/GitHub/Untitled/MA/Feinkonzept_JuriStoffers_Updated.pdf.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -304,8 +304,8 @@ Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count301
 \l__pdf_internal_box=\box56
-) (./updatedFeinConzept.aux)
-\openout1 = `updatedFeinConzept.aux'.
+) (./Feinkonzept_JuriStoffers_Updated.pdf.aux)
+\openout1 = `Feinkonzept_JuriStoffers_Updated.pdf.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
@@ -345,13 +345,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring ON on input line 17.
- (./updatedFeinConzept.out) (./updatedFeinConzept.out)
+ (./Feinkonzept_JuriStoffers_Updated.pdf.out) (./Feinkonzept_JuriStoffers_Updated.pdf.out)
 \@outlinefile=\write3
-\openout3 = `updatedFeinConzept.out'.
+\openout3 = `Feinkonzept_JuriStoffers_Updated.pdf.out'.
 
- (./updatedFeinConzept.toc)
+ (./Feinkonzept_JuriStoffers_Updated.pdf.toc)
 \tf@toc=\write4
-\openout4 = `updatedFeinConzept.toc'.
+\openout4 = `Feinkonzept_JuriStoffers_Updated.pdf.toc'.
 
 
 
@@ -371,24 +371,24 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 78--79
 
 
 
-[3{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./updatedFeinConzept.aux)
+[3{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./Feinkonzept_JuriStoffers_Updated.pdf.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `updatedFeinConzept.out' has not changed.
+Package rerunfilecheck Info: File `Feinkonzept_JuriStoffers_Updated.pdf.out' has not changed.
 (rerunfilecheck)             Checksum: B6D63556CD8184530ABC9B167FF78247;1215.
  ) 
 Here is how much of TeX's memory you used:
  10147 strings out of 473190
- 155903 string characters out of 5715801
- 566209 words of memory out of 5000000
+ 156335 string characters out of 5715801
+ 566299 words of memory out of 5000000
  33270 multiletter control sequences out of 15000+600000
  565814 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,485b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,503b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on updatedFeinConzept.pdf (3 pages, 72082 bytes).
+Output written on Feinkonzept_JuriStoffers_Updated.pdf.pdf (3 pages, 72082 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  80 compressed objects within 1 object stream
