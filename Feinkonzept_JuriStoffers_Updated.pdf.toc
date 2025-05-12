@@ -1,8 +1,0 @@
-\contentsline {section}{\numberline {1}Research Objectives}{2}{section.1}%
-\contentsline {section}{\numberline {2}Contents of Thesis}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Market Mechanics}{2}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Exploratory Data Analysis}{2}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Risk \& Position Size}{2}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Automation and Test Run}{3}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Project Timeline}{3}{section.3}%
-\contentsline {section}{\numberline {4}Expected Delivery}{3}{section.4}%
