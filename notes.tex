@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{hyperref}
+
+\geometry{a4paper, margin=1in}
+\setstretch{1.2}
+
+\title{Statistical Outlier Detection Notes}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Outlier Detection Using Mean and Standard Deviation}
+
+To detect outliers in a dataset $\Delta$, we use the mean and standard deviation:
+
+\begin{itemize}
+    \item $\mu(\Delta)$: Mean of the data
+    \item $\sigma(\Delta)$: Standard deviation of the data
+\end{itemize}
+
+\subsection*{Normal Range}
+
+The normal range is defined as:
+
+\[
+\mu(\Delta) \pm 2\sigma(\Delta)
+\]
+
+This means most data points (about 95\% if normally distributed) are expected to lie within this range.
+
+\subsection*{Outlier Condition}
+
+A value is considered an outlier if:
+
+\[
+\Delta < \mu(\Delta) - 2\sigma(\Delta) \quad \text{or} \quad \Delta > \mu(\Delta) + 2\sigma(\Delta)
+\]
+
+\subsection*{Python Equivalent}
+
+This logic can be implemented in Python as follows:
+
+\begin{verbatim}
+mu, std = delta.mean(), delta.std()
+lower, upper = mu - 2*std, mu + 2*std
+outliers = (delta < lower) | (delta > upper)
+\end{verbatim}
+
+\subsection*{Notes}
+
+\begin{itemize}
+    \item This method assumes data is roughly normally distributed.
+    \item Using $2\sigma$ captures approximately 95\% of data points under a normal distribution.
+    \item You can adjust the multiplier (e.g., $3\sigma$) for stricter or looser thresholds.
+\end{itemize}
+
+\end{document}
