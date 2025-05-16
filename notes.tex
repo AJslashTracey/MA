@@ -48,11 +48,30 @@ A value is considered an outlier if:
 \]
 
 
+
 \begin{itemize}
     \item $\Delta$ - Orderbook Delta Depth of 5\% from Coinbase
     \item $\mu(\Delta)$ - Mean of $\Delta$
     \item $\sigma(\Delta)$ - Standard deviation of the dataset
 \end{itemize}
+
+
+\subsection*{Strength of Signal}
+
+To not only detect outlier price points but also see how far they are expanded from the mean I use the Z-score for each data point being detected as an outliers
+\newpage
+The Z-score is calculated as:
+
+\[
+Z = \frac{\Delta_5 - \mu(\Delta_5)}{\sigma(\Delta_5)}
+\]
+
+Only points outside the $[\mu - 2\sigma, \mu + 2\sigma]$ interval are considered outliers.  
+For these, the signal strength is defined as $|Z|$, indicating how extreme the value is compared to the distribution.
+
+\textit{Example:}  
+A point with a Z-score of $+3.1$ is a stronger signal than one at $+2.1$, since it is farther from the mean.  
+Non-outliers receive a signal strength of 0.
 
 
 

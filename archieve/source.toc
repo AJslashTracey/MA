@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}Executive Summary}{1}{}%
+\contentsline {section}{\numberline {2}Market Opportunity}{1}{}%
+\contentsline {paragraph}{Structural inefficiency.}{1}{}%
+\contentsline {paragraph}{Why now.}{1}{}%
+\contentsline {paragraph}{Addressable edge.}{1}{}%
+\contentsline {section}{\numberline {3}Algorithm \& Competitive Edge}{1}{}%
+\contentsline {subsection}{\numberline {3.1}Signal Logic}{1}{}%
+\contentsline {subsection}{\numberline {3.2}Execution Rules}{2}{}%
+\contentsline {subsection}{\numberline {3.3}Preliminary KPIs}{2}{}%
+\contentsline {section}{\numberline {4}Implementation Roadmap}{2}{}%
+\contentsline {section}{\numberline {5}Risk Mitigation}{2}{}%
+\contentsline {section}{\numberline {6}Projected Outcomes}{3}{}%
+\contentsline {paragraph}{Base case.}{3}{}%
+\contentsline {paragraph}{Downside.}{3}{}%
+\contentsline {paragraph}{Upside.}{3}{}%
+\contentsline {section}{\numberline {7}Ask \& Next Steps}{3}{}%
+\contentsfinish 

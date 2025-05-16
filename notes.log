@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  13 MAY 2025 22:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  16 MAY 2025 22:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -344,53 +344,55 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<imgs/ResultsOfSTDoutlierDecection.png, id=18, 1435.3625pt x 752.8125pt>
+
+[2]
+<imgs/ResultsOfSTDoutlierDecection.png, id=25, 1435.3625pt x 752.8125pt>
 File: imgs/ResultsOfSTDoutlierDecection.png Graphic file (type png)
 <use imgs/ResultsOfSTDoutlierDecection.png>
-Package pdftex.def Info: imgs/ResultsOfSTDoutlierDecection.png  used on input line 77.
+Package pdftex.def Info: imgs/ResultsOfSTDoutlierDecection.png  used on input line 96.
 (pdftex.def)             Requested size: 452.9679pt x 237.56221pt.
 
 
-[2
+[3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.90 \newpage
-              <./imgs/ResultsOfSTDoutlierDecection.png>]
-<imgs/RSI1min.png, id=28, 2172.115pt x 803.0pt>
+l.109 \newpage
+               <./imgs/ResultsOfSTDoutlierDecection.png>]
+<imgs/RSI1min.png, id=35, 2172.115pt x 803.0pt>
 File: imgs/RSI1min.png Graphic file (type png)
 <use imgs/RSI1min.png>
-Package pdftex.def Info: imgs/RSI1min.png  used on input line 117.
+Package pdftex.def Info: imgs/RSI1min.png  used on input line 136.
 (pdftex.def)             Requested size: 362.37569pt x 133.95961pt.
-<imgs/15minRsi.png, id=29, 2172.115pt x 803.0pt>
+<imgs/15minRsi.png, id=36, 2172.115pt x 803.0pt>
 File: imgs/15minRsi.png Graphic file (type png)
 <use imgs/15minRsi.png>
-Package pdftex.def Info: imgs/15minRsi.png  used on input line 122.
+Package pdftex.def Info: imgs/15minRsi.png  used on input line 141.
 (pdftex.def)             Requested size: 362.37569pt x 133.95961pt.
-<imgs/60minRSI.png, id=30, 2172.115pt x 803.0pt>
+<imgs/60minRSI.png, id=37, 2172.115pt x 803.0pt>
 File: imgs/60minRSI.png Graphic file (type png)
 <use imgs/60minRSI.png>
-Package pdftex.def Info: imgs/60minRSI.png  used on input line 128.
+Package pdftex.def Info: imgs/60minRSI.png  used on input line 147.
 (pdftex.def)             Requested size: 362.37569pt x 133.95961pt.
 
 
-[3
+[4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.131 
+l.150 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.131 
+l.150 
        <./imgs/RSI1min.png> <./imgs/15minRsi.png>]
 
-[4
+[5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.138 \end{document}
+l.157 \end{document}
                      <./imgs/60minRSI.png>] (./notes.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
@@ -400,18 +402,18 @@ Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 9926 strings out of 473190
- 153674 string characters out of 5715801
- 559893 words of memory out of 5000000
- 33044 multiletter control sequences out of 15000+600000
- 567937 words of font info for 71 fonts, out of 8000000 for 9000
+ 9930 strings out of 473190
+ 153711 string characters out of 5715801
+ 560893 words of memory out of 5000000
+ 33045 multiletter control sequences out of 15000+600000
+ 568284 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,6n,79p,566b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on notes.pdf (4 pages, 606130 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on notes.pdf (5 pages, 618291 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
+ 96 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
