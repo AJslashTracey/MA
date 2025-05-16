@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1747427494.99084 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/notes.tex" "notes.pdf" "notes" 1747427496.29676 0
-  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/notes.tex" 1747427494.7933 3993 8a8e21fc9a501696b726f954b9b3eecf ""
+["pdflatex"] 1747428371.9267 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/notes.tex" "notes.pdf" "notes" 1747428373.10664 2
+  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/notes.tex" 1747428371.61893 3978 32d26848e2195e3729b78515d6862a0b ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -25,6 +25,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti12.tfm" 1136768653 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm" 1136768653 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -34,6 +35,7 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1248133631 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1215737283 136101 f533469f523533d38317ab5729d00c8a ""
   "/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -95,11 +97,11 @@
   "imgs/15minRsi.png" 1747161567.69659 324329 fb89059373195419ca231cf4f525b37d ""
   "imgs/60minRSI.png" 1747161666.17777 254018 f2a330d5da92bd3ad0fdca22883d50b2 ""
   "imgs/RSI1min.png" 1747160989.68198 151129 1735a9ed81315dc2804f0160283703d3 ""
-  "imgs/ResultsOfSTDoutlierDecection.png" 1747082281.79767 164811 12018037394363f0364e7897bcffce97 ""
-  "imgs/zoomedin_outliers_strenght_signal_zscore.png" 1747427446.65326 175639 445919e3fd686e73d1579295f58b74a4 ""
-  "notes.aux" 1747427496.23947 887 102b1cc1d879e5abac6225100194779d "pdflatex"
-  "notes.out" 1747427495.3338 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "notes.tex" 1747427494.7933 3993 8a8e21fc9a501696b726f954b9b3eecf ""
+  "imgs/ResultsOfSTDoutlierDecection.png" 0 -1 0 ""
+  "imgs/outlier_signal_visualised.png" 1747428324.8096 267875 36c1b6c39eb0b92493ea270e2a187fb9 ""
+  "notes.aux" 1747428373.05151 887 cb8877470bde13e9b7b9f3c6bd459885 "pdflatex"
+  "notes.out" 1747428372.2357 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "notes.tex" 1747428371.61893 3978 32d26848e2195e3729b78515d6862a0b ""
   (generated)
   "notes.aux"
   "notes.log"
