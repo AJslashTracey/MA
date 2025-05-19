@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1747428371.9267 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/notes.tex" "notes.pdf" "notes" 1747428373.10664 2
-  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/notes.tex" 1747428371.61893 3978 32d26848e2195e3729b78515d6862a0b ""
+["pdflatex"] 1747661481.37292 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/notes.tex" "notes.pdf" "notes" 1747661483.23755 2
+  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/notes.tex" 1747661479.08547 4193 2d308e7348ee78ecc1bb62f223ae09f0 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -99,9 +99,10 @@
   "imgs/RSI1min.png" 1747160989.68198 151129 1735a9ed81315dc2804f0160283703d3 ""
   "imgs/ResultsOfSTDoutlierDecection.png" 0 -1 0 ""
   "imgs/outlier_signal_visualised.png" 1747428324.8096 267875 36c1b6c39eb0b92493ea270e2a187fb9 ""
-  "notes.aux" 1747428373.05151 887 cb8877470bde13e9b7b9f3c6bd459885 "pdflatex"
-  "notes.out" 1747428372.2357 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "notes.tex" 1747428371.61893 3978 32d26848e2195e3729b78515d6862a0b ""
+  "imgs/swingpoints_emaspread_priceOutliers.png" 1747661299.24708 234505 61fa41a0932ea21432dfc3de004f12a6 ""
+  "notes.aux" 1747661483.1658 1021 841eb582e0b224f741e4582e823045fe "pdflatex"
+  "notes.out" 1747661481.8233 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "notes.tex" 1747661479.08547 4193 2d308e7348ee78ecc1bb62f223ae09f0 ""
   (generated)
   "notes.aux"
   "notes.log"

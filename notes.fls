@@ -184,6 +184,11 @@ INPUT ./imgs/60minRSI.png
 INPUT ./imgs/60minRSI.png
 INPUT ./imgs/60minRSI.png
 INPUT ./imgs/60minRSI.png
+INPUT ./imgs/swingpoints_emaspread_priceOutliers.png
+INPUT ./imgs/swingpoints_emaspread_priceOutliers.png
+INPUT ./imgs/swingpoints_emaspread_priceOutliers.png
+INPUT ./imgs/swingpoints_emaspread_priceOutliers.png
+INPUT ./imgs/swingpoints_emaspread_priceOutliers.png
 INPUT notes.aux
 INPUT ./notes.out
 INPUT ./notes.out
