@@ -8,11 +8,12 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{float}
+\newcommand{\comm}[1]{def}
 
 \geometry{a4paper, margin=1in}
 \setstretch{1.2}
 
-\title{Statistical Outlier Detection Notes}
+\title{\Huge Statistical Outlier Detection Notes}
 \author{}
 \date{}
 
@@ -50,10 +51,15 @@ A value is considered an outlier if:
 
 
 \begin{itemize}
-    \item $\Delta$ - Orderbook Delta Depth of 5\% from Coinbase
+    \item $\Delta$ - Orderbook Delta Depth of 5\% from Coinbase (BTC/USD) 
     \item $\mu(\Delta)$ - Mean of $\Delta$
     \item $\sigma(\Delta)$ - Standard deviation of the dataset
 \end{itemize}
+
+
+\subsection*{Lookahead Bias}
+
+
 
 
 \subsection*{Strength of Signal}
@@ -99,11 +105,7 @@ Non-outliers receive a signal strength of 0.
 \end{itemize}
 
 
-\begin{figure}
-    \centering
-    \includegraphics[width=1\textwidth]{imgs/ResultsOfSTDoutlierDecection.png}
-    \caption{results over a two month data set}
-\end{figure}
+
 
 
 \subsection*{Future Plans}
@@ -116,64 +118,79 @@ Non-outliers receive a signal strength of 0.
 
 \newpage
 
-\subsection*{Order Book Delta RSI (14-period)}
-
-The Relative Strength Index (RSI) applied to the order book delta $\Delta$ is defined as:
-
-\[
-\text{RSI}_{\Delta}(t) = 100 - \frac{100}{1 + RS(t)}
-\]
-
-where
-
-\[
-RS(t) = \frac{\text{Average Gain over 14 periods}}{\text{Average Loss over 14 periods}}
-\]
 
 
-\subsubsection*{Dictionary of Terms}
+
+
+\section*{Meassuring volatility after Price Outlier detection}
+
+
+\begin{equation}
+    r_t = \frac{\Delta_{5,t} - \Delta_{5,t-1}}{\Delta_{5,t-1}}
+\end{equation}
+
+\subsection*{Dictionary of Terms}
 
 \begin{itemize}
-  \item $\Delta(t)$ — Order book delta at time $t$ (e.g., 5\% depth imbalance)
-  \item $\text{Gain}$ — Positive change in $\Delta$: $\Delta(t) - \Delta(t-1) > 0$
-
+    \item $P_t$  
+      – Asset price at time $t$.
+    \item $r_t = \dfrac{P_t - P_{t-1}}{P_{t-1}}$  
+      – 1-minute price return at time $t$.
+    \item $\sigma^{\mathrm{(15)}}_{t}$  
+      – Realized volatility: the standard deviation of the next 15 one-minute returns,
+      \[
+        \sigma^{\mathrm{(15)}}_{t}
+        = \sqrt{\frac{1}{14}\sum_{i=1}^{15}\bigl(r_{t+i}-\bar r_{t}\bigr)^{2}},
+        \quad
+        \bar r_{t} = \frac{1}{15}\sum_{i=1}^{15} r_{t+i}
+      \]
+      aligned so that at time $t$ it measures volatility over $t+1$ to $t+15$.
 \end{itemize}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{imgs/RSI1min.png}
-    \caption{1 min time frame RSI orderbook depth 5\%}    
-\end{figure}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{imgs/15minRsi.png}
-    \caption{15 min time frame RSI orderbook depth 5\%}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{imgs/60minRSI.png}
-    \caption{60 min time frame RSI orderbook depth 5\%}
-\end{figure}
 
 
+\subsection*{In Py code}
+
+\begin{verbatim}
+import pandas as pd
+df = pd.read_csv(file_path)
+df.set_index('timestamp', inplace=True)
+#Compute 1-min return of delta_5
+
+df['r_t'] = df['price'].pct_change().fillna(0)
 
 
-\section*{EMA compression/expanssion}
+#compute rolling std of the future 15 min window
 
+window = 15
+
+#rolling on r_t, then shift forward so index t hold vol of t+1...t+15
+df['future_vol_15] = (
+    df['r_t']
+    .rolling(window=window)
+    .std()
+    .shift(-window)
+)
+
+
+
+
+
+
+\end{verbatim}
 
 
 \newpage
 
-
 \section*{Combining Indicators}
+Here I visulised the swing points, the EMA spread and the 100 outliers with the highest Z-Score in the same plot.
 
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{imgs/swingpoints_emaspread_priceOutliers.png}
+    \includegraphics[width=\textwidth]{imgs/swingpoints_emaspread_priceOutliers.png}
     \caption{combined indicators png}
 \end{figure}
 
-
+\footnote{Chart made with Matplotlib and Seaborn}
 
 \end{document}
