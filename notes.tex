@@ -122,18 +122,19 @@ Non-outliers receive a signal strength of 0.
 
 
 
-\section*{Meassuring volatility after Price Outlier detection}
+\section*{Measuring Volatility After Price Outlier Detection}
 
 
 \begin{equation}
-    r_t = \frac{\Delta_{5,t} - \Delta_{5,t-1}}{\Delta_{5,t-1}}
+    r_t = \frac{P_{t} - P_{t-1}}{P_{t-1}}
 \end{equation}
+
 
 \subsection*{Dictionary of Terms}
 
 \begin{itemize}
     \item $P_t$  
-      – Asset price at time $t$.
+      Asset price at time $t$.
     \item $r_t = \dfrac{P_t - P_{t-1}}{P_{t-1}}$  
       – 1-minute price return at time $t$.
     \item $\sigma^{\mathrm{(15)}}_{t}$  
