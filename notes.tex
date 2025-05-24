@@ -17,6 +17,13 @@
 \author{}
 \date{}
 
+
+
+
+
+    
+
+
 \begin{document}
 
 \maketitle
@@ -68,9 +75,9 @@ To not only detect outlier price points but also see how far they are expanded f
 \newpage
 The Z-score is calculated as:
 
-\[
-Z = \frac{\Delta_5 - \mu(\Delta_5)}{\sigma(\Delta_5)}
-\]
+
+$$Z = \frac{\Delta_5 - \mu(\Delta_5)}{\sigma(\Delta_5)}$$
+
 
 Only points outside the $[\mu - 2\sigma, \mu + 2\sigma]$ interval are considered outliers.  
 For these, the signal strength is defined as $|Z|$, indicating how extreme the value is compared to the distribution.
