@@ -51,10 +51,11 @@ This means most data points (about 95\% if normally distributed) are expected to
 
 A value is considered an outlier if:
 
-\[
-\Delta < \mu(\Delta) - 2\sigma(\Delta) \quad \text{or} \quad \Delta > \mu(\Delta) + 2\sigma(\Delta)
-\]
 
+
+\begin{equation}\label{eq: outlier_detection}
+    \Delta < \mu(\Delta) - 2\sigma(\Delta) \quad \text{or} \quad \Delta > \mu(\Delta) + 2\sigma(\Delta)    
+\end{equation}
 
 
 \begin{itemize}
@@ -146,12 +147,20 @@ Non-outliers receive a signal strength of 0.
       – 1-minute price return at time $t$.
     \item $\sigma^{\mathrm{(15)}}_{t}$  
       – Realized volatility: the standard deviation of the next 15 one-minute returns,
-      \[
+      
+      
+
+      
+      \begin{equation}\label{eq:realized-vol}
         \sigma^{\mathrm{(15)}}_{t}
         = \sqrt{\frac{1}{14}\sum_{i=1}^{15}\bigl(r_{t+i}-\bar r_{t}\bigr)^{2}},
         \quad
-        \bar r_{t} = \frac{1}{15}\sum_{i=1}^{15} r_{t+i}
-      \]
+        \bar r_{t} = \frac{1}{15}\sum_{i=1}^{15} r_{t+i}.
+      \end{equation}
+      
+
+
+
       aligned so that at time $t$ it measures volatility over $t+1$ to $t+15$.
 \end{itemize}
 
@@ -179,13 +188,72 @@ df['future_vol_15] = (
     .std()
     .shift(-window)
 )
-
-
-
-
-
-
 \end{verbatim}
+
+
+
+\newpage
+
+\subsection*{\textbf{Statistical evidence}}
+
+Once an outlier is detected \eqref{eq: outlier_detection} inside of the Orderbook $\Delta$, we calculate the15-minute ahead realized volatility using Equation: \eqref{eq:realized-vol}
+
+
+
+
+if a $\Delta_t$ values is flagged as an outlier \eqref{eq: outlier_detection}
+we record
+$$
+\sigma^{(15)}_t
+\;=\;
+\sqrt{\frac{1}{14}\sum_{i=1}^{15}\bigl(r_{t+i}-\bar r_{t}\bigr)^{2}},
+$$
+
+We then form two samples over our full dataset which during this test includes 104 957 one minutes intervals of $P$ and Orderbook $\Delta$:
+
+
+$$
+\mathcal{S}_{\rm out} \;=\;\{\sigma^{(15)}_t : t\text{ is an outlier}\},
+\quad
+\mathcal{S}_{\rm non} \;=\;\{\sigma^{(15)}_t : t\text{ is not an outlier}\}.
+$$
+
+
+Sample mean results:
+$$
+\overline{\sigma}^{(15)}_{\rm out}
+=0.0006244,
+\qquad
+\overline{\sigma}^{(15)}_{\rm non}
+=0.0005138,
+$$
+
+
+
+
+This concludes an increase of $r_t$ of roughly 21.5\%
+
+
+To check Statistical evidence
+
+\begin{itemize}
+  \item a two-sample *t*-test (unequal variances), which yields
+  $$
+    T=24.72,\quad p=4.79\times10^{-132},
+  $$
+  \item a Mann–Whitney *U*-test, which returns
+  $$
+    p=4.02\times10^{-157}.
+  $$
+\end{itemize}
+
+
+
+
+
+
+
+
 
 
 \newpage
