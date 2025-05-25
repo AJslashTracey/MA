@@ -60,6 +60,7 @@ A value is considered an outlier if:
 
 \begin{itemize}
   \item $\Delta$ - Orderbook Delta Depth of 5\% from Coinbase (BTC/USD) 
+  \item   This basically means we take a delta of the Bid and Ask orders which are in a range of 5\% from the current price.
   \item $\mu(\Delta)$ — Mean of the last 1440 values of $\Delta$ before time $t$
   \item $\sigma(\Delta)$ - Standard deviation over the last 1440 $\Delta$ values before time $t$
 
