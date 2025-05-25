@@ -30,22 +30,35 @@
 
 \section*{Outlier Detection Using Mean and Standard Deviation (Z-Score Based Outlier Detection)}
 
-To detect outliers in a dataset $\Delta$, we use the mean and standard deviation:
 
-\begin{itemize}
-    \item $\mu(\Delta)$: Mean of the data
-    \item $\sigma(\Delta)$: Standard deviation of the data
-\end{itemize}
 
 \subsection*{Normal Range}
 
-The normal range is defined as:
+What I want to test is how price reacts to anomalous orderbook delta movements, particularly in scenarios where unrealistic or clearly outlying values are detected. In cryptocurrency markets, such inefficiencies can be caused by various events, one example is liquidation
+ events that interact with passive demand order stacked zones. During these events, the orderbook delta exhibits significant increases, providing a clear signal of market stress. This research will focus on understanding the relationship between rapid delta movements and how price reacts after these events.
+
+\subsection*{My Hypothesis}
+
+\begin{itemize}
+  \item I expext realized volatility to increase after an outlier is detected. 
+  \item I expext a return to the mean after a strong outlier is detected.
+\end{itemize}
+
+
+
+\subsection*{Normal Range}
+
+
+
+
 
 \[
 \mu(\Delta) \pm 2\sigma(\Delta)
 \]
 
 This means most data points (about 95\% if normally distributed) are expected to lie within this range.
+
+\newpage
 
 \subsection*{Outlier Condition}
 
@@ -57,10 +70,11 @@ A value is considered an outlier if:
   \Delta < \mu(\Delta) - 2\sigma(\Delta) \quad \text{or} \quad \Delta > \mu(\Delta) + 2\sigma(\Delta)    
 \end{equation}
 
+This is a simple Z-score based outlier detection.
 
 \begin{itemize}
-  \item $\Delta$ - Orderbook Delta Depth of 5\% from Coinbase (BTC/USD) 
-  \item   This basically means we take a delta of the Bid and Ask orders which are in a range of 5\% from the current price.
+  \item $\Delta$ - Orderbook Delta Depth with a certain depth I will test on: $\Delta_{1\%}$ $\Delta_{2.5\%}$ $\Delta_{5\%}$ from Coinbase (BTC/USD) 
+  \item   This basically means we take a delta of the Bid and Ask orders which are in a range of x\% from the current price.
   \item $\mu(\Delta)$ — Mean of the last 1440 values of $\Delta$ before time $t$
   \item $\sigma(\Delta)$ - Standard deviation over the last 1440 $\Delta$ values before time $t$
 
