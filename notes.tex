@@ -54,14 +54,15 @@ A value is considered an outlier if:
 
 
 \begin{equation}\label{eq: outlier_detection}
-    \Delta < \mu(\Delta) - 2\sigma(\Delta) \quad \text{or} \quad \Delta > \mu(\Delta) + 2\sigma(\Delta)    
+  \Delta < \mu(\Delta) - 2\sigma(\Delta) \quad \text{or} \quad \Delta > \mu(\Delta) + 2\sigma(\Delta)    
 \end{equation}
 
 
 \begin{itemize}
-    \item $\Delta$ - Orderbook Delta Depth of 5\% from Coinbase (BTC/USD) 
-    \item $\mu(\Delta)$ - Mean of $\Delta$
-    \item $\sigma(\Delta)$ - Standard deviation of the dataset
+  \item $\Delta$ - Orderbook Delta Depth of 5\% from Coinbase (BTC/USD) 
+  \item $\mu(\Delta)$ — Mean of the last 1440 values of $\Delta$ before time $t$
+  \item $\sigma(\Delta)$ - Standard deviation over the last 1440 $\Delta$ values before time $t$
+
 \end{itemize}
 
 
