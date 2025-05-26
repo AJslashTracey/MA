@@ -266,13 +266,46 @@ To check Statistical evidence
 \newpage
 \section*{Measuring avearge return after price outlier detection}
 
+
+
+
+\subsection*{Formulars}
+\begin{align}
+\intertext{Once a $\Delta_t$ Outlier is detected we calculate the 15-min forward return of \underline{BTC/USD} price}
+\mathrm{Ret}^{(15)}_t
+\;=\;\frac{P_{t+15} - P_t}{P_t}
+\tag{4}\\[1ex]
+\intertext{We then differentiate between a bullish and a bearish outlier. Which is already defined \eqref{eq: outlier_detection}}
+\overline{\mathrm{Ret}}^{(15)}_{\rm bull}
+= \frac{1}{|\mathcal{T}_{\rm bull}|}
+  \sum_{t\in\mathcal{T}_{\rm bull}} \mathrm{Ret}^{(15)}_t
+\tag{7}\\[1ex]
+\overline{\mathrm{Ret}}^{(15)}_{\rm bear}
+= \frac{1}{|\mathcal{T}_{\rm bear}|}
+  \sum_{t\in\mathcal{T}_{\rm bear}} \mathrm{Ret}^{(15)}_t
+\tag{8}
+\end{align}
+
+
+
+
+
+
+
 \subsection*{Dictionary of Terms}
 
-First we have to differentiate between a bullish and a bearish outlier.
+\begin{itemize}
+  \item Price at a certain time: \space $P_t$
+  \item 15-min forward return: \space $\mathrm{Ret}^{(15)}_t$
+\end{itemize}
 
 
 
 
+
+\begin{verbatim}
+  #compute 15-min forward return of BTC/USD price
+\end{verbatim}
 
 
 
