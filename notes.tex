@@ -13,7 +13,7 @@
 \geometry{a4paper, margin=1in}
 \setstretch{1.2}
 
-\title{\Huge Statistical Outlier Detection Notes}
+\title{\Huge Orderbook Delta price reaction research}
 \author{}
 \date{}
 
@@ -28,8 +28,20 @@
 
 \maketitle
 
-\section*{Outlier Detection Using Mean and Standard Deviation (Z-Score Based Outlier Detection)}
 
+\subsection*{Table of Contents}
+
+\begin{itemize}
+  \item Outlier Detection Using Mean and Standard Deviation (Z-Score Based Outlier Detection)
+  \item Measuring Volatility After Price Outlier Detection
+  \item Measuring avearge return after price outlier detection
+  \item Combining Indicators
+\end{itemize}
+
+
+\newpage
+
+\section*{Outlier Detection Using Mean and Standard Deviation (Z-Score Based Outlier Detection)}
 
 
 \subsection*{Normal Range}
@@ -81,38 +93,10 @@ This is a simple Z-score based outlier detection.
 \end{itemize}
 
 
-\subsection*{Lookahead Bias}
 
 
 
 
-\subsection*{Strength of Signal}
-
-To not only detect outlier price points but also see how far they are expanded from the mean I use the Z-score for each data point being detected as an outliers
-\newpage
-The Z-score is calculated as:
-
-
-$$Z = \frac{\Delta_5 - \mu(\Delta_5)}{\sigma(\Delta_5)}$$
-
-
-Only points outside the $[\mu - 2\sigma, \mu + 2\sigma]$ interval are considered outliers.  
-For these, the signal strength is defined as $|Z|$, indicating how extreme the value is compared to the distribution.
-
-\textit{Example:}  
-A point with a Z-score of $+3.1$ is a stronger signal than one at $+2.1$, since it is farther from the mean.  
-Non-outliers receive a signal strength of 0. 
-\footnote{Visualisation inside of Figure 1}
-
-
-
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1\textwidth]{imgs/outlier_signal_visualised.png}
-    \caption{Heatmap Outlier}
-\end{figure}
 
 
 
@@ -137,8 +121,23 @@ Non-outliers receive a signal strength of 0.
 \begin{itemize}
     \item Test on more data
     \item use rolling windows (e.g. 1 day or 1 week) for local context.
-    \item Compare sensitivity with +- 1.5$\sigma$ or +-2.5$\sigma$
+    \item Compare sensitivity with +- 1.5$\sigma$ or +-2.5$\sigma$ $\rightarrow$ optimize for best results
 \end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \newpage
 
@@ -264,6 +263,12 @@ To check Statistical evidence
 \end{itemize}
 
 
+\newpage
+\section*{Measuring avearge return after price outlier detection}
+
+\subsection*{Dictionary of Terms}
+
+First we have to differentiate between a bullish and a bearish outlier.
 
 
 
