@@ -6,6 +6,8 @@
 \usepackage{enumitem}
 \usepackage{array}
 \setlist{nosep}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
 
 \title{Automated Bitcoin Trading – Feinkonzept}
 \author{Juri S.}
@@ -51,27 +53,34 @@ and errors, and set up alerts for any issues. Finally, I explain how I run a
 test phase (paper trading) to make sure everything works as expected before
 using real money.
 
-\section{Project Timeline}
-\begin{center}
+\subsection{Termonology}
+
+\section*{3\hspace{1em}Project Timeline}
+\addcontentsline{toc}{section}{3\hspace{1em}Project Timeline}
+\vspace{-0.5em}
+\noindent\rule{\textwidth}{0.5pt}
+
 \begin{tabular}{|>{\raggedright\arraybackslash}p{7cm}|>{\raggedright\arraybackslash}p{7cm}|}
 \hline
 \textbf{Phase} & \textbf{Weeks / Dates}\\ \hline
-Exploratory analysis \& signal ideation & KW~17 – KW~21 (24~Apr – 26~May)\\ \hline
-Parameter tuning \& dry-run (paper trading) & KW~22 (27~May – 2~Jun)\\ \hline
-Live deployment (real funds) & KW~25 – KW~28 (16~Jun – 14~Jul)\\ \hline
-Result analysis \& thesis writing & KW~29 – KW~33 (15~Jul – 18~Aug)\\ \hline
-Editing, final layout, submission & KW~34 – KW~36 (19~Aug – 5~Sep)\\ \hline
+Exploratory analysis \& signal ideation & KW~17 -- KW~21 (24~Apr -- 26~May)\\ \hline
+Parameter tuning \& dry-run (paper trading) & KW~22 -- KW~25 (27~May -- 23~Jun)\\ \hline
+Live deployment (real funds) & KW~28 -- KW~31 (8~Jul -- 4~Aug)\\ \hline
+Result analysis \& thesis writing & KW~32 (5~Aug -- 11~Aug)\\ \hline
+Editing, final layout, submission & KW~33 -- KW~35 (12~Aug -- 1~Sep)\\ \hline
 \end{tabular}
-\end{center}
 
-\smallskip
-This timeline could change and is just a rough estimate.
+\vspace{0.5em}
+
+\begin{tcolorbox}[colback=blue!10!white, colframe=blue!10!white, boxrule=0pt, arc=0pt, left=0pt, right=0pt, top=0pt, bottom=0pt]
+\textit{This timeline could change and is just a rough estimate.}
+\end{tcolorbox}
 
 \section{Expected Delivery}
 \begin{itemize}
   \item Python code for data handling, back-testing and live execution in a GitHub repository.
   \item Example datasets already available at
-        \href{https://github.com/AJslashTracey/OBDeltaData}{OBDeltaData}.
+        \href{https://github.com/AJslashTracey/OBDeltaData}{GitHub repository}.
   \item A statistical report comparing other strategies I tested and other signals I considered.
   \item Final thesis detailing methodology, live results and critical reflection.
 \end{itemize}
