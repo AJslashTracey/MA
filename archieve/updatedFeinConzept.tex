@@ -32,12 +32,18 @@ Outlining what Bitcoin is and what the value of Bitcoin represents. I go into th
 how markets work. I also discuss the efficient market hypothesis and its
 relevance to algorithmic trading.
 
-\subsection{Exploratory Data Analysis}
-Description of the process on how I explore the data. How I look at the data in plain
-terms, plot the bid- and ask-side deltas, check how often and how strongly
-they move, and see whether large changes line up with later price moves. I
-also use simple tools such as line charts and histograms to spot patterns that
-seem to be statistically relevant.
+\subsection{From data analysis to trading strategy}
+I start by visualizing the data using simple line charts and scatter plots to identify intuitive patterns that appear statistically relevant.
+These patterns are then tested for statistical significance using basic methods such as conditional probability comparisons and hypothesis testing, implemented in Python.
+I plan to use several indicators and combine them into a trading strategy. 
+Different strategies with various indicator combinations will be evaluated using backtesting on historical data and walk-forward analysis.
+
+
+
+\vspace{0.5em}
+\noindent\textit{\footnotesize%
+\textbf{Indicator} is a statistical measure for current market conditions.
+}
 
 
 
@@ -46,19 +52,33 @@ seem to be statistically relevant.
 
 
 \subsection{Risk \& Position Size}
-Here I explain how I handle risk and position size. How I calculate the
-position size and how I set the stop-loss and take-profit levels. How I came
-up with the numbers and how I adjusted them.
+Dive into risk management on how I handle position size and how I set the stop-loss and take-profit levels. 
+
+\vspace{0.5em}
+\noindent\textit{\footnotesize%
+\textbf{stop-loss} Is an order to sell a position if the price drops below a certain level which marks the invalidation of your initial ideas of the trade.
+\textbf{Take-profit} Is an order to sell a position if the price rises above a certain level which marks the end of the trade.
+}
+
+
+
+
+\newpage
 
 \subsection{Automation and Test Run}
-Here I describe how I automate the trading process. I explain how the bot
+Dive into how I automate the trading process and live singal calculation. I explain how the bot
 is set up to run automatically, how signals are processed, and how orders
-are sent to the exchange. I also cover how I monitor the system, log trades
+are sent to the exchange.
+Go into the basics of the mechanics behind the bot and what kind of libaries I used in python. Where it is running on a PaaS.
+I also cover how I monitor the system, log trades
 and errors, and set up alerts for any issues. Finally, I explain how I run a
 test phase (paper trading) to make sure everything works as expected before
 using real money.
 
-\subsection{Termonology}
+\vspace{0.5em}
+\noindent\textit{\footnotesize%
+\textbf{PaaS} is a cloud platform as a service. It is a platform that allows you to run your own software in the cloud remotely.}
+
 
 \section*{3\hspace{1em}Project Timeline}
 \addcontentsline{toc}{section}{3\hspace{1em}Project Timeline}
