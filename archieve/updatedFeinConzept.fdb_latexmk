@@ -1,9 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1749290626.45407 "/Users/juristoffers/Desktop/GitHub/Untitled/ma/archieve/updatedFeinConzept.tex" "/Users/juristoffers/Desktop/GitHub/Untitled/ma/archieve/updatedFeinConzept.pdf" "updatedFeinConzept" 1749290627.40401 0
-  "/Users/juristoffers/Desktop/GitHub/Untitled/ma/archieve/updatedFeinConzept.aux" 1749290627.30121 1252 c67e4b15a592cb8a7ea5766dc01f56c1 "pdflatex"
-  "/Users/juristoffers/Desktop/GitHub/Untitled/ma/archieve/updatedFeinConzept.out" 1749290627.30203 1341 120c58840f82a35d67c0e70be6eb2e07 "pdflatex"
-  "/Users/juristoffers/Desktop/GitHub/Untitled/ma/archieve/updatedFeinConzept.tex" 1749290626.1616 3607 ede95b2dcb84ec7d6aea4091345c3dc8 ""
-  "/Users/juristoffers/Desktop/GitHub/Untitled/ma/archieve/updatedFeinConzept.toc" 1749290627.30236 720 380d266bea0a17465c0386d64deb4b43 "pdflatex"
+["pdflatex"] 1749290854.0221 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/archieve/updatedFeinConzept.tex" "updatedFeinConzept.pdf" "updatedFeinConzept" 1749290854.90168 0
+  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/archieve/updatedFeinConzept.tex" 1749290853.79185 3608 a0bbee99e7e724936aed8ffe8df06a4e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -151,10 +148,14 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1743709780 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1743709729 3345743 a3ced839d75efeff1f35965e5076c360 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
+  "updatedFeinConzept.aux" 1749290854.80575 1252 c67e4b15a592cb8a7ea5766dc01f56c1 "pdflatex"
+  "updatedFeinConzept.out" 1749290854.80637 1341 120c58840f82a35d67c0e70be6eb2e07 "pdflatex"
+  "updatedFeinConzept.tex" 1749290853.79185 3608 a0bbee99e7e724936aed8ffe8df06a4e ""
+  "updatedFeinConzept.toc" 1749290854.80661 720 380d266bea0a17465c0386d64deb4b43 "pdflatex"
   (generated)
-  "/Users/juristoffers/Desktop/GitHub/Untitled/ma/archieve/updatedFeinConzept.aux"
-  "/Users/juristoffers/Desktop/GitHub/Untitled/ma/archieve/updatedFeinConzept.log"
-  "/Users/juristoffers/Desktop/GitHub/Untitled/ma/archieve/updatedFeinConzept.out"
-  "/Users/juristoffers/Desktop/GitHub/Untitled/ma/archieve/updatedFeinConzept.pdf"
-  "/Users/juristoffers/Desktop/GitHub/Untitled/ma/archieve/updatedFeinConzept.toc"
+  "updatedFeinConzept.aux"
+  "updatedFeinConzept.log"
+  "updatedFeinConzept.out"
+  "updatedFeinConzept.pdf"
+  "updatedFeinConzept.toc"
   (rewritten before read)
