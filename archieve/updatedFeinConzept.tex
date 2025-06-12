@@ -34,7 +34,7 @@
 
 \section{Research Objectives}
 \begin{enumerate}
-  \item Identify statistically significant signals that indicate potential short-term price moves.
+  \item Identify statistically significant signals that indicate potential price movements.
   \item Convert the most promising signal(s) into an executable rule-based strategy.
   \item Evaluate performance via back-testing and a four-week live test (16~Jun – 14~Jul 2025).
   \item Document robustness, limitations and possible improvements.
@@ -46,9 +46,8 @@ I briefly outline what Bitcoin is and what the value of Bitcoin represents. How 
 
 
 \subsection{From data analysis to trading strategy}
-I start by visualizing the data using simple line charts and scatter plots to identify intuitive patterns that appear statistically relevant.
-These patterns are then tested for statistical significance using basic methods such as conditional probability comparisons and hypothesis testing, implemented in Python.
-I plan to use several indicators and combine them into a trading strategy. 
+I search for statistically significant signals by testing an idea using basic methods such as conditional probability comparisons and hypothesis testing, implemented in Python. the difference between cumulative buy and sell orders within a certain range of the current Bitcoin price, which I use as a signal for local demand-supply imbalances
+I plan to use several indicators and combine them into a trading strategy.  A orderbook delta is the difference between cumulative buy and sell orders within a certain range of the current Bitcoin price, which I use as a signal for local demand-supply imbalances.
 Different strategies with various indicator combinations will be evaluated using backtesting on historical data and walk-forward analysis.
 
 
@@ -56,13 +55,13 @@ Different strategies with various indicator combinations will be evaluated using
 
 %out of sample => Data not used for optimization
 %in sample => Data used for optimization
-¨%As new data come in, we keep optimizing for the best parameters and update the strategy continuously.
+%As new data come in, we keep optimizing for the best parameters and update the strategy continuously.
 
 
 
 \vspace{0.5em}
 \noindent\textit{\footnotesize%
-\textbf{Indicator} is a statistical measure for current market conditions.
+\textbf{Indicator} statistics used to measure current conditions as well as to forecast financial or economic trends.
 }
 
 
