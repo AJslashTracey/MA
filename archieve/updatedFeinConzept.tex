@@ -42,9 +42,8 @@
 
 \section{Contents of Thesis}
 \subsection{Market Mechanics}
-Outlining what Bitcoin is and what the value of Bitcoin represents. I go into the basics of auction theory and why it is important for understanding
-how markets work. I also discuss the efficient market hypothesis and its
-relevance to algorithmic trading.
+I briefly outline what Bitcoin is and what the value of Bitcoin represents. How Bitcoin works as a digital currency and why specifically I chose Bitcoin as my trading instrument.
+
 
 \subsection{From data analysis to trading strategy}
 I start by visualizing the data using simple line charts and scatter plots to identify intuitive patterns that appear statistically relevant.
@@ -57,7 +56,7 @@ Different strategies with various indicator combinations will be evaluated using
 
 %out of sample => Data not used for optimization
 %in sample => Data used for optimization
-%As new data come in, we keep optimizing for the best parameters and update the strategy continuously.
+¨%As new data come in, we keep optimizing for the best parameters and update the strategy continuously.
 
 
 
@@ -73,7 +72,7 @@ Different strategies with various indicator combinations will be evaluated using
 
 
 \subsection{Risk \& Position Size}
-Dive into risk management on how I handle position size and how I set the stop-loss and take-profit levels. 
+I manage risk by determining trade sizes and setting clear price levels for when to exit trades, both for protecting against losses and taking profits. 
 
 \vspace{0.5em}
 \noindent\textit{\footnotesize%
@@ -87,14 +86,9 @@ Dive into risk management on how I handle position size and how I set the stop-l
 \newpage
 
 \subsection{Automation and Test Run}
-Dive into how I automate the trading process and live singal calculation. I explain how the bot
-is set up to run automatically, how signals are processed, and how orders
-are sent to the exchange.
-Go into the basics of the mechanics behind the bot and what kind of libaries I used in python. Where it is running on a PaaS.
-I also cover how I monitor the system, log trades
-and errors, and set up alerts for any issues. Finally, I explain how I run a
-test phase (paper trading) to make sure everything works as expected before
-using real money.
+
+
+I automate the process of calculating live signals and executing trades on the exchange. The algorithmic trading system will be written in Python and will be run on a PaaS, and includes monitoring for trades and errors with automated alerts. Finally, I run a test phase (paper trading) to make sure everything works as expected before using real money.
 
 \vspace{0.5em}
 \noindent\textit{\footnotesize%
