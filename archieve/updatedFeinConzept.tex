@@ -46,12 +46,14 @@ I briefly outline what Bitcoin is and what the value of Bitcoin represents. How 
 
 
 \subsection{From data analysis to trading strategy}
-I search for statistically significant signals by testing an idea using basic methods such as conditional probability comparisons and hypothesis testing, implemented in Python. the difference between cumulative buy and sell orders within a certain range of the current Bitcoin price, which I use as a signal for local demand-supply imbalances
-I plan to use several indicators and combine them into a trading strategy.  A orderbook delta is the difference between cumulative buy and sell orders within a certain range of the current Bitcoin price, which I use as a signal for local demand-supply imbalances.
-Different strategies with various indicator combinations will be evaluated using backtesting on historical data and walk-forward analysis.
+I search for statistically significant signals that can be converted into indicators by testing ideas using methods such as conditional probability comparisons and hypothesis testing conducted in Python. One such signal is the order book delta, defined as the difference between cumulative buy and sell orders within a certain range of the current Bitcoin price. This serves as an indicator of local demand-supply imbalances.
+I plan to develop several such indicators and combine them into complete trading strategies. These strategies will be evaluated through backtesting on historical data as well as walk-forward analysis to assess out-of-sample performance.
+
 
 
 %Hidden note ------------------------------------------------------------
+
+%cumulative synonyms: total, overall, whole, entire, aggregate, cumulative
 
 %out of sample => Data not used for optimization
 %in sample => Data used for optimization
@@ -61,7 +63,7 @@ Different strategies with various indicator combinations will be evaluated using
 
 \vspace{0.5em}
 \noindent\textit{\footnotesize%
-\textbf{Indicator} statistics used to measure current conditions as well as to forecast financial or economic trends.
+\textbf{Indicator} statistics used to measure current conditions as well as to forecast financial or economic trends. \textbf{Hypothesis testing} is a  statistical method used to determine if there is enough evidence to reject a null hypothesis in favor of an alternative hypothesis. \textbf{Backtesting} is a method of evaluating the performance of a trading strategy using historical data.
 }
 
 
@@ -70,14 +72,8 @@ Different strategies with various indicator combinations will be evaluated using
 
 
 
-\subsection{Risk \& Position Size}
-I manage risk by determining trade sizes and setting clear price levels for when to exit trades, both for protecting against losses and taking profits. 
-
-\vspace{0.5em}
-\noindent\textit{\footnotesize%
-\textbf{stop-loss} Is an order to sell a position if the price drops below a certain level which marks the invalidation of your initial ideas of the trade.
-\textbf{Take-profit} Is an order to sell a position if the price rises above a certain level which marks the end of the trade.
-}
+\subsection{Risk management}
+I manage risk by setting clear price levels for when to exit trades, both for protecting against losses and taking profits. 
 
 
 
