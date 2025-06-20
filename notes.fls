@@ -124,10 +124,10 @@ INPUT ./notes.out
 INPUT ./notes.out
 INPUT notes.out
 INPUT notes.out
+OUTPUT notes.pdf
 INPUT ./notes.out
 INPUT ./notes.out
 OUTPUT notes.out
-OUTPUT notes.pdf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm

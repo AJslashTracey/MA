@@ -182,7 +182,7 @@ This is a simple Z-score based outlier detection.
 
 
 
-\subsection*{In Py code}
+\subsection*{In Python code}
 
 \begin{verbatim}
 import pandas as pd
@@ -342,8 +342,8 @@ Top 3 $z$-values with largest volatility uplift 107880-minutes sample
 \end{table}
 
 
-\newpage
-\subsection*{Conclusions}
+
+
 
 
 
@@ -401,6 +401,20 @@ Top 3 $z$-values with largest volatility uplift 107880-minutes sample
 
 \newpage
 
+
+%complementation of indicators into a strategy
+\section{Combining indicators for strategy}
+
+
+\newpage
+\section*{Resarch in overlap of orderbook deltas with different depths}
+
+
+
+
+
+
+\newpage
 \section*{Combining Indicators}
 Here I visulised the swing points, the EMA spread and the 100 outliers with the highest Z-Score in the same plot.
 
@@ -411,5 +425,40 @@ Here I visulised the swing points, the EMA spread and the 100 outliers with the 
 \end{figure}
 
 \footnote{Chart made with Matplotlib and Seaborn}
+
+
+\newpage
+\section*{Mapping Orderbook delta EMA with standard deviation shifing}
+\section*{Formulars}
+
+\begin{equation}
+  EMA_t = \alpha \cdot \Delta_t + (1 - \alpha) \cdot EMA_{t-1}
+\end{equation}
+
+Dictionary of Terms
+
+\begin{itemize}
+  \item $EMA_t$ - Exponential Moving Average at time $t$
+  \item $\Delta_t$ - Orderbook delta at time $t$
+  \item $\alpha$ - Smoothing factor
+  \item $\sigma(\Delta)$ - Standard deviation of the orderbook delta with a 
+\end{itemize}
+
+We'll now shift the EMA by the standard deviation of the orderbook delta 
+
+
+
+
+
+\newpage
+\section*{sources}
+\subsection*{\href{https://x.com/HangukQuant/status/1930603876069335120}{url}: How good or random is your trading}
+
+
+
+
+
+
+
 
 \end{document}
