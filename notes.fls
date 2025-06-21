@@ -172,6 +172,11 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./60min_swing_point_bias.png
+INPUT ./60min_swing_point_bias.png
+INPUT ./60min_swing_point_bias.png
+INPUT ./60min_swing_point_bias.png
+INPUT ./60min_swing_point_bias.png
 INPUT ./imgs/swingpoints_emaspread_priceOutliers.png
 INPUT ./imgs/swingpoints_emaspread_priceOutliers.png
 INPUT ./imgs/swingpoints_emaspread_priceOutliers.png
