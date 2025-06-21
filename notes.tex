@@ -410,21 +410,30 @@ Top 3 $z$-values with largest volatility uplift 107880-minutes sample
 \section*{Underlying strategy Bias}
 
 %underlying bias logic =     df['indiactor'] = (df['trend'] == 'Uptrend') & (df3['delta5'] > 0)
-Every single parameter has to fight to be implemented into my strategy.  Some simple examples are:
+Every single parameter has to fight to be implemented into my strategy. To get some kind of filter since we are working with an asset which has clear trends and isn't stationary we need to do some trend identification.  
+I'll call it the underlying bias. Some simple examples are for a bias are:
 \begin{itemize}
   \item $\Delta_{5\%} < 0$ (more passive demand than supply)
   \item $EMA_{\text{n}} > P_t$ (EMA is an exponential average of $P_t-n$, $P-T$ is the price at time $t$)
-
+  \item $EMA_{\text{n}} >EMA_{\text{x}}$ (Crossing of two EMAs with different time periods $n$ and $x$)
 \end{itemize}
 
+But I want to get some clear trend identification where we divide into the three different categories:
 
-
-These are simple ways to determine a simple bias. Since Bitcoin is clear not a stationary asset we can determine Trends
 \begin{itemize}
   \item Uptrend: Higher Highs and Higher Lows
   \item Downtrend: Lower Lows and Lower Highs
   \item Sideways: No clear trend
 \end{itemize}
+
+
+An \textbf{uptrend} is broken if a Lower Lower is made and a \textbf{downtrend} is broken if a Higher Higher is made.
+
+
+
+
+
+
 
 But how do I determine the trend? First step is to determine local extremas (swing points):
 

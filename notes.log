@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  21 JUN 2025 13:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  21 JUN 2025 14:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -384,7 +384,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <imgs/swingpoints_emaspread_priceOutliers.png, id=92, 867.24pt x 722.7pt>
 File: imgs/swingpoints_emaspread_priceOutliers.png Graphic file (type png)
 <use imgs/swingpoints_emaspread_priceOutliers.png>
-Package pdftex.def Info: imgs/swingpoints_emaspread_priceOutliers.png  used on input line 454.
+Package pdftex.def Info: imgs/swingpoints_emaspread_priceOutliers.png  used on input line 463.
 (pdftex.def)             Requested size: 452.9679pt x 377.47131pt.
 
 
@@ -392,7 +392,7 @@ Package pdftex.def Info: imgs/swingpoints_emaspread_priceOutliers.png  used on i
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.461 \newpage
+l.470 \newpage
                <./imgs/swingpoints_emaspread_priceOutliers.png>]
 
 [12]
@@ -414,7 +414,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  69i,10n,79p,566b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on notes.pdf (13 pages, 363695 bytes).
+Output written on notes.pdf (13 pages, 364623 bytes).
 PDF statistics:
  194 PDF objects out of 1000 (max. 8388607)
  146 compressed objects within 2 object streams
