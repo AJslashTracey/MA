@@ -409,9 +409,38 @@ Top 3 $z$-values with largest volatility uplift 107880-minutes sample
 \newpage
 \section*{Underlying strategy Bias}
 
+%underlying bias logic =     df['indiactor'] = (df['trend'] == 'Uptrend') & (df3['delta5'] > 0)
+Every single parameter has to fight to be implemented into my strategy.  Some simple examples are:
+\begin{itemize}
+  \item $\Delta_{5\%} < 0$ (more passive demand than supply)
+  \item $EMA_{\text{n}} > P_t$ (EMA is an exponential average of $P_t-n$, $P-T$ is the price at time $t$)
+
+\end{itemize}
 
 
 
+These are simple ways to determine a simple bias. Since Bitcoin is clear not a stationary asset we can determine Trends
+\begin{itemize}
+  \item Uptrend: Higher Highs and Higher Lows
+  \item Downtrend: Lower Lows and Lower Highs
+  \item Sideways: No clear trend
+\end{itemize}
+
+But how do I determine the trend? First step is to determine local extremas (swing points):
+
+\begin{itemize}
+  \item We resample the price data to 1-minute intervals to reduce noise
+  \item For each point $P_t$, we look at a window of $n$ previous price values: $[P_{t-n}, ..., P_t]$
+  \item A swing high is formed when $P_t$ is the highest value in this window:
+    \[ P_t = \max(P_{t-n}, ..., P_t) \]
+  \item A swing low is formed when $P_t$ is the lowest value in this window:
+    \[ P_t = \min(P_{t-n}, ..., P_t) \]
+  \item The parameter $n$ determines the sensitivity of our swing point detection:
+    \begin{itemize}
+      \item Larger $n$ identifies major swing points (less sensitive)
+      \item Smaller $n$ catches minor price fluctuations (more sensitive)
+    \end{itemize}
+\end{itemize}
 
 
 
