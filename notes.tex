@@ -40,6 +40,24 @@
 \end{itemize}
 
 
+
+\subsection*{Orderbook Delta defenition}
+The orderbook delta is calculate by the difference between the sum of the bid and ask orders at a certain depth.
+Formular:
+\begin{equation*}
+  \Delta_{x\%} = \sum_{i=1}^{x\%} \Delta_{i}
+\end{equation*}
+
+\begin{itemize}
+  \item $\Delta_{x\%}$ is the sum of the orderbook delta for the last $x\%$ of the orderbook.
+  \item $\Delta_{i}$ is the orderbook delta for the $i$-th level of the orderbook.
+\end{itemize}
+
+
+
+
+
+
 \newpage
 
 \section*{Outlier Detection Using Mean and Standard Deviation (Z-Score Based Outlier Detection)}
@@ -420,36 +438,60 @@ I'll call it the underlying bias. Some simple examples are for a bias are:
 
 But I want to get some clear trend identification where we divide into the three different categories:
 
+
+Ideas I want to test on:
+
 \begin{itemize}
-  \item Uptrend: Higher Highs and Higher Lows
-  \item Downtrend: Lower Lows and Lower Highs
-  \item Sideways: No clear trend
+  \item Market Structure defenition (Higher Highs and Higher Lows)
+  \item Realtive strenght index on Price and $\Delta_{x\%}$
+  
+  
+\end{itemize}
+\newpage
+\section*{Finding an edge}
+\subsection*{No clear path}
+Finding an edge is a very hard task. There is no clear path to success. You kinda have to try by trail and error every error could be a step further but also a potential path into a dead end.
+
+
+\newpage
+
+
+
+Sources:
+\href{https://trdr.io/}{TRDR} This platform allow you to use different kind of metrics on different Timeseries datasets (BTC/USD Price, orderbookdelta  and Open Interest
+
+\newpage
+\section{Comparison of Delta Indicators on 39,694-minute sample}
+
+\begin{table}[h]
+\begin{tabular}{cccc}
+\hline
+Period & $N_{signals}$ & $U(z)$ (\%) & T-statistic $p$ \\
+\hline
+\multicolumn{4}{l}{Delta2.5 Strategy ($N_{total}$ = 9,182)} \\
+\hline
+  $5m$ & $9,182$ & $+52.03$ & $1.851 \times 10^{-41}$ \\
+  $60m$ & $9,182$ & $+55.94$ & $3.537 \times 10^{-4}$ \\
+  $360m$ & $9,182$ & $+59.20$ & $12.524 \times 10^{0}$ \\
+  \hline
+  \multicolumn{4}{l}{Delta5 Strategy ($N_{total}$ = 12,234)} \\
+  \hline
+  $5m$ & $12,234$ & $+51.38$ & $3.382 \times 10^{-7}$ \\
+  $60m$ & $12,234$ & $+53.44$ & $4.010 \times 10^{-1}$ \\
+  $360m$ & $12,234$ & $+57.04$ & $13.617 \times 10^{0}$ \\
+\hline
+\end{tabular}
+\caption{Comparison of Delta2.5 vs Delta5 strategies across different time periods}
+\end{table}
+
+\begin{itemize}
+  \item $N_{signals}$ represents number of trading signals
+  \item $U(z)$ represents positive return ratio
+  \item T-statistic $p$ represents statistical significance
 \end{itemize}
 
 
-An \textbf{uptrend} is broken if a Lower Lower is made and a \textbf{downtrend} is broken if a Higher Higher is made.
 
-
-
-
-
-
-
-But how do I determine the trend? First step is to determine local extremas (swing points):
-
-\begin{itemize}
-  \item We resample the price data to 1-minute intervals to reduce noise
-  \item For each point $P_t$, we look at a window of $n$ previous price values: $[P_{t-n}, ..., P_t]$
-  \item A swing high is formed when $P_t$ is the highest value in this window:
-    \[ P_t = \max(P_{t-n}, ..., P_t) \]
-  \item A swing low is formed when $P_t$ is the lowest value in this window:
-    \[ P_t = \min(P_{t-n}, ..., P_t) \]
-  \item The parameter $n$ determines the sensitivity of our swing point detection:
-    \begin{itemize}
-      \item Larger $n$ identifies major swing points (less sensitive)
-      \item Smaller $n$ catches minor price fluctuations (more sensitive)
-    \end{itemize}
-\end{itemize}
 
 
 \newpage
@@ -461,6 +503,18 @@ But how do I determine the trend? First step is to determine local extremas (swi
 \end{figure}
 
 
+
+\newpage
+\section*{Swing Point Bias Visualization}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{60min_swing_point_bias.png}
+    \caption{Price Action with Swing Points (1min price, 60min swings) showing trend periods}
+\end{figure}
+
+% You might want to add a description or explanation here
+This visualization demonstrates how swing points are identified on a 1-minute price chart using a 60-minute window for swing point detection. The green and red shaded areas represent uptrend and downtrend periods respectively, while red triangles mark swing highs and green triangles mark swing lows.
 
 \newpage
 \section*{Combining Indicators}
@@ -488,7 +542,8 @@ Dictionary of Terms
 \begin{itemize}
   \item $EMA_t$ - Exponential Moving Average at time $t$
   \item $\Delta_t$ - Orderbook delta at time $t$
-  \item $\alpha$ - Smoothing factor
+  \item $\alpha$ - Smoothing factor 
+  \item $\alpha = \frac{2}{n+1}$ where $n$ is the period of the EMA
   \item $\sigma(\Delta)$ - Standard deviation of the orderbook delta with a 
 \end{itemize}
 

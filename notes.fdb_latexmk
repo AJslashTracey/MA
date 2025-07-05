@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1750618803.35964 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/notes.tex" "notes.pdf" "notes" 1750618804.55376 0
-  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/notes.tex" 1750618801.86825 12313 e626dde9511e567d5e1a6821f74ad726 ""
+["pdflatex"] 1751746867.38387 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/notes.tex" "notes.pdf" "notes" 1751746868.28134 0
+  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/notes.tex" 1751746867.20799 14021 5ffa4b19da47ba93152abc730050fe58 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -99,9 +99,9 @@
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "60min_swing_point_bias.png" 1750498955.94452 104464 a0cacf3ea1067bf0bb14aac6fcd270e7 ""
   "imgs/swingpoints_emaspread_priceOutliers.png" 1747661299.24708 234505 61fa41a0932ea21432dfc3de004f12a6 ""
-  "notes.aux" 1750618804.47457 1265 41fb194fc56282df3d2c31892bd09fce "pdflatex"
-  "notes.out" 1750618804.47524 217 954d377d3a6150ec5a7eb902ab540635 "pdflatex"
-  "notes.tex" 1750618801.86825 12313 e626dde9511e567d5e1a6821f74ad726 ""
+  "notes.aux" 1751746868.21949 1791 ba946eb84df2a2db93a8f0d4675d6f99 "pdflatex"
+  "notes.out" 1751746868.22009 548 fa6b73a0833a623fe248fafc4adb60d6 "pdflatex"
+  "notes.tex" 1751746867.20799 14021 5ffa4b19da47ba93152abc730050fe58 ""
   (generated)
   "notes.aux"
   "notes.log"
