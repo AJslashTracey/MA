@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  5 JUL 2025 22:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  10 JUL 2025 13:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -390,12 +390,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.497 \newpage
+l.502 \newpage
               ]
 <60min_swing_point_bias.png, id=114, 1084.05pt x 578.16pt>
 File: 60min_swing_point_bias.png Graphic file (type png)
 <use 60min_swing_point_bias.png>
-Package pdftex.def Info: 60min_swing_point_bias.png  used on input line 501.
+Package pdftex.def Info: 60min_swing_point_bias.png  used on input line 506.
 (pdftex.def)             Requested size: 452.9679pt x 241.58163pt.
 
 
@@ -403,11 +403,11 @@ Package pdftex.def Info: 60min_swing_point_bias.png  used on input line 501.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.507 \newpage
+l.512 \newpage
                <./60min_swing_point_bias.png>]
 File: 60min_swing_point_bias.png Graphic file (type png)
 <use 60min_swing_point_bias.png>
-Package pdftex.def Info: 60min_swing_point_bias.png  used on input line 512.
+Package pdftex.def Info: 60min_swing_point_bias.png  used on input line 517.
 (pdftex.def)             Requested size: 452.9679pt x 241.58163pt.
 
 
@@ -415,12 +415,12 @@ Package pdftex.def Info: 60min_swing_point_bias.png  used on input line 512.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.519 \newpage
+l.524 \newpage
               ]
 <imgs/swingpoints_emaspread_priceOutliers.png, id=128, 867.24pt x 722.7pt>
 File: imgs/swingpoints_emaspread_priceOutliers.png Graphic file (type png)
 <use imgs/swingpoints_emaspread_priceOutliers.png>
-Package pdftex.def Info: imgs/swingpoints_emaspread_priceOutliers.png  used on input line 525.
+Package pdftex.def Info: imgs/swingpoints_emaspread_priceOutliers.png  used on input line 530.
 (pdftex.def)             Requested size: 452.9679pt x 377.47131pt.
 
 
@@ -428,12 +428,14 @@ Package pdftex.def Info: imgs/swingpoints_emaspread_priceOutliers.png  used on i
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.532 \newpage
+l.537 \newpage
                <./imgs/swingpoints_emaspread_priceOutliers.png>]
 
 [17]
 
-[18] (./notes.aux)
+[18]
+
+[19] (./notes.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -442,18 +444,18 @@ Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: FA6B73A0833A623FE248FAFC4ADB60D6;548.
  ) 
 Here is how much of TeX's memory you used:
- 10058 strings out of 473190
- 155532 string characters out of 5715801
+ 10062 strings out of 473190
+ 155572 string characters out of 5715801
  564205 words of memory out of 5000000
  33126 multiletter control sequences out of 15000+600000
  568743 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,10n,79p,566b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on notes.pdf (18 pages, 465407 bytes).
+Output written on notes.pdf (19 pages, 466076 bytes).
 PDF statistics:
- 230 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 242 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
+ 64 named destinations out of 1000 (max. 500000)
  27 words of extra memory for PDF output out of 10000 (max. 10000000)
 
