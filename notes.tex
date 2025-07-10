@@ -563,9 +563,38 @@ We'll now shift the EMA by the standard deviation of the orderbook delta
 I had a pretty hard time going from developing a logic for the outliers of the Delta. Finding that volatility increases after outliers was a good first find which didn't take long to find. But finding some a defenition condtion is meet directional bias was very difficult. By directional bias I mean a price direction which is not random after some kind of condition. It was pretty clear from the begging on that the outliers by there selfe won't offer any kind of directional bias
 
 
+An outlier is defined as:
+
 \begin{itemize}
   \item \eqref{eq: outlier_detection}.
+  $\Delta < \mu(\Delta) - 2\sigma(\Delta) \quad \text{or} \quad \Delta > \mu(\Delta) + 2\sigma(\Delta)    $
 \end{itemize}
+
+
+Then since we Bitcoin clearly is not a stationary asset I needed to find some kind of trend identification. I found that the swing points are a good indicator for this.
+We determined a trend by using looking at swingpoints. A swing point is a local extrema of a certain period.
+
+\subsection*{Where did I start my research}
+\begin{verbatim}
+  #compute swing points
+  swing_points = swing_points(df['price'], period=n)
+
+\end{verbatim}
+
+Parameters of the swing\textunderscore points function:
+\begin{itemize}
+  \item $n$ is the lookback period
+  \item $df['price']$ is the price column of the dataframe (Which is a timeseries)
+  \item $P_t$ is a value of $df['price']$ at time $t$
+\end{itemize}
+
+
+We basically got through the time series dataset and look back $n$ $P_t$ values. The highest and lowest points inside of that specific lookback period are the swing points. After that we detetermine if price is making higher highs or lower lows. We check this by storeing the last swing points and wait till we are eighter making a higher high or a lower low.
+
+
+
+\subsection*{Finding an edge}
+
 
 
 
