@@ -188,6 +188,17 @@ INPUT ./imgs/swingpoints_emaspread_priceOutliers.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT ./imgs/plotting_of_my_idea.png
+INPUT ./imgs/plotting_of_my_idea.png
+INPUT ./imgs/plotting_of_my_idea.png
+INPUT ./imgs/plotting_of_my_idea.png
+INPUT ./imgs/plotting_of_my_idea.png
+INPUT ./imgs/v2_plotting my idea.png
+INPUT ./imgs/v2_plotting my idea.png
+INPUT ./imgs/v2_plotting my idea.png
+INPUT ./imgs/v2_plotting my idea.png
+INPUT ./imgs/v2_plotting my idea.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT notes.aux
 INPUT ./notes.out
 INPUT ./notes.out

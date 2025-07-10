@@ -595,7 +595,85 @@ We basically got through the time series dataset and look back $n$ $P_t$ values.
 
 \subsection*{Finding an edge}
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{imgs/plotting_of_my_idea.png}
+  \caption{Visualization of $\Delta_t$ outliers and swing points}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{imgs/v2_plotting my idea.png}
+  \caption{Visualization of $\Delta_t$ outliers and swing points}
+\end{figure}
 
+After plotting different kind of parts of Timeseries Data sets I created I was pretty sure that somewhere I would be finding an edge since the outliers often where at good entry points for a strategy. Only problem was I wasn't able to get any statistical proof ot this.
+After finding a Github Repo which used Vectorbt to test 1000 strategies at the same time I tried a similar approach and tested different conditions to see if there was some kind of edge.
+
+
+
+
+
+
+
+
+
+\subsection*{Monte Carlo Testing}
+
+First of I have to explain how I search for a strategy and how it nearly killed my computer. 
+We start by defining a different kind of sample sizes of all the $\Delta_t$ outliers time periods after the outlier detection. 
+We want to know the return after our condition meets and then check in after $z$ minutes after that
+\begin{verbatim}
+  sampling_percentages = [0.1, 0.2, 0.6, 0.8, 1.0]
+  holding_periods = [60, 120, 240, 360]  
+\end{verbatim}
+
+The sampling percentage definies how many of the existing outliers we use and test the returns on. So let's say we have $x$ amount of $\Delta_t$ Outliers. We then randomly select $z$ \% amount of outliers and test the returns on them. We do this 1000 times and then take the average return of all the 1000 tests.
+The second step is to test each sampling percentage on the different holding periods. So let's say we have a sampling percentage of $z$ \% and a holding period of $y$ minutes. We then take the $z$ \% amount of outliers and test the returns on them after $y$ minutes. This test is basically copied from the Vectorbt Github Respository. I just changed the code to fit my needs and added some extra information returns. My code gives back the average return, the Sharpe, expectancy and mean Z-Score.
+
+\begin{itemize}
+  \item \textbf{Sharpe Ratio}: The Sharpe ratio is a measure of the risk-adjusted return of a strategy. It is calculated by dividing the average return of the strategy by the standard deviation of the returns.
+  \item Calculated by $\frac{\overline{r}}{\sigma}$ Where $\overline{r}$ is the average return and $\sigma$ is the standard deviation of the returns.
+  \item \textbf{Expectancy}: The expectancy is a measure of the profitability of a strategy. It is calculated by dividing the average return of the strategy by the average loss of the strategy.
+  \item Calculated by $\frac{\overline{r}}{\overline{l}}$ Where $\overline{r}$ is the average return and $\overline{l}$ is the average loss.
+  \item \textbf{Mean Z-Score}: The mean Z-Score is a measure of the average Z-Score of the strategy. It is calculated by taking the average of the Z-Scores of the strategy.
+  \item Calculated by $\frac{1}{n}\sum_{i=1}^{n} z_i$ Where $z_i$ is the Z-Score of the strategy at time $i$ and $n$ is the number of Z-Scores.
+  \item \textbf{Average Return}: The average return is a measure of the average return of the strategy. It is calculated by taking the average of the returns of the strategy.
+  \item Calculated by $\frac{1}{n}\sum_{i=1}^{n} r_i$ Where $r_i$ is the return of the strategy at time $i$ and $n$ is the number of returns.
+
+
+
+\end{itemize}
+
+
+
+Now it is time to test some strategies. The first strategy I want to test is pretty intuitive. Measure the average return of bullish outliers inside of an uptrend.
+
+\begin{list}{label}{spacing}
+  \item A outlier is bullish if the the orderbook $\Delta_t$ is two standard deviations above the mean of the last 1440 $\Delta_t$ values and bearish if it is two standard deviations below the mean of the last 1440 $\Delta_t$ values.
+
+\end{list}
+
+Now when we backtest a strategy we have to have a few things in mind. First of all we are backtesting on on historical data and if we just use different kind of entry conditions we might just change the entry conditions till we have a good end results. This would be overfitting and not work on future data. 
+In order to prevent overfitting we have to use a holdout sample. I have one dataset on which we test our entry conditions to see if they even have potential. 
+
+
+
+\begin{table}[H]
+  \centering
+  \caption{Worth a out of sample test}
+  \label{tab:strategy_results}
+  \begin{tabular}{@{}lrr@{}}
+    \toprule
+      Sharpe Ratio &  Average Return  \\
+    \midrule
+      1.5 & 0.005 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+If these conditions are met for a condition I test on some out of sample data. (Out of sample data just means that we test on new data)
+Most of the time things end up not even passing the first out of sample test and lose their potential instantly. If not I have another out of sample test and if that one is passed we are ready to do some more monte carlo testing and look how potential equity curves look like.
+And to make things even worse we can assume that the sharpen ratio will decrease by atleast 20\% compared to the backtest simulation.
 
 
 
