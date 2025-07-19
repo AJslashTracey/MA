@@ -568,12 +568,6 @@ There are three main steps to find an edge.
 
 
 
-\newpage
-
-
-
-Sources:
-\href{https://trdr.io/}{TRDR} This platform allow you to use different kind of metrics on different Timeseries datasets (BTC/USD Price, orderbookdelta  and Open Interest
 
 
 
@@ -878,29 +872,96 @@ So logical thinking we could assume that long strategy can be reversed into a sh
 
 
 
-\subsection*{First strategy test}
+\subsection{First strategy test}
 So the first strategy I test was before I developed the backtesting framework. I was testing on a simple logic. If the price on the 1h timeframe closed above the 50 period EMA and the $\Delta_5$ of the orderbook was positive we would enter a buy position if price was in a range of $0.05\%$ of the $EMA_50$.
 
 
+In addition to that I was using a stop loss and a trailing stop. The stop loss was set to $1\%$ and the trailing stop was set to $1\%$ of the price.
+A trailing stop is a stop loss that is adjusted to the price of the asset. So if the price goes up the stop loss goes up with it. The idea behing this is that we can catch a bigger upwards in contrast to a fixed stop profit.
+
+I only tested this on a short sample of data because I just had started my data mining process and didn't have any more data. But I can asure that more data didn't make it more profitable just worse.
 
 
-So this strategy was first time I tested on a simple logic. If the trend indentification showed that we are in an uptrend and a bullish outlier was detected we would enter a position a buy position.
+
+
+\subsubsection{Code}
+
+\begin{verbatim}
+  # Define entry/exit signals
+  range_pct = 0.0005
+  sl_stop_pct = 0.01
+  trailing_stop_pct = 0.01
+
+  entries = (
+    (df['bias'] > df['ema']) &
+    (df['price'] >= df['ema'] * (1 - range_pct)) &
+    (df['price'] <= df['ema'] * (1 + range_pct))
+  )
+
+\end{verbatim}
+
+\subsubsection{Strategy 1 results}
+
+\begin{table}[H]
+  \centering
+  \caption{Detailed backtest results for the first strategy test.}
+  \label{tab:strategy_1_detailed_results}
+  \small
+  \begin{tabular}{@{}lr@{}}
+    \toprule
+    \textbf{Metric} & \textbf{Value} \\
+    \midrule
+    \multicolumn{2}{c}{\textbf{General}} \\
+    \midrule
+    Start                         & 2025-03-12 00:00:01 \\
+    End                           & 2025-03-17 07:24:01 \\
+    Period (minutes)              & 7,636 \\
+    \midrule
+    \multicolumn{2}{c}{\textbf{Performance}} \\
+    \midrule
+    Start Value                   & 100.00 \\
+    End Value                     & 97.13 \\
+    Total Return [\%]             & -2.87 \\
+    Benchmark Return [\%]         & 0.38 \\
+    Total Fees Paid               & 2.21 \\
+    Open Trade PnL                & 0.23 \\
+    \midrule
+    
+    
+
+    \multicolumn{2}{c}{\textbf{Trades}} \\
+    \midrule
+    Total Trades                  & 23 \\
+    Closed Trades                 & 22 \\
+    Win Rate [\%]                 & 31.82 \\
+    Profit Factor                 & 0.75 \\
+    Expectancy                    & -0.14 \\
+    Best Trade [\%]               & 3.15 \\
+    Worst Trade [\%]              & -1.24 \\
+    Avg Winning Trade [\%]        & 1.35 \\
+    Avg Losing Trade [\%]         & -0.83 \\
+    
+    \bottomrule
+  \end{tabular}
+\end{table}
 
 
 
-
+\newpage
 \subsection{Explaining figure}
 So on the $Y$ axis we have the average return of the strategy. And on the $X$ axis we have the sampling percentage. So for example if we are sampling 10\% of the outliers and then testing the returns on them. We would get a return of 10\% and a Sharpe ratio of 1.0.
 
 
 
 
-\begin{equation}
-  \Delta_t > \mu(\Delta) + 2\sigma(\Delta) \quad \text{and} \quad \text{trend} = 'Uptrend'
-\end{equation}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{imgs/Bullish_outliers_inside_of_uptrend.png}
+  \caption{Average returns of bullish outliers inside of an uptrend}
+\end{figure}
 
-
-
+\subsection{What did change}
+So from march till july I didn't backtest any strategies. I was focusing on developing signals and indicators. 
 
 
 
@@ -910,7 +971,8 @@ So on the $Y$ axis we have the average return of the strategy. And on the $X$ ax
 \subsection*{\href{https://x.com/HangukQuant/status/1930603876069335120}{How good or random is your trading}}
 \subsection*{\href{https://github.com/polakowo/vectorbt}{Testing 1000 strategies at the same time (via Monte Carlo)}}
 \subsection*{\href{https://x.com/abetrade/status/1941613701150188008}{ A lot of my ideas come from thiy guys Tweets, to research into this}}
-
+\subsection*{\href{https://trdr.io/}{TRDR} This platform allow you to use different kind of metrics on different Timeseries datasets (BTC/USD Price, orderbookdelta  and Open Interest}
+\subsection*{\href{}{Trend identification System}}
 
 
 \newpage

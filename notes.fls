@@ -191,9 +191,22 @@ INPUT ./imgs/v2_plotting my idea.png
 INPUT ./imgs/v2_plotting my idea.png
 INPUT ./imgs/v2_plotting my idea.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT ./imgs/Bullish_outliers_inside_of_uptrend.png
+INPUT ./imgs/Bullish_outliers_inside_of_uptrend.png
+INPUT ./imgs/Bullish_outliers_inside_of_uptrend.png
+INPUT ./imgs/Bullish_outliers_inside_of_uptrend.png
+INPUT ./imgs/Bullish_outliers_inside_of_uptrend.png
 INPUT notes.aux
 INPUT ./notes.out
 INPUT ./notes.out
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
