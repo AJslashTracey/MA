@@ -3,9 +3,11 @@
 \contentsline {subsection}{\numberline {2.1}Normal Range}{5}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}My Hypothesis}{5}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Normal Range}{5}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Outlier Condition}{6}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Idea behind}{7}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Future Plans}{7}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.4}Bullish and Bearish Outliers version 1}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Bullish and Bearish Outliers version 2}{5}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Outlier Condition}{6}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Idea behind}{7}{subsection.2.7}%
+\contentsline {subsection}{\numberline {2.8}Future Plans}{7}{subsection.2.8}%
 \contentsline {section}{\numberline {3}Measuring Volatility After Price Outlier Detection}{8}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Dictionary of Terms}{8}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}In Python code}{8}{subsection.3.2}%
@@ -19,30 +21,30 @@
 \contentsline {subsection}{\numberline {7.1}Fees}{14}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}No Fees results}{14}{subsection.7.2}%
 \contentsline {subsection}{\numberline {7.3}With Fees results}{15}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}No clear path}{16}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Comparison of Delta Indicators on 39,694-minute sample}{17}{section.8}%
-\contentsline {section}{\numberline {9}Combining Indicators}{18}{section.9}%
-\contentsline {section}{\numberline {10}Mapping Orderbook delta EMA with standard deviation shifing}{19}{section.10}%
-\contentsline {section}{\numberline {11}Formulars}{19}{section.11}%
-\contentsline {section}{\numberline {12}From outliers to strategy}{20}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Progress description}{20}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Where did I start my research}{20}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}Finding an edge}{21}{subsection.12.3}%
-\contentsline {subsection}{\numberline {12.4}Monte Carlo Testing}{22}{subsection.12.4}%
-\contentsline {subsection}{\numberline {12.5}Backtesting framework}{24}{subsection.12.5}%
-\contentsline {section}{\numberline {13}Developing a strategy}{26}{section.13}%
-\contentsline {subsection}{\numberline {13.1}Initial thoughts}{26}{subsection.13.1}%
-\contentsline {subsection}{\numberline {13.2}Reverse strategy}{26}{subsection.13.2}%
-\contentsline {subsection}{\numberline {13.3}First strategy test}{26}{subsection.13.3}%
-\contentsline {subsubsection}{\numberline {13.3.1}Code}{26}{subsubsection.13.3.1}%
-\contentsline {subsubsection}{\numberline {13.3.2}Strategy 1 results}{27}{subsubsection.13.3.2}%
-\contentsline {subsection}{\numberline {13.4}Explaining figure}{28}{subsection.13.4}%
-\contentsline {subsection}{\numberline {13.5}What did change}{28}{subsection.13.5}%
+\contentsline {subsection}{\numberline {7.4}No clear path}{15}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Comparison of Delta Indicators on 39,694-minute sample}{16}{section.8}%
+\contentsline {section}{\numberline {9}Combining Indicators}{17}{section.9}%
+\contentsline {section}{\numberline {10}Mapping Orderbook delta EMA with standard deviation shifing}{18}{section.10}%
+\contentsline {section}{\numberline {11}Formulars}{18}{section.11}%
+\contentsline {section}{\numberline {12}From outliers to strategy}{19}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Progress description}{19}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Where did I start my research}{19}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Finding an edge}{20}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Monte Carlo Testing}{21}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}Backtesting framework}{23}{subsection.12.5}%
+\contentsline {section}{\numberline {13}Developing a strategy}{25}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Initial thoughts}{25}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Reverse strategy}{25}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}First strategy test}{25}{subsection.13.3}%
+\contentsline {subsubsection}{\numberline {13.3.1}Code}{25}{subsubsection.13.3.1}%
+\contentsline {subsubsection}{\numberline {13.3.2}Strategy 1 results}{26}{subsubsection.13.3.2}%
+\contentsline {subsection}{\numberline {13.4}Learning from the first strategy}{26}{subsection.13.4}%
+\contentsline {subsection}{\numberline {13.5}Explaining figure}{27}{subsection.13.5}%
+\contentsline {subsection}{\numberline {13.6}Strategy 2}{28}{subsection.13.6}%
 \contentsline {section}{\numberline {14}sources}{29}{section.14}%
 \contentsline {subsection}{\numberline {14.1}\href {https://x.com/HangukQuant/status/1930603876069335120}{How good or random is your trading}}{29}{subsection.14.1}%
-\contentsline {subsection}{\numberline {14.2}\href {https://github.com/polakowo/vectorbt}{Testing 1000 strategies at the same time (via Monte Carlo)}}{29}{subsection.14.2}%
-\contentsline {subsection}{\numberline {14.3}\href {https://x.com/abetrade/status/1941613701150188008}{Tweets}}{29}{subsection.14.3}%
-\contentsline {subsection}{\numberline {14.4}\href {https://trdr.io/}{TRDR} This platform allow you to use different kind of metrics on different Timeseries datasets (BTC/USD Price, orderbookdelta and Open Interest}{29}{subsection.14.4}%
-\contentsline {subsection}{\numberline {14.5}\href {https://github.com/neurotrader888/TrendLineAutomation}{Trend line automation}}{29}{subsection.14.5}%
-\contentsline {subsection}{\numberline {14.6}\href {https://github.com/polakowo/vectorbt}{Vectorbt github documentation respository.}}{29}{subsection.14.6}%
-\contentsline {subsection}{\numberline {14.7}Backtesting}{29}{subsection.14.7}%
+\contentsline {subsection}{\numberline {14.2}\href {https://x.com/abetrade/status/1941613701150188008}{Tweets}}{29}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}\href {https://trdr.io/}{TRDR} This platform allow you to use different kind of metrics on different Timeseries datasets (BTC/USD Price, orderbookdelta and Open Interest}{29}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}\href {https://github.com/neurotrader888/TrendLineAutomation}{Trend line automation}}{29}{subsection.14.4}%
+\contentsline {subsection}{\numberline {14.5}\href {https://github.com/polakowo/vectorbt}{Vectorbt github documentation respository.}}{29}{subsection.14.5}%
+\contentsline {subsection}{\numberline {14.6}\href {https://github.com/AJslashTracey/deep_research_chatGPT_03}{Deep research by ChatGPT}}{29}{subsection.14.6}%

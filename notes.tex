@@ -75,7 +75,7 @@ Formular:
 
 \newpage
 
-\section{Outlier Detection Using Mean and Standard Deviation (Z-Score Based Outlier Detection)}
+\section{Outlier Detection Using Mean and Standard Deviation (Z-Score Based Outlier Detection)}\label{sec:outlier_detection}
 
 
 \subsection{Normal Range}
@@ -87,7 +87,7 @@ What I want to test is how price reacts to anomalous orderbook delta movements, 
 
 \begin{itemize}
   \item I expext realized volatility to increase after an outlier is detected. 
-  \item I expext a return to the mean after a strong outlier is detected.
+  \item I expect some kind of reaction from the price after an outlier is detected.
 \end{itemize}
 
 
@@ -95,14 +95,31 @@ What I want to test is how price reacts to anomalous orderbook delta movements, 
 \subsection{Normal Range}
 
 
-
-
-
 \[
 \mu(\Delta) \pm 2\sigma(\Delta)
 \]
 
-This means most data points (about 95\% if normally distributed) are expected to lie within this range.
+
+\subsection{Bullish and Bearish Outliers version 1}
+What does bullish and bearish even mean? A bullish signal is a signal where think price will go up. A bearish signal is a signal where think price will go down.
+
+Now I defnined a a bullish outlier as bullish if he has a certain z-score value and a bearish outlier as a bearish if he has a certain z-score value.
+
+The z-score is calculated by the following formular:
+\begin{equation}
+  z = \frac{\Delta - \mu(\Delta)}{\sigma(\Delta)}
+\end{equation}
+
+And shows how many standard deviations $\Delta_t$ is from the mean away.
+
+
+\subsection{Bullish and Bearish Outliers version 2}
+
+
+
+
+
+
 
 \newpage
 
@@ -545,7 +562,6 @@ Inside of my Market simulation where I can test different kind of strategies I w
 
 
 
-\newpage
 
 
 
@@ -708,7 +724,9 @@ After finding a Github Repo which used Vectorbt to test 1000 strategies at the s
 \subsection{Monte Carlo Testing}
 
 First of I have to explain how I search for a strategy and how it nearly killed my computer. 
-We start by defining a different kind of sample sizes of all the $\Delta_t$ outliers time periods after the outlier detection. 
+We start by defining a different kind of sample sizes of all the $\Delta_t$ outliers time periods after the outlier detection.
+
+
 We want to know the return after our condition meets and then check in after $z$ minutes after that
 \begin{verbatim}
   sampling_percentages = [0.1, 0.2, 0.6, 0.8, 1.0]
@@ -937,9 +955,12 @@ I only tested this on a short sample of data because I just had started my data 
   \end{tabular}
 \end{table}
 
+\subsection{Learning from the first strategy}
+So from march till july I didn't backtest any strategies. I was focusing on developing signals and indicators. This backtest clearly showed me that I have to do research first and have some kind of background idea of what I am doing.
 
 
 \newpage
+
 \subsection{Explaining figure}
 So on the $Y$ axis we have the average return of the strategy. And on the $X$ axis we have the sampling percentage. 
 A sampling percentage of 10\% means that we are using 10 random \% of the outliers and then testing the returns on them. We conduct this 1000 times and then take the average return of all the 1000 tests. In addition to that we are testing the returns on different holding periods. So for example if we are testing the returns on a holding period of 60 minutes we are testing the returns on the 10 random \% of the outliers after 60 minutes. We conduct this 1000 times and then take the average return of all the 1000 tests.
@@ -953,8 +974,25 @@ A sampling percentage of 10\% means that we are using 10 random \% of the outlie
   \caption{Average returns of bullish outliers inside of an uptrend}
 \end{figure}
 
-\subsection{What did change}
-So from march till july I didn't backtest any strategies. I was focusing on developing signals and indicators. 
+
+\newpage
+\subsection{Strategy 2}
+
+So this was the second strategy I tested and the first I tested with my new edge development frame work.
+The logic is very straight forward with two conditions:
+
+\begin{itemize}
+  \item  A $\Delta_{5,t}$ value is identified as a bullish outlier (see Section~\ref{sec:outlier_detection}).
+  \item Trend is identified as uptrend
+\end{itemize}
+
+
+
+
+
+
+
+
 
 
 
@@ -962,14 +1000,17 @@ So from march till july I didn't backtest any strategies. I was focusing on deve
 \newpage
 \section{sources}
 \subsection{\href{https://x.com/HangukQuant/status/1930603876069335120}{How good or random is your trading}}
-\subsection{\href{https://github.com/polakowo/vectorbt}{Testing 1000 strategies at the same time (via Monte Carlo)}}
+Twitter articles about random walk theory and how to test if a strategy is random or not. 
+%\subsection{\href{https://github.com/polakowo/vectorbt}{Testing 1000 strategies at the same time (via Monte Carlo)}}
 \subsection{\href{https://x.com/abetrade/status/1941613701150188008}{Tweets}}
 A lot of my ideas come from thiy guys Tweets, to research into this. He is a disgresionary trade what means he trades based on his own decisions and has a mental framework to trade. I learned what an orderbook delta is from him.
 \subsection{\href{https://trdr.io/}{TRDR} This platform allow you to use different kind of metrics on different Timeseries datasets (BTC/USD Price, orderbookdelta  and Open Interest}his platform allow you to use different kind of metrics on different Timeseries datasets like: BTC/USD Price orderbookdelta  and Open Interest
 \subsection{\href{https://github.com/neurotrader888/TrendLineAutomation}{Trend line automation}} Used this for the $v3$ version of my trend identification system
 \subsection{\href{https://github.com/polakowo/vectorbt}{Vectorbt github documentation respository.}} I implemented some ideas from this repository for my backtesting framework and used vectorbt for the fees and slippage implementations
-\subsection{Backtesting}
-I will backtest my strategy on a 1 year dataset from 2024-03-12 to 2025-03-12.
+
+
+\subsection{\href{https://github.com/AJslashTracey/deep_research_chatGPT_03}{Deep research by ChatGPT}}
+The OpenAI subscription enables you use deepsearch function from chatGPT I would say this tool is probably useful for research but I didn't find any value from this besides finding out about new indicators. The only thing finding I made from these two pdfs was the Aroon indicator which I implemented in the second verions of my trend indentification system $v2$
 
 
 \end{document}
