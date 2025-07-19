@@ -51,17 +51,12 @@
 
 % Rest of your document continues here...
 
-\subsection*{Table of Contents}
-
-\begin{itemize}
-  \item Outlier Detection Using Mean and Standard Deviation (Z-Score Based Outlier Detection)
-  \item Measuring Volatility After Price Outlier Detection
-  \item Measuring avearge return after price outlier detection
-\end{itemize}
+\tableofcontents
+\newpage
 
 
 
-\subsection*{Orderbook Delta defenition}
+\section{Orderbook Delta defenition}
 The orderbook delta is calculate by the difference between the sum of the bid and ask orders at a certain depth.
 Formular:
 \begin{equation*}
@@ -80,15 +75,15 @@ Formular:
 
 \newpage
 
-\section*{Outlier Detection Using Mean and Standard Deviation (Z-Score Based Outlier Detection)}
+\section{Outlier Detection Using Mean and Standard Deviation (Z-Score Based Outlier Detection)}
 
 
-\subsection*{Normal Range}
+\subsection{Normal Range}
 
 What I want to test is how price reacts to anomalous orderbook delta movements, particularly in scenarios where unrealistic or clearly outlying values are detected. In cryptocurrency markets, such inefficiencies can be caused by various events, one example is liquidation
  events that interact with passive demand order stacked zones. During these events, the orderbook delta exhibits significant increases, providing a clear signal of market stress. This research will focus on understanding the relationship between rapid delta movements and how price reacts after these events.
 
-\subsection*{My Hypothesis}
+\subsection{My Hypothesis}
 
 \begin{itemize}
   \item I expext realized volatility to increase after an outlier is detected. 
@@ -97,7 +92,7 @@ What I want to test is how price reacts to anomalous orderbook delta movements, 
 
 
 
-\subsection*{Normal Range}
+\subsection{Normal Range}
 
 
 
@@ -111,7 +106,7 @@ This means most data points (about 95\% if normally distributed) are expected to
 
 \newpage
 
-\subsection*{Outlier Condition}
+\subsection{Outlier Condition}
 
 A value is considered an outlier if:
 
@@ -143,7 +138,7 @@ This is a simple Z-score based outlier detection.
 \newpage
 
 
-\subsection*{Idea behind}
+\subsection{Idea behind}
 
 \begin{itemize}
     \item This method assumes data is roughly normally distributed.
@@ -155,7 +150,7 @@ This is a simple Z-score based outlier detection.
 
 
 
-\subsection*{Future Plans}
+\subsection{Future Plans}
 
 \begin{itemize}
     \item Test on more data
@@ -184,7 +179,7 @@ This is a simple Z-score based outlier detection.
 
 
 
-\section*{Measuring Volatility After Price Outlier Detection}
+\section{Measuring Volatility After Price Outlier Detection}
 
 
 \begin{equation}\label{eq:price_return}
@@ -192,7 +187,7 @@ This is a simple Z-score based outlier detection.
 \end{equation}
 
 
-\subsection*{Dictionary of Terms}
+\subsection{Dictionary of Terms}
 
 \begin{itemize}
     \item $P_t$  
@@ -220,7 +215,7 @@ This is a simple Z-score based outlier detection.
 
 
 
-\subsection*{In Python code}
+\subsection{In Python code}
 
 \begin{verbatim}
 import pandas as pd
@@ -248,7 +243,7 @@ df['future_vol_15] = (
 
 \newpage
 
-\subsection*{\textbf{Statistical evidence}}
+\subsection{Statistical evidence}
 
 Once an outlier is detected \eqref{eq: outlier_detection} inside of the Orderbook $\Delta$, we calculate the15-minute ahead realized volatility using Equation: \eqref{eq:realized-vol}
 
@@ -304,7 +299,7 @@ To check Statistical evidence
 
 \newpage
 
-\section*{Optimising for best Z-Score thresold for outliers}
+\section{Optimising for best Z-Score thresold for outliers}
 
 As state inside of \eqref{eq: outlier_detection} we use a Z-Score thresold of 2 to detect outliers. I now want to 
 see if by any chance there is a better Thresold value  
@@ -391,12 +386,12 @@ Top 3 $z$-values with largest volatility uplift (Walk forward $v2$)
 
 
 \newpage
-\section*{Measuring avearge return after price outlier detection}
+\section{Measuring avearge return after price outlier detection}
 
 
 
 
-\subsection*{Formulars}
+\subsection{Formulars}
 \begin{align}
 \intertext{Once a $\Delta_t$ Outlier is detected we calculate the 15-min forward return of \underline{BTC/USD} price}
 \mathrm{Ret}^{(15)}_t
@@ -419,7 +414,7 @@ Top 3 $z$-values with largest volatility uplift (Walk forward $v2$)
 
 
 
-\subsection*{Dictionary of Terms}
+\subsection{Dictionary of Terms}
 
 \begin{itemize}
   \item Price at a certain time: \space $P_t$
@@ -445,7 +440,7 @@ Top 3 $z$-values with largest volatility uplift (Walk forward $v2$)
 
 
 
-\section*{Underlying strategy Bias}
+\section{Underlying strategy Bias}
 
 %underlying bias logic =     df['indiactor'] = (df['trend'] == 'Uptrend') & (df3['delta5'] > 0)
 Every single parameter has to fight to be implemented into my strategy. To get some kind of filter since we are working with an asset which has clear trends so it isn't stationary we need to do some trend identification. Different trends are also called diffferent regimes.
@@ -486,8 +481,8 @@ Ideas I want to test on:
 
 
 \newpage
-\section*{Finding an edge}
-\subsection*{Fees}
+\section{Finding an edge}
+\subsection{Fees}
 So the first problem you run into if building a strategy is the fees. You have to pay fees for every trade you make. A fee is a fixed percentage amount of the trade size you take. On the exchange I choose, Hyperliquid the fee is about 0.003\% of the trade size. Which is a normal amount inside the crypto space. 
 Just to showcase how important fees are I will show you a simple example.
 
@@ -509,7 +504,7 @@ Inside of my Market simulation where I can test different kind of strategies I w
 \end{verbatim}
 
 
-\subsection*{No Fees results}
+\subsection{No Fees results}
 
 \begin{table}[H]
   \centering
@@ -527,7 +522,7 @@ Inside of my Market simulation where I can test different kind of strategies I w
   \end{tabular}
 \end{table}
 
-\subsection*{With Fees results}
+\subsection{With Fees results}
 
 
 \begin{table}[H]
@@ -555,7 +550,7 @@ Inside of my Market simulation where I can test different kind of strategies I w
 
 
 
-\subsection*{No clear path}
+\subsection{No clear path}
 Finding an edge is a very hard task. There is no clear path to success. You kinda have to try by trail and error every error could be a step further but also a potential path into a dead end.
   
 There are three main steps to find an edge. 
@@ -615,7 +610,7 @@ Period & $N_{signals}$ & $U(z)$ (\%) & T-statistic $p$ \\
 
 
 \newpage
-\section*{Combining Indicators}
+\section{Combining Indicators}
 Here I visulised the swing points, the EMA spread and the 100 outliers with the highest Z-Score in the same plot.
 
 \begin{figure}[H]
@@ -628,8 +623,8 @@ Here I visulised the swing points, the EMA spread and the 100 outliers with the 
 
 
 \newpage
-\section*{Mapping Orderbook delta EMA with standard deviation shifing}
-\section*{Formulars}
+\section{Mapping Orderbook delta EMA with standard deviation shifing}
+\section{Formulars}
 
 \begin{equation}
   EMA_t = \alpha \cdot \Delta_t + (1 - \alpha) \cdot EMA_{t-1}
@@ -651,8 +646,8 @@ We'll now shift the EMA by the standard deviation of the orderbook delta
 
 
 \newpage
-\section*{From outliers to strategy}
-\subsection*{Progress description}
+\section{From outliers to strategy}
+\subsection{Progress description}
 I had a pretty hard time going from developing a logic for the outliers of the Delta.Finding that volatility increases after outliers was a good first find which didn't take long to find. But finding some defenition condtion is meet directional bias was very difficult. By directional bias I mean a price direction which is not random after some kind of condition. It was pretty clear from the begging on that the outliers by there selfe won't offer any kind of directional bias
 
 
@@ -667,7 +662,7 @@ An outlier is defined as:
 Then since Bitcoin clearly is not a stationary asset I needed to find some kind of trend identification. I found that the swing points are a good indicator for this.
 We determined a trend by using looking at swingpoints. A swing point is a local extrema of a certain period.
 
-\subsection*{Where did I start my research}
+\subsection{Where did I start my research}
 \begin{verbatim}
   #compute swing points
   swing_points = swing_points(df['price'], period=n)
@@ -686,7 +681,7 @@ We basically got through the time series dataset and look back $n$ $P_t$ values.
 
 
 
-\subsection*{Finding an edge}
+\subsection{Finding an edge}
 
 \begin{figure}[H]
   \centering
@@ -710,7 +705,7 @@ After finding a Github Repo which used Vectorbt to test 1000 strategies at the s
 
 
 
-\subsection*{Monte Carlo Testing}
+\subsection{Monte Carlo Testing}
 
 First of I have to explain how I search for a strategy and how it nearly killed my computer. 
 We start by defining a different kind of sample sizes of all the $\Delta_t$ outliers time periods after the outlier detection. 
@@ -763,7 +758,7 @@ And to make things even worse we can assume that the sharpen ratio will decrease
 \newpage
 
 
-\subsection*{Backtesting framework}
+\subsection{Backtesting framework}
 
 My backtesting framework is built in Python using the VectorBT library and consists of several key components:
 
@@ -859,7 +854,7 @@ This framework allows for rapid testing of multiple strategy variations while ma
 
 
 \newpage
-\section*{Developing a strategy}
+\section{Developing a strategy}
 
 \subsection{Initial thoughts}
 
@@ -880,8 +875,6 @@ In addition to that I was using a trailing stop. The trailing stop was set to $1
 A trailing stop is a stop loss that is adjusted to the price of the asset. So if the price goes up the stop loss goes up with it. The idea behing this is that we can catch a bigger upwards in contrast to a fixed stop profit.
 
 I only tested this on a short sample of data because I just had started my data mining process and didn't have any more data. But I can asure that more data didn't make it more profitable just worse.
-
-
 
 
 \subsubsection{Code}
@@ -967,18 +960,16 @@ So from march till july I didn't backtest any strategies. I was focusing on deve
 
 
 \newpage
-\section*{sources}
-\subsection*{\href{https://x.com/HangukQuant/status/1930603876069335120}{How good or random is your trading}}
-\subsection*{\href{https://github.com/polakowo/vectorbt}{Testing 1000 strategies at the same time (via Monte Carlo)}}
-\subsection*{\href{https://x.com/abetrade/status/1941613701150188008}{Tweets}}
+\section{sources}
+\subsection{\href{https://x.com/HangukQuant/status/1930603876069335120}{How good or random is your trading}}
+\subsection{\href{https://github.com/polakowo/vectorbt}{Testing 1000 strategies at the same time (via Monte Carlo)}}
+\subsection{\href{https://x.com/abetrade/status/1941613701150188008}{Tweets}}
 A lot of my ideas come from thiy guys Tweets, to research into this. He is a disgresionary trade what means he trades based on his own decisions and has a mental framework to trade. I learned what an orderbook delta is from him.
-\subsection*{\href{https://trdr.io/}{TRDR} This platform allow you to use different kind of metrics on different Timeseries datasets (BTC/USD Price, orderbookdelta  and Open Interest}his platform allow you to use different kind of metrics on different Timeseries datasets like: BTC/USD Price orderbookdelta  and Open Interest
-\subsection*{\href{https://github.com/neurotrader888/TrendLineAutomation}{Trend line automation}} Used this for the $v3$ version of my trend identification system
-\subsection*{\href{https://github.com/polakowo/vectorbt}{Vectorbt github documentation respository.}} I implemented some ideas from this repository for my backtesting framework and used vectorbt for the fees and slippage implementations
-
-
-\newpage
-
+\subsection{\href{https://trdr.io/}{TRDR} This platform allow you to use different kind of metrics on different Timeseries datasets (BTC/USD Price, orderbookdelta  and Open Interest}his platform allow you to use different kind of metrics on different Timeseries datasets like: BTC/USD Price orderbookdelta  and Open Interest
+\subsection{\href{https://github.com/neurotrader888/TrendLineAutomation}{Trend line automation}} Used this for the $v3$ version of my trend identification system
+\subsection{\href{https://github.com/polakowo/vectorbt}{Vectorbt github documentation respository.}} I implemented some ideas from this repository for my backtesting framework and used vectorbt for the fees and slippage implementations
+\subsection{Backtesting}
+I will backtest my strategy on a 1 year dataset from 2024-03-12 to 2025-03-12.
 
 
 \end{document}

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1752917777.32733 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/notes.tex" "notes.pdf" "notes" 1752917778.49773 0
-  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/notes.tex" 1752917777.11638 31092 d44a233d44a994d06fa511afe86def79 ""
+["pdflatex"] 1752918085.27897 "/Users/juristoffers/Desktop/GitHub/Untitled/MA/notes.tex" "notes.pdf" "notes" 1752918086.51987 0
+  "/Users/juristoffers/Desktop/GitHub/Untitled/MA/notes.tex" 1752918082.62195 30878 4f378949e25b410160b76a3f0a6295e4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -105,12 +105,14 @@
   "imgs/plotting_of_my_idea.png" 1752154537.15196 265139 a66232cbc9b5b45ac7f853b3e1709227 ""
   "imgs/swingpoints_emaspread_priceOutliers.png" 1747661299.24708 234505 61fa41a0932ea21432dfc3de004f12a6 ""
   "imgs/v2_plotting my idea.png" 1752155158.05721 260455 5ef86edac224b53828b78f113357f186 ""
-  "notes.aux" 1752917778.43238 3319 f75bb20a420606b259c8ddf6d50be880 "pdflatex"
-  "notes.out" 1752917778.43324 1302 11fa980097785c4306a87174f1b00591 "pdflatex"
-  "notes.tex" 1752917777.11638 31092 d44a233d44a994d06fa511afe86def79 ""
+  "notes.aux" 1752918086.44619 8930 0482e5f9dca60bdab54bf1d80dd616f8 "pdflatex"
+  "notes.out" 1752918086.44745 9195 b8bc4944d88f3a278126db5691f562b9 "pdflatex"
+  "notes.tex" 1752918082.62195 30878 4f378949e25b410160b76a3f0a6295e4 ""
+  "notes.toc" 1752918086.44779 4663 faa92710aa52da3776d773f5ac431168 "pdflatex"
   (generated)
   "notes.aux"
   "notes.log"
   "notes.out"
   "notes.pdf"
+  "notes.toc"
   (rewritten before read)
