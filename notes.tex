@@ -488,13 +488,9 @@ Top 3 $z$-values with largest volatility uplift (Walk forward $v2$)
 
 %underlying bias logic =     df['indiactor'] = (df['trend'] == 'Uptrend') & (df3['delta5'] > 0)
 Every single parameter has to fight to be implemented into my strategy. To get some kind of filter since we are working with an asset which has clear trends so it isn't stationary we need to do some trend identification. Different trends are also called diffferent regimes.
-I'll call it the underlying bias. Some simple examples are for a bias are:
-\begin{itemize}
-  \item $\Delta_{5\%} < 0$ (more passive demand than supply)
-  \item $EMA_{\text{n}} >EMA_{\text{x}}$ (Crossing of two EMAs with different time periods $n$ and $x$)
-\end{itemize}
+I'll call it the underlying bias. 
 
-But I want to get some clear trend identification where we divide into the three different categories:
+I will differentiate between three different types of regimes:
 \begin{itemize}
   \item Uptrend
   \item Downtrend
@@ -507,6 +503,60 @@ Ranging is defined as a period where price is not making higher highs and higher
 
 
 
+\subsubsection{Trend identification version 1}
+
+To see in what kind of regime we are we first have to search for swing points. A swing point is a local extrema of a certain period. So a swing low is a local minimum and a swing high is a local maximum. Local is just that it is inside of our lookbackperiod.
+
+\textbf{Swing point} identification code:
+
+\begin{verbatim}
+  if current_price > np.max(lookback_window):
+    swing_high = current_price
+  if current_price < np.min(lookback_window):
+    swing_low = current_price
+\end{verbatim}
+
+This code snipped definies the swing low/high variables, it loops through the lookback window and checks if the current price is higher than the highest price in the lookback window or lower than the lowest price in the lookback window. If it is the case we update the swing low/high variable.
+
+
+
+
+\textbf{Regime determination} 
+
+\begin{verbatim}
+  window = 5
+  price_window = prices[i-window:i]
+  prev_window = prices[i-window-1:i-1]
+
+  #Then we calculate
+  price > local_high and local_high > prev_high
+\end{verbatim}
+
+\textbf{Meaning:}
+
+Current price $> \text{local high (recent 5)}$
+
+Recent 5-period high $>$ previous 5-period high
+
+This would mean we are in an \textbf{uptrend}.
+
+For a \textbf{downtrend} analogous logic applies. If none of both applies we define the regime as \textbf{ranging}.
+
+
+
+\subsubsection{Trend identification version $v2$}
+Now after conducting research with chatgpt I found the Aroon indicator. This indicator is a technical indicator that measures the strength and direction of a trend. It is calculated by taking the difference between the current price and the highest price over the last $n$ periods.
+
+In my trend identification the Aroon indicator is used to determine how recently price has made a new high or low within our defenied lookback period.
+
+The closer the Aroon up the more recent the high and the closer th Aroon Down the more recent the low.
+
+\begin{verbatim}
+  aroon_indicator = aroonIndicator(period=window)
+  arron_indicator.generate(df_resampled)
+
+
+\end{verbatim}
 
 
 
@@ -801,7 +851,7 @@ My backtesting framework is built in Python using the VectorBT library and consi
 
 \subsubsection*{Data Pipeline}
 
-Connection to Postgres database with the following data:
+Connection to Postgres database hosted on railway.app with global access. 
 \begin{itemize}
   \item Historical price data from Coinbase (BTC/USD)
   \item Orderbook delta data at different depths ($\Delta_{1\%}$, $\Delta_{2.5\%}$, $\Delta_{5\%}$)
@@ -809,7 +859,7 @@ Connection to Postgres database with the following data:
   \item Direct ema calculation which a lenght of 50 on the 1h timeframe
 \end{itemize}
 
-I choose to directly calculate the EMA on the 1h timeframe since my datamining process might miss random minutes of data so if we calculate the EMA afterwards this could influence the results.
+
 
 
 
@@ -827,7 +877,6 @@ The framework implements a three-stage testing process:
     \begin{itemize}
       \item Test promising strategies on separate dataset (Two different datasets)
       \item Require consistent performance across datasets
-      \item Expect 20\% degradation in Sharpe ratio
     \end{itemize}
   
   \item \textbf{Monte Carlo Simulation}
@@ -843,7 +892,6 @@ Each strategy is evaluated using:
 \begin{itemize}
   \item \textbf{Sharpe Ratio}: $\frac{\overline{r}}{\sigma}$
   \item \textbf{Expectancy}: $\frac{\overline{r}}{\overline{l}}$
-  \item \textbf{Mean Z-Score}: $\frac{1}{n}\sum_{i=1}^{n} z_i$
   \item \textbf{Average Return}: $\frac{1}{n}\sum_{i=1}^{n} r_i$
 \end{itemize}
 
@@ -852,7 +900,6 @@ The framework incorporates:
 \begin{itemize}
   \item Trading fees (0.003\% on Hyperliquid)
   \item  Slippage of (0.0001\% on Hyperliquid)
-  \item Position sizing rules
   \item Maximum drawdown limits
   \item Stop-loss and take-profit levels
 \end{itemize}
@@ -990,15 +1037,15 @@ A sampling percentage of 10\% means that we are using 10 random \% of the outlie
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{imgs/Bullish_outliers_inside_of_uptrend.png}
-  \caption{Average returns of bullish outliers inside of an uptrend}
+  \caption{Strategy 2 results}
+  \label{fig:bullish_outliers_inside_of_uptrend}
 \end{figure}
 
 
-\newpage
 \subsection{Strategy 2}
 
-So this was the second strategy I tested and the first I tested with my new edge development frame work.
-The logic is very straight forward with two conditions:
+So this was the second strategy I tested and the first time I used my new backtesting framework. 
+Results from this backtest: \ref{fig:bullish_outliers_inside_of_uptrend}
 
 \begin{itemize}
   \item  A $\Delta_{5,t}$ value is identified as a bullish outlier (see Section~\ref{sec:outlier_detection}).
@@ -1019,7 +1066,7 @@ The logic is very straight forward with two conditions:
 \newpage
 \section{sources}
 \subsection{\href{https://x.com/HangukQuant/status/1930603876069335120}{How good or random is your trading}}
-Twitter articles about random walk theory and how to test if a strategy is random or not. 
+Twitter article about random walk theory and how to test if a strategy is random or not. 
 %\subsection{\href{https://github.com/polakowo/vectorbt}{Testing 1000 strategies at the same time (via Monte Carlo)}}
 \subsection{\href{https://x.com/abetrade/status/1941613701150188008}{Tweets}}
 A lot of my ideas come from thiy guys Tweets, to research into this. He is a disgresionary trade what means he trades based on his own decisions and has a mental framework to trade. I learned what an orderbook delta is from him.
