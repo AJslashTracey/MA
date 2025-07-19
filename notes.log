@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  19 JUL 2025 11:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  19 JUL 2025 11:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -478,7 +478,7 @@ Overfull \hbox (10.15733pt too wide) in paragraph at lines 846--846
 pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.950 \newpage
+l.949 \newpage
               ]
 <imgs/Bullish_outliers_inside_of_uptrend.png, id=232, 867.24pt x 578.16pt>
 File: imgs/Bullish_outliers_inside_of_uptrend.png Graphic file (type png)
@@ -494,10 +494,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has
 l.969 \newpage
                <./imgs/Bullish_outliers_inside_of_uptrend.png>]
 
-Package hyperref Warning: Suppressing link with empty target on input line 975.
-
-
-
 [27] (./notes.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
@@ -507,18 +503,18 @@ Package rerunfilecheck Info: File `notes.out' has not changed.
 (rerunfilecheck)             Checksum: 11FA980097785C4306A87174F1B00591;1302.
  ) 
 Here is how much of TeX's memory you used:
- 10138 strings out of 473190
- 157091 string characters out of 5715801
- 564524 words of memory out of 5000000
+ 10139 strings out of 473190
+ 157102 string characters out of 5715801
+ 565524 words of memory out of 5000000
  33165 multiletter control sequences out of 15000+600000
  571213 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,10n,79p,566b,584s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,10n,79p,582b,497s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on notes.pdf (28 pages, 803487 bytes).
+Output written on notes.pdf (28 pages, 804234 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
- 270 compressed objects within 3 object streams
- 100 named destinations out of 1000 (max. 500000)
+ 344 PDF objects out of 1000 (max. 8388607)
+ 272 compressed objects within 3 object streams
+ 101 named destinations out of 1000 (max. 500000)
  85 words of extra memory for PDF output out of 10000 (max. 10000000)
 
