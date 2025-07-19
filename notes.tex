@@ -14,21 +14,42 @@
 \geometry{a4paper, margin=1in}
 \setstretch{1.2}
 
-\title{\Huge Orderbook Delta price reaction research}
-\author{}
-\date{}
+% Title page setup
+\title{
+    \Huge\textbf{A Systematic Trading Approach from Data Mining to Live Deployment}\\
+    \vspace{1cm}
+    \Large Documentation\\
+    \vspace{2cm}
+}
 
+\author{
+    \Large Submitted by:\\
+    \vspace{0.5cm}
+    \textbf{Juri Stoffers}\\
+    \vspace{2cm}
+    \Large Supervised by:\\
+    \vspace{0.5cm}
+    \textbf{Dr. Geoffrey Ostrin}\\
+    \vspace{2cm}
+}
 
-
-
-
-    
-
+\date{\Large \today}
 
 \begin{document}
 
+% Create title page
+\begin{titlepage}
 \maketitle
+\thispagestyle{empty}
+\end{titlepage}
 
+% Add a blank page after title
+\newpage
+\null
+\thispagestyle{empty}
+\newpage
+
+% Rest of your document continues here...
 
 \subsection*{Table of Contents}
 
@@ -36,7 +57,6 @@
   \item Outlier Detection Using Mean and Standard Deviation (Z-Score Based Outlier Detection)
   \item Measuring Volatility After Price Outlier Detection
   \item Measuring avearge return after price outlier detection
-  \item Combining Indicators
 \end{itemize}
 
 
@@ -318,7 +338,7 @@ Top 3 $z$-values with largest volatility uplift 69811-minutes sample
 
 \end{table}
 
-Same $z$-values on extended dataset 107880-minutes sample
+Same $z$-values on extended dataset (Walk forward $v1$)
 
 \begin{table}[H]
   \centering
@@ -340,7 +360,7 @@ Same $z$-values on extended dataset 107880-minutes sample
 
 
 
-Top 3 $z$-values with largest volatility uplift 107880-minutes sample
+Top 3 $z$-values with largest volatility uplift (Walk forward $v2$)
 
 
 \begin{table}[H]
@@ -421,22 +441,36 @@ Top 3 $z$-values with largest volatility uplift 107880-minutes sample
 
 
 %complementation of indicators into a strategy
-\section{Combining indicators for strategy}
 
 
-\newpage
+
+
 \section*{Underlying strategy Bias}
 
 %underlying bias logic =     df['indiactor'] = (df['trend'] == 'Uptrend') & (df3['delta5'] > 0)
-Every single parameter has to fight to be implemented into my strategy. To get some kind of filter since we are working with an asset which has clear trends and isn't stationary we need to do some trend identification.  
+Every single parameter has to fight to be implemented into my strategy. To get some kind of filter since we are working with an asset which has clear trends so it isn't stationary we need to do some trend identification. Different trends are also called diffferent regimes.
 I'll call it the underlying bias. Some simple examples are for a bias are:
 \begin{itemize}
   \item $\Delta_{5\%} < 0$ (more passive demand than supply)
-  \item $EMA_{\text{n}} > P_t$ (EMA is an exponential average of $P_t-n$, $P-T$ is the price at time $t$)
   \item $EMA_{\text{n}} >EMA_{\text{x}}$ (Crossing of two EMAs with different time periods $n$ and $x$)
 \end{itemize}
 
 But I want to get some clear trend identification where we divide into the three different categories:
+\begin{itemize}
+  \item Uptrend
+  \item Downtrend
+  \item Ranging
+\end{itemize}
+
+Uptrend is defined as a period where the price is making higher highs and higher lows.
+Downtrend is defined as a period where the price is making lower highs and lower lows.
+Ranging is defined as a period where price is not making higher highs and higher lows or lower highs and lower lows. But for my approach I will just use this if we are gettign mixed signals. 
+
+
+\newpage
+
+
+
 
 
 Ideas I want to test on:
@@ -447,11 +481,92 @@ Ideas I want to test on:
   
   
 \end{itemize}
+
+
+
+
 \newpage
 \section*{Finding an edge}
+\subsection*{Fees}
+So the first problem you run into if building a strategy is the fees. You have to pay fees for every trade you make. A fee is a fixed percentage amount of the trade size you take. On the exchange I choose, Hyperliquid the fee is about 0.003\% of the trade size. Which is a normal amount inside the crypto space. 
+Just to showcase how important fees are I will show you a simple example.
+
+Inside of my Market simulation where I can test different kind of strategies I will set up a simple strategy. When ever a bullish outlier in the delta appears and the trend function sais that we are inside of an uptrend I will buy Bitcoin and wait for 240 Minutes.
+
+\begin{verbatim}
+  #Define a mask for the bullish outliers inside of an uptrend 
+  outlier_mask = (df_temp['outlier_context'] == 's') & (df_temp['trend'] == 'Uptrend')  
+  
+  #Define the entry and exit signals with the Vector BT libary
+  pf = vbt.Portfolio.from_signals(
+    close=price,
+    entries=entry_signals,
+    exits=exit_signals,
+    init_cash=100, #Begining amount if cash
+    freq='1T'
+  ) 
+
+\end{verbatim}
+
+
+\subsection*{No Fees results}
+
+\begin{table}[H]
+  \centering
+  \caption{No Fees}
+  \label{tab:backtest_results}
+  \begin{tabular}{@{}lr@{}}
+    \toprule
+    Metric & Value \\
+    \midrule
+    Holding Period & 240 minutes \\
+    Total Return & 2.599\% \\
+    Mean sharp ratio& 3.067088 \\
+    Total Signals & 187 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection*{With Fees results}
+
+
+\begin{table}[H]
+  \centering
+  \caption{With Fees}
+  \label{tab:backtest_results_fees}
+  \begin{tabular}{@{}lr@{}}
+    \toprule
+    Metric & Value \\
+    \midrule
+    Holding Period & 240 minutes \\
+    Total Return & 1.537\% \\
+    Mean sharp & 1.841555 \\
+    Mean Z-Score & 2.48 \\
+
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+
+\newpage
+
+
+
+
 \subsection*{No clear path}
 Finding an edge is a very hard task. There is no clear path to success. You kinda have to try by trail and error every error could be a step further but also a potential path into a dead end.
   
+There are three main steps to find an edge. 
+\begin{itemize}
+  \item Copying other strategies
+  \item Finding an edge by yourself
+  \item Build a systematich version of your disgresionary trading.
+\end{itemize}
+
+
+
 
 \newpage
 
@@ -499,27 +614,11 @@ Period & $N_{signals}$ & $U(z)$ (\%) & T-statistic $p$ \\
 
 
 
-\newpage
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\textwidth]{60min_swing_point_bias.png}
-  \caption{1 min interval price with 60 min swing points and a $n$ value of 8 }
-\end{figure}
 
 
 
-\newpage
-\section*{Swing Point Bias Visualization}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{60min_swing_point_bias.png}
-    \caption{Price Action with Swing Points (1min price, 60min swings) showing trend periods}
-\end{figure}
 
-% You might want to add a description or explanation here
-This visualization demonstrates how swing points are identified on a 1-minute price chart using a 60-minute window for swing point detection. The green and red shaded areas represent uptrend and downtrend periods respectively, while red triangles mark swing highs and green triangles mark swing lows.
 
 \newpage
 \section*{Combining Indicators}
@@ -560,7 +659,7 @@ We'll now shift the EMA by the standard deviation of the orderbook delta
 \newpage
 \section*{From outliers to strategy}
 \subsection*{Progress description}
-I had a pretty hard time going from developing a logic for the outliers of the Delta. Finding that volatility increases after outliers was a good first find which didn't take long to find. But finding some a defenition condtion is meet directional bias was very difficult. By directional bias I mean a price direction which is not random after some kind of condition. It was pretty clear from the begging on that the outliers by there selfe won't offer any kind of directional bias
+I had a pretty hard time going from developing a logic for the outliers of the Delta.Finding that volatility increases after outliers was a good first find which didn't take long to find. But finding some defenition condtion is meet directional bias was very difficult. By directional bias I mean a price direction which is not random after some kind of condition. It was pretty clear from the begging on that the outliers by there selfe won't offer any kind of directional bias
 
 
 An outlier is defined as:
@@ -571,7 +670,7 @@ An outlier is defined as:
 \end{itemize}
 
 
-Then since we Bitcoin clearly is not a stationary asset I needed to find some kind of trend identification. I found that the swing points are a good indicator for this.
+Then since Bitcoin clearly is not a stationary asset I needed to find some kind of trend identification. I found that the swing points are a good indicator for this.
 We determined a trend by using looking at swingpoints. A swing point is a local extrema of a certain period.
 
 \subsection*{Where did I start my research}
@@ -658,18 +757,7 @@ In order to prevent overfitting we have to use a holdout sample. I have one data
 
 
 
-\begin{table}[H]
-  \centering
-  \caption{Worth a out of sample test}
-  \label{tab:strategy_results}
-  \begin{tabular}{@{}lrr@{}}
-    \toprule
-      Sharpe Ratio &  Average Return  \\
-    \midrule
-      1.5 & 0.005 \\
-    \bottomrule
-  \end{tabular}
-\end{table}
+
 
 If these conditions are met for a condition I test on some out of sample data. (Out of sample data just means that we test on new data)
 Most of the time things end up not even passing the first out of sample test and lose their potential instantly. If not I have another out of sample test and if that one is passed we are ready to do some more monte carlo testing and look how potential equity curves look like.
@@ -679,11 +767,98 @@ And to make things even worse we can assume that the sharpen ratio will decrease
 
 
 \newpage
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\textwidth]{imgs/Bullish_outliers_inside_of_uptrend.png}
-  \caption{Equity Curve of the strategy}
-\end{figure}
+
+
+\subsection*{Backtesting framework}
+
+My backtesting framework is built in Python using the VectorBT library and consists of several key components:
+
+\subsubsection*{Data Pipeline}
+
+Connection to Postgres database with the following data:
+\begin{itemize}
+  \item Historical price data from Coinbase (BTC/USD)
+  \item Orderbook delta data at different depths ($\Delta_{1\%}$, $\Delta_{2.5\%}$, $\Delta_{5\%}$)
+  \item 1-minute timeframe for base calculations
+  \item Direct ema calculation which a lenght of 50 on the 1h timeframe
+\end{itemize}
+
+I choose to directly calculate the EMA on the 1h timeframe since my datamining process might miss random minutes of data so if we calculate the EMA afterwards this could influence the results.
+
+
+
+\subsubsection*{Testing Methodology}
+The framework implements a three-stage testing process:
+\begin{enumerate}
+  \item \textbf{Initial Sample Testing}
+    \begin{itemize}
+      \item Test strategy on initial dataset
+      \item Multiple sampling percentages: [0.1, 0.2, 0.6, 0.8, 1.0]
+      \item Various holding periods: [60, 120, 240, 360] minutes
+    \end{itemize}
+  
+  \item \textbf{Out-of-Sample Validation}
+    \begin{itemize}
+      \item Test promising strategies on separate dataset (Two different datasets)
+      \item Require consistent performance across datasets
+      \item Expect 20\% degradation in Sharpe ratio
+    \end{itemize}
+  
+  \item \textbf{Monte Carlo Simulation}
+    \begin{itemize}
+      \item Random sampling of trade opportunities
+      \item 1000 iterations per test configuration
+      \item Analysis of distribution of outcomes
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection*{Performance Metrics}
+Each strategy is evaluated using:
+\begin{itemize}
+  \item \textbf{Sharpe Ratio}: $\frac{\overline{r}}{\sigma}$
+  \item \textbf{Expectancy}: $\frac{\overline{r}}{\overline{l}}$
+  \item \textbf{Mean Z-Score}: $\frac{1}{n}\sum_{i=1}^{n} z_i$
+  \item \textbf{Average Return}: $\frac{1}{n}\sum_{i=1}^{n} r_i$
+\end{itemize}
+
+\subsubsection*{Risk Management}
+The framework incorporates:
+\begin{itemize}
+  \item Trading fees (0.003\% on Hyperliquid)
+  \item  Slippage of (0.0001\% on Hyperliquid)
+  \item Position sizing rules
+  \item Maximum drawdown limits
+  \item Stop-loss and take-profit levels
+\end{itemize}
+
+\subsubsection*{Implementation}
+\begin{verbatim}
+# Example of strategy implementation
+def backtest_strategy(data, params):
+    # Define entry/exit signals
+    outlier_mask = (data['outlier_context'] == 's') & 
+                   (data['trend'] == 'Uptrend')
+    
+    # Create portfolio simulation
+    pf = vbt.Portfolio.from_signals(
+        close=data['price'],
+        entries=outlier_mask,
+        exits=exits_after_n_bars(outlier_mask, n=params['holding_period']),
+        init_cash=100,
+        freq='1T'
+    )
+    
+    return calculate_metrics(pf)
+\end{verbatim}
+
+This framework allows for rapid testing of multiple strategy variations while maintaining strict validation criteria to prevent overfitting.
+
+
+
+
+
+
+
 
 
 
@@ -691,6 +866,43 @@ And to make things even worse we can assume that the sharpen ratio will decrease
 
 \newpage
 \section*{Developing a strategy}
+
+\subsection{Initial thoughts}
+
+I will only able to show a few strategies backtests since I tested on about 150 different logics and only 1 of them passed all the out of sample tests. I will show the best ideas I had and the results of the backtests.
+
+
+\subsection{Reverse strategy}
+So logical thinking we could assume that long strategy can be reversed into a short strategy and vice versa. The problem is that we have fees and slippage. So we need a certain amount of profit to cover the fees and slippage. And since my strategy has a rather high frequency we need to have a lot of trades to cover the fees and slippage.
+
+
+
+
+\subsection*{First strategy test}
+So the first strategy I test was before I developed the backtesting framework. I was testing on a simple logic. If the price on the 1h timeframe closed above the 50 period EMA and the $\Delta_5$ of the orderbook was positive we would enter a buy position if price was in a range of $0.05\%$ of the $EMA_50$.
+
+
+
+
+So this strategy was first time I tested on a simple logic. If the trend indentification showed that we are in an uptrend and a bullish outlier was detected we would enter a position a buy position.
+
+
+
+
+\subsection{Explaining figure}
+So on the $Y$ axis we have the average return of the strategy. And on the $X$ axis we have the sampling percentage. So for example if we are sampling 10\% of the outliers and then testing the returns on them. We would get a return of 10\% and a Sharpe ratio of 1.0.
+
+
+
+
+\begin{equation}
+  \Delta_t > \mu(\Delta) + 2\sigma(\Delta) \quad \text{and} \quad \text{trend} = 'Uptrend'
+\end{equation}
+
+
+
+
+
 
 
 \newpage
