@@ -147,14 +147,20 @@ and shows how many standard deviations $\Delta_t$ is away from current mean
 
 
 
-\subsection{Bullish and Bearish Outliers version 2}
+%\subsection{Bullish and Bearish Outliers version 2}
 
 
-This idea was developed from a friend of mine who suggested I should check for direction pressure in combination with a z-score based outlier detection.
-A direction pressure is a measure of the strength of the buy or sell pressure in the orderbook. 
+%This version still builds up on version 1 of the outlier detection system. A friend of mine suggested I should run some test on directional pressure of the orderbook.
 
-\subsubsection{Pressure window}
-This is basically our look back period. Example: $P_w$ = 60 means we look back 60 minutes to calculate the direction pressure.
+
+%Implementation:
+%\subsubsection{Resample of timeseries dataset}
+%Since we need OHCL data to calculate the direction pressure we need to resample the dataset. OHCL data include open, high, low and close price of a certain time period.
+%Since I only have a one minute dataset I will resample it to 15 minutes.
+%\subsubsection{Pressure window}
+%This is basically our look back period. Example: $P_w$ = 60 means we look back 60 minutes to calculate the direction pressure.
+
+
 
 \subsubsection{}
 
@@ -500,20 +506,12 @@ Downtrend is defined as a period where the price is making lower highs and lower
 Ranging is defined as a period where price is not making higher highs and higher lows or lower highs and lower lows. But for my approach I will just use this if we are gettign mixed signals. 
 
 
-\newpage
 
 
 
 
 
-Ideas I want to test on:
 
-\begin{itemize}
-  \item Market Structure defenition (Higher Highs and Higher Lows)
-  \item Realtive strenght index on Price and $\Delta_{x\%}$
-  
-  
-\end{itemize}
 
 
 

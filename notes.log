@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  19 JUL 2025 12:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  19 JUL 2025 13:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -394,133 +394,131 @@ l.50 \newpage
 [10]
 
 [11]
-
-[12]
-Overfull \hbox (78.08237pt too wide) in paragraph at lines 542--542
+Overfull \hbox (78.08237pt too wide) in paragraph at lines 540--540
 []  \OT1/cmtt/m/n/12 outlier_mask = (df_temp['outlier_context'] == 's') & (df_temp['trend'] == 'Uptrend')[] 
  []
 
 
 
-[13
+[12
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.582 
+l.580 
       ]
 
-[14
+[13
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.609 \newpage
+l.607 \newpage
               ]
 
-[15
+[14
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.649 \newpage
+l.647 \newpage
               ]
-<imgs/swingpoints_emaspread_priceOutliers.png, id=370, 867.24pt x 722.7pt>
+<imgs/swingpoints_emaspread_priceOutliers.png, id=356, 867.24pt x 722.7pt>
 File: imgs/swingpoints_emaspread_priceOutliers.png Graphic file (type png)
 <use imgs/swingpoints_emaspread_priceOutliers.png>
-Package pdftex.def Info: imgs/swingpoints_emaspread_priceOutliers.png  used on input line 655.
+Package pdftex.def Info: imgs/swingpoints_emaspread_priceOutliers.png  used on input line 653.
 (pdftex.def)             Requested size: 452.9679pt x 377.47131pt.
 
 
-[16
+[15
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.662 \newpage
+l.660 \newpage
                <./imgs/swingpoints_emaspread_priceOutliers.png>]
 
-[17]
-<imgs/plotting_of_my_idea.png, id=388, 1569.865pt x 803.0pt>
+[16]
+<imgs/plotting_of_my_idea.png, id=374, 1569.865pt x 803.0pt>
 File: imgs/plotting_of_my_idea.png Graphic file (type png)
 <use imgs/plotting_of_my_idea.png>
-Package pdftex.def Info: imgs/plotting_of_my_idea.png  used on input line 725.
+Package pdftex.def Info: imgs/plotting_of_my_idea.png  used on input line 723.
 (pdftex.def)             Requested size: 452.9679pt x 231.68777pt.
-<imgs/v2_plotting my idea.png, id=389, 1569.865pt x 803.0pt>
+<imgs/v2_plotting my idea.png, id=375, 1569.865pt x 803.0pt>
 File: imgs/v2_plotting my idea.png Graphic file (type png)
 <use imgs/v2_plotting my idea.png>
-Package pdftex.def Info: imgs/v2_plotting my idea.png  used on input line 730.
+Package pdftex.def Info: imgs/v2_plotting my idea.png  used on input line 728.
 (pdftex.def)             Requested size: 452.9679pt x 231.68777pt.
 
 
-[18]
+[17]
 
-[19
+[18
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.736 
+l.734 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.736 
+l.734 
        <./imgs/plotting_of_my_idea.png> <./imgs/v2_plotting my idea.png>]
+
+[19]
 
 [20]
 
 [21]
-
-[22]
-Overfull \hbox (10.15733pt too wide) in paragraph at lines 880--880
+Overfull \hbox (10.15733pt too wide) in paragraph at lines 878--878
 []        \OT1/cmtt/m/n/12 exits=exits_after_n_bars(outlier_mask, n=params['holding_period']),[] 
  []
 
 
 
+[22]
+
 [23]
 
-[24]
-
-[25
+[24
 pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.983 \newpage
+l.981 \newpage
               ]
-<imgs/Bullish_outliers_inside_of_uptrend.png, id=439, 867.24pt x 578.16pt>
+<imgs/Bullish_outliers_inside_of_uptrend.png, id=425, 867.24pt x 578.16pt>
 File: imgs/Bullish_outliers_inside_of_uptrend.png Graphic file (type png)
 <use imgs/Bullish_outliers_inside_of_uptrend.png>
-Package pdftex.def Info: imgs/Bullish_outliers_inside_of_uptrend.png  used on input line 994.
+Package pdftex.def Info: imgs/Bullish_outliers_inside_of_uptrend.png  used on input line 992.
 (pdftex.def)             Requested size: 452.9679pt x 301.97705pt.
 
 
-[26
+[25
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.999 \newpage
+l.997 \newpage
                <./imgs/Bullish_outliers_inside_of_uptrend.png>]
 
-[27]
+[26]
 
-[28] (./notes.aux)
+[27] (./notes.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: CBD063E307298629555915C2786E1575;9761.
+(rerunfilecheck)             Checksum: E1A2190E64869609D7F9F49950BE9870;9352.
  ) 
 Here is how much of TeX's memory you used:
- 10197 strings out of 473190
- 158054 string characters out of 5715801
+ 10192 strings out of 473190
+ 157977 string characters out of 5715801
  566658 words of memory out of 5000000
- 33213 multiletter control sequences out of 15000+600000
+ 33211 multiletter control sequences out of 15000+600000
  571213 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,10n,79p,931b,497s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on notes.pdf (29 pages, 814185 bytes).
+Output written on notes.pdf (28 pages, 812956 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 475 compressed objects within 5 object streams
- 108 named destinations out of 1000 (max. 500000)
- 437 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 536 PDF objects out of 1000 (max. 8388607)
+ 462 compressed objects within 5 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 421 words of extra memory for PDF output out of 10000 (max. 10000000)
 
