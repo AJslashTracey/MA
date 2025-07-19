@@ -125,34 +125,44 @@ What does bullish and bearish even mean? A bullish signal is a signal where thin
 
 Now I defnined a a bullish outlier as bullish if he has a certain z-score value and a bearish outlier as a bearish if he has a certain z-score value.
 
+The mean is calculated is calculate by making a rolling window of the last $1440$ $\Delta$ values. (Basically a moving average of the last 1440 $\Delta$ values)
+Same period is applied for the standard deviation.
+
+Python code:
+\begin{verbatim}
+  df['mean'] = df['delta'].rolling(window=1440).mean()
+  df['std'] = df['delta'].rolling(window=1440).std()
+\end{verbatim}
+
+
+
+
+
 The z-score is calculated by the following formular:
 \begin{equation}
   z = \frac{\Delta - \mu(\Delta)}{\sigma(\Delta)}
 \end{equation}
 
-And shows how many standard deviations $\Delta_t$ is from the mean away.
+and shows how many standard deviations $\Delta_t$ is away from current mean	  
+
 
 
 \subsection{Bullish and Bearish Outliers version 2}
 
 
+This idea was developed from a friend of mine who suggested I should check for direction pressure in combination with a z-score based outlier detection.
+A direction pressure is a measure of the strength of the buy or sell pressure in the orderbook. 
+
+\subsubsection{Pressure window}
+This is basically our look back period. Example: $P_w$ = 60 means we look back 60 minutes to calculate the direction pressure.
+
+\subsubsection{}
+
+\subsubsection{}
 
 
 
 
-
-
-
-
-This is a simple Z-score based outlier detection.
-
-\begin{itemize}
-  \item $\Delta$ - Orderbook Delta Depth with a certain depth I will test on: $\Delta_{1\%}$ $\Delta_{2.5\%}$ $\Delta_{5\%}$ from Coinbase (BTC/USD) 
-  \item   This basically means we take a delta of the Bid and Ask orders which are in a range of x\% from the current price.
-  \item $\mu(\Delta)$ — Mean of the last 1440 values of $\Delta$ before time $t$
-  \item $\sigma(\Delta)$ - Standard deviation over the last 1440 $\Delta$ values before time $t$
-
-\end{itemize}
 
 
 

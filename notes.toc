@@ -5,6 +5,9 @@
 \contentsline {subsection}{\numberline {2.3}Outlier Condition}{5}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Bullish and Bearish Outliers version 1}{5}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Bullish and Bearish Outliers version 2}{5}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Pressure window}{5}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}}{5}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}}{5}{subsubsection.2.5.3}%
 \contentsline {subsection}{\numberline {2.6}Idea behind}{6}{subsection.2.6}%
 \contentsline {subsection}{\numberline {2.7}Future Plans}{6}{subsection.2.7}%
 \contentsline {section}{\numberline {3}Measuring Volatility After Price Outlier Detection}{7}{section.3}%
