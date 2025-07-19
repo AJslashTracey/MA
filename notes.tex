@@ -56,7 +56,33 @@
 
 
 
+
+
+
+
+
+
+\newpage
+
+\section{Outlier Detection Using Mean and Standard Deviation (Z-Score Based Outlier Detection)}\label{sec:outlier_detection}
+
+
 \section{Orderbook Delta defenition}
+The orderbook is a real-time electronic list of all pending buy (bid) and sell (ask) orders for a specific asset, organized by price level. It represents the current market depth and shows:
+
+\begin{itemize}
+  \item \textbf{Bid Side}: All buy orders, sorted from highest to lowest price
+  \item \textbf{Ask Side}: All sell orders, sorted from lowest to highest price
+  \item \textbf{Spread}: The difference between the highest bid and lowest ask price
+\end{itemize}
+
+Each price level in the orderbook shows:
+\begin{itemize}
+  \item The price of the order
+  \item The total volume (quantity) of orders at that price
+  \item The number of individual orders at that price (on some exchanges)
+\end{itemize}
+
 The orderbook delta is calculate by the difference between the sum of the bid and ask orders at a certain depth.
 Formular:
 \begin{equation*}
@@ -68,14 +94,6 @@ Formular:
   \item $\Delta_{i}$ is the orderbook delta for the $i$-th level of the orderbook.
 \end{itemize}
 
-
-
-
-
-
-\newpage
-
-\section{Outlier Detection Using Mean and Standard Deviation (Z-Score Based Outlier Detection)}\label{sec:outlier_detection}
 
 
 \subsection{Normal Range}
@@ -92,13 +110,15 @@ What I want to test is how price reacts to anomalous orderbook delta movements, 
 
 
 
-\subsection{Normal Range}
+\subsection{Outlier Condition}
+
+A value is considered an outlier if:
 
 
-\[
-\mu(\Delta) \pm 2\sigma(\Delta)
-\]
 
+\begin{equation}\label{eq: outlier_detection}
+  \Delta < \mu(\Delta) - 2\sigma(\Delta) \quad \text{or} \quad \Delta > \mu(\Delta) + 2\sigma(\Delta)    
+\end{equation}
 
 \subsection{Bullish and Bearish Outliers version 1}
 What does bullish and bearish even mean? A bullish signal is a signal where think price will go up. A bearish signal is a signal where think price will go down.
@@ -121,17 +141,8 @@ And shows how many standard deviations $\Delta_t$ is from the mean away.
 
 
 
-\newpage
-
-\subsection{Outlier Condition}
-
-A value is considered an outlier if:
 
 
-
-\begin{equation}\label{eq: outlier_detection}
-  \Delta < \mu(\Delta) - 2\sigma(\Delta) \quad \text{or} \quad \Delta > \mu(\Delta) + 2\sigma(\Delta)    
-\end{equation}
 
 This is a simple Z-score based outlier detection.
 
