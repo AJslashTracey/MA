@@ -63,11 +63,14 @@
 
 
 \newpage
+%I have to make a better introduction right here since this is a bit too straight forward
+% Have to includ things like how I came up with the orderbook delta idea and why I wanted to test things ont that.
+
 
 \section{Outlier Detection Using Mean and Standard Deviation (Z-Score Based Outlier Detection)}\label{sec:outlier_detection}
 
 
-\section{Orderbook Delta defenition}
+\subsection{Orderbook Delta defenition}
 The orderbook is a real-time electronic list of all pending buy (bid) and sell (ask) orders for a specific asset, organized by price level. It represents the current market depth and shows:
 
 \begin{itemize}
@@ -223,7 +226,9 @@ and shows how many standard deviations $\Delta_t$ is away from current mean
 
 
 
-\section{Measuring Volatility After Price Outlier Detection}
+\section{Measuring Volatility After Outlier Detection}
+
+
 
 
 \begin{equation}\label{eq:price_return}
@@ -851,7 +856,7 @@ My backtesting framework is built in Python using the VectorBT library and consi
 
 \subsubsection*{Data Pipeline}
 
-Connection to Postgres database hosted on railway.app with global access. 
+Connection to Postgres database hosted on railway.app with global access. \href{https://customchart-production.up.railway.app/#}{Live data mining progress}
 \begin{itemize}
   \item Historical price data from Coinbase (BTC/USD)
   \item Orderbook delta data at different depths ($\Delta_{1\%}$, $\Delta_{2.5\%}$, $\Delta_{5\%}$)
