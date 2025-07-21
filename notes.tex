@@ -228,6 +228,13 @@ and shows how many standard deviations $\Delta_t$ is away from current mean
 
 \section{Measuring Volatility After Outlier Detection}
 
+The first Idea I had was to measure the volatility of the price after an outlier is detected. Volatility is a measure of how much price changes in eighter direction over a certain period of time. 
+Using the following formular:
+
+
+
+
+
 
 
 
@@ -274,9 +281,7 @@ df.set_index('timestamp', inplace=True)
 
 df['r_t'] = df['price'].pct_change().fillna(0)
 
-
 #compute rolling std of the future 15 min window
-
 window = 15
 
 #rolling on r_t, then shift forward so index t hold vol of t+1...t+15
@@ -292,7 +297,7 @@ df['future_vol_15] = (
 
 \newpage
 
-\subsection{Statistical evidence}
+\subsection{Statistical evidence and results}
 
 Once an outlier is detected \eqref{eq: outlier_detection} inside of the Orderbook $\Delta$, we calculate the15-minute ahead realized volatility using Equation: \eqref{eq:realized-vol}
 
@@ -712,25 +717,6 @@ Here I visulised the swing points, the EMA spread and the 100 outliers with the 
 \footnote{Chart made with Matplotlib and Seaborn}
 
 
-\newpage
-\section{Mapping Orderbook delta EMA with standard deviation shifing}
-\section{Formulars}
-
-\begin{equation}
-  EMA_t = \alpha \cdot \Delta_t + (1 - \alpha) \cdot EMA_{t-1}
-\end{equation}
-
-Dictionary of Terms
-
-\begin{itemize}
-  \item $EMA_t$ - Exponential Moving Average at time $t$
-  \item $\Delta_t$ - Orderbook delta at time $t$
-  \item $\alpha$ - Smoothing factor 
-  \item $\alpha = \frac{2}{n+1}$ where $n$ is the period of the EMA
-  \item $\sigma(\Delta)$ - Standard deviation of the orderbook delta with a 
-\end{itemize}
-
-We'll now shift the EMA by the standard deviation of the orderbook delta 
 
 
 

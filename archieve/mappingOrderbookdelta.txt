@@ -1,0 +1,20 @@
+
+\newpage
+\section{Mapping Orderbook delta EMA with standard deviation shifing}
+\section{Formulars}
+
+\begin{equation}
+  EMA_t = \alpha \cdot \Delta_t + (1 - \alpha) \cdot EMA_{t-1}
+\end{equation}
+
+Dictionary of Terms
+
+\begin{itemize}
+  \item $EMA_t$ - Exponential Moving Average at time $t$
+  \item $\Delta_t$ - Orderbook delta at time $t$
+  \item $\alpha$ - Smoothing factor 
+  \item $\alpha = \frac{2}{n+1}$ where $n$ is the period of the EMA
+  \item $\sigma(\Delta)$ - Standard deviation of the orderbook delta with a 
+\end{itemize}
+
+We'll now shift the EMA by the standard deviation of the orderbook delta 

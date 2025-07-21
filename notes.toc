@@ -8,10 +8,10 @@
 \contentsline {subsubsection}{\numberline {1.5.2}}{5}{subsubsection.1.5.2}%
 \contentsline {subsection}{\numberline {1.6}Idea behind}{6}{subsection.1.6}%
 \contentsline {subsection}{\numberline {1.7}Future Plans}{6}{subsection.1.7}%
-\contentsline {section}{\numberline {2}Measuring Volatility After Price Outlier Detection}{7}{section.2}%
+\contentsline {section}{\numberline {2}Measuring Volatility After Outlier Detection}{7}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Dictionary of Terms}{7}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}In Python code}{7}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Statistical evidence}{8}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.3}Statistical evidence and results}{8}{subsection.2.3}%
 \contentsline {section}{\numberline {3}Optimising for best Z-Score thresold for outliers}{9}{section.3}%
 \contentsline {section}{\numberline {4}Measuring avearge return after price outlier detection}{10}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Formulars}{10}{subsection.4.1}%
