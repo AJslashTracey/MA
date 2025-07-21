@@ -648,6 +648,9 @@ Inside of my Market simulation where I can test different kind of strategies I w
 \subsection{No clear path}
 Finding an edge is a very hard task. There is no clear path to success. You kinda have to try by trail and error every error could be a step further but also a potential path into a dead end.
   
+
+
+
 There are three main steps to find an edge. 
 \begin{itemize}
   \item Copying other strategies
@@ -664,35 +667,7 @@ There are three main steps to find an edge.
 
 
 
-\newpage
-\section{Comparison of Delta Indicators on 39,694-minute sample}
 
-\begin{table}[h]
-\begin{tabular}{cccc}
-\hline
-Period & $N_{signals}$ & $U(z)$ (\%) & T-statistic $p$ \\
-\hline
-\multicolumn{4}{l}{Delta2.5 Strategy ($N_{total}$ = 9,182)} \\
-\hline
-  $5m$ & $9,182$ & $+52.03$ & $1.851 \times 10^{-41}$ \\
-  $60m$ & $9,182$ & $+55.94$ & $3.537 \times 10^{-4}$ \\
-  $360m$ & $9,182$ & $+59.20$ & $12.524 \times 10^{0}$ \\
-  \hline
-  \multicolumn{4}{l}{Delta5 Strategy ($N_{total}$ = 12,234)} \\
-  \hline
-  $5m$ & $12,234$ & $+51.38$ & $3.382 \times 10^{-7}$ \\
-  $60m$ & $12,234$ & $+53.44$ & $4.010 \times 10^{-1}$ \\
-  $360m$ & $12,234$ & $+57.04$ & $13.617 \times 10^{0}$ \\
-\hline
-\end{tabular}
-\caption{Comparison of Delta2.5 vs Delta5 strategies across different time periods}
-\end{table}
-
-\begin{itemize}
-  \item $N_{signals}$ represents number of trading signals
-  \item $U(z)$ represents positive return ratio
-  \item T-statistic $p$ represents statistical significance
-\end{itemize}
 
 
 
@@ -724,7 +699,7 @@ Here I visulised the swing points, the EMA spread and the 100 outliers with the 
 \newpage
 \section{From outliers to strategy}
 \subsection{Progress description}
-I had a pretty hard time going from developing a logic for the outliers of the Delta.Finding that volatility increases after outliers was a good first find which didn't take long to find. But finding some defenition condtion is meet directional bias was very difficult. By directional bias I mean a price direction which is not random after some kind of condition. It was pretty clear from the begging on that the outliers by there selfe won't offer any kind of directional bias
+I had a pretty hard time going from developing a logic for the outliers of the Delta. Finding that volatility increases after outliers was a good first find which didn't take long and the process was pretty straight forward. But finding some defenition condtion is meet directional bias was very difficult. By directional bias I mean a price direction which is not random after some kind of condition. It was pretty clear from the begging on that the outliers by there selfe won't offer any kind of directional bias
 
 
 An outlier is defined as:
