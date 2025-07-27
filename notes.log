@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  27 JUL 2025 00:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  27 JUL 2025 15:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -429,7 +429,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has 
                                                   \__shipout_drop_firstpage_...
 l.682 \newpage
               ]
-<imgs/swingpoints_emaspread_priceOutliers.png, id=356, 867.24pt x 722.7pt>
+<imgs/swingpoints_emaspread_priceOutliers.png, id=362, 867.24pt x 722.7pt>
 File: imgs/swingpoints_emaspread_priceOutliers.png Graphic file (type png)
 <use imgs/swingpoints_emaspread_priceOutliers.png>
 Package pdftex.def Info: imgs/swingpoints_emaspread_priceOutliers.png  used on input line 688.
@@ -442,12 +442,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has
                                                   \__shipout_drop_firstpage_...
 l.699 \newpage
                <./imgs/swingpoints_emaspread_priceOutliers.png>]
-<imgs/plotting_of_my_idea.png, id=369, 1569.865pt x 803.0pt>
+<imgs/plotting_of_my_idea.png, id=375, 1569.865pt x 803.0pt>
 File: imgs/plotting_of_my_idea.png Graphic file (type png)
 <use imgs/plotting_of_my_idea.png>
 Package pdftex.def Info: imgs/plotting_of_my_idea.png  used on input line 739.
 (pdftex.def)             Requested size: 452.9679pt x 231.68777pt.
-<imgs/v2_plotting my idea.png, id=370, 1569.865pt x 803.0pt>
+<imgs/v2_plotting my idea.png, id=376, 1569.865pt x 803.0pt>
 File: imgs/v2_plotting my idea.png Graphic file (type png)
 <use imgs/v2_plotting my idea.png>
 Package pdftex.def Info: imgs/v2_plotting my idea.png  used on input line 744.
@@ -489,7 +489,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has 
                                                   \__shipout_drop_firstpage_...
 l.994 \newpage
               ]
-<imgs/Bullish_outliers_inside_of_uptrend.png, id=421, 867.24pt x 578.16pt>
+<imgs/Bullish_outliers_inside_of_uptrend.png, id=427, 867.24pt x 578.16pt>
 File: imgs/Bullish_outliers_inside_of_uptrend.png Graphic file (type png)
 <use imgs/Bullish_outliers_inside_of_uptrend.png>
 Package pdftex.def Info: imgs/Bullish_outliers_inside_of_uptrend.png  used on input line 1005.
@@ -509,21 +509,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: DB801D46F3B65D9B3579B8D2A5E0052C;9290.
+(rerunfilecheck)             Checksum: FB6FF5DC5F014475BECAF89FF15FB512;9535.
  ) 
 Here is how much of TeX's memory you used:
- 10189 strings out of 473190
- 158014 string characters out of 5715801
+ 10191 strings out of 473190
+ 158046 string characters out of 5715801
  567699 words of memory out of 5000000
- 33212 multiletter control sequences out of 15000+600000
+ 33213 multiletter control sequences out of 15000+600000
  571213 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,10n,79p,931b,495s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on notes.pdf (26 pages, 810565 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on notes.pdf (26 pages, 821288 bytes).
 PDF statistics:
- 530 PDF objects out of 1000 (max. 8388607)
- 458 compressed objects within 5 object streams
- 101 named destinations out of 1000 (max. 500000)
- 421 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 542 PDF objects out of 1000 (max. 8388607)
+ 468 compressed objects within 5 object streams
+ 102 named destinations out of 1000 (max. 500000)
+ 429 words of extra memory for PDF output out of 10000 (max. 10000000)
 
