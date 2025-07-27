@@ -48,4 +48,4 @@
 \contentsline {subsection}{\numberline {10.5}\href {https://github.com/polakowo/vectorbt}{Vectorbt github documentation respository.}}{25}{subsection.10.5}%
 \contentsline {subsection}{\numberline {10.6}\href {https://github.com/AJslashTracey/deep_research_chatGPT_03}{Deep research by ChatGPT}}{25}{subsection.10.6}%
 \contentsline {subsection}{\numberline {10.7}\href {https://www.r-5.org/files/books/trading/charts/market-profile/James_Dalton-Markets_in_Profile-EN.pdf}{Markets in profile -- James Dalton}}{25}{subsection.10.7}%
-\contentsline {subsection}{\numberline {10.8}\href {https://x.com/TradingStable/status/1944181051326165271}{Do retail traders stande a chance?}}{25}{subsection.10.8}%
+\contentsline {subsection}{\numberline {10.8}\href {https://x.com/i/grok/share/q9fAogSBPA92zR0lgXd4q9OZT}{Do retail traders stande a chance?}}{25}{subsection.10.8}%
