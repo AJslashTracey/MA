@@ -737,13 +737,20 @@ We basically got through the time series dataset and look back $n$ $P_t$ values.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{imgs/plotting_of_my_idea.png}
-  \caption{Visualization of $\Delta_t$ outliers and swing points}
+  \caption{Visualization of $\Delta_t$ outliers and regime identification}
 \end{figure}
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{imgs/v2_plotting my idea.png}
-  \caption{Visualization of $\Delta_t$ outliers and swing points}
+  \caption{Visualization of $\Delta_t$ outliers and regime identification}
 \end{figure}
+
+Here you can see two visulaisations of outliers and regime identification. On two different timeseries datasets. This was my trend identification system $v1$ which is only based on swing point mapping.
+
+
+
+
+
 
 After plotting different kind of parts of Timeseries Data sets I created I was pretty sure that somewhere I would be finding an edge since the outliers often where at good entry points for a strategy. Only problem was I wasn't able to get any statistical proof ot this.
 After finding a Github Repo which used Vectorbt to test 1000 strategies at the same time I tried a similar approach and tested different conditions to see if there was some kind of edge.
@@ -995,7 +1002,7 @@ So from march till july I didn't backtest any strategies. I was focusing on deve
 
 \subsection{Explaining figure}
 So on the $Y$ axis we have the average return of the strategy. And on the $X$ axis we have the sampling percentage. 
-A sampling percentage of 10\% means that we are using 10 random \% of the outliers and then testing the returns on them. We conduct this 1000 times and then take the average return of all the 1000 tests. In addition to that we are testing the returns on different holding periods. So for example if we are testing the returns on a holding period of 60 minutes we are testing the returns on the 10 random \% of the outliers after 60 minutes. We conduct this 1000 times and then take the average return of all the 1000 tests.
+A sampling percentage of 10\% means that we are using 10 random precentage of the $\Delta_t$ outliers my system identified over the backtesting timeseries dataset and then testing the returns on them. We conduct this 1000 times and then take the average return of all the 1000 tests. In addition to that we are testing the returns on different holding periods. So for example if we are testing the returns on a holding period of 60 minutes we are testing the returns on the 10 random precentage of the outliers after 60 minutes. We conduct this 1000 times and then take the average return of all the 1000 tests.
 
 
 
