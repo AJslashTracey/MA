@@ -47,9 +47,24 @@
 \newpage
 \null
 \thispagestyle{empty}
+
+
+
+\begin{center}
+\begin{abstract}
+  This document documents the mathematical and statistical background of the research and testing I conducted for my strategy development. Explination of the formulars I used and the different versions of my algorithms.
+\end{abstract}
+\end{center}
+
+
+
+
 \newpage
 
 % Rest of your document continues here...
+
+
+
 
 \tableofcontents
 \newpage
@@ -74,9 +89,9 @@
 The orderbook is a real-time electronic list of all pending buy (bid) and sell (ask) orders for a specific asset, organized by price level. It represents the current market depth and shows:
 
 \begin{itemize}
-  \item \textbf{Bid Side}: All buy orders, sorted from highest to lowest price
-  \item \textbf{Ask Side}: All sell orders, sorted from lowest to highest price
-  \item \textbf{Spread}: The difference between the highest bid and lowest ask price
+  \item Bids: The prices at which buyers are willing to purchase an asset 
+  \item Asks: The prices at which sellers are willing to sell their asset
+  \item The difference between the highest bid and lowest ask creates what we call the "spread"
 \end{itemize}
 
 Each price level in the orderbook shows:
@@ -86,10 +101,11 @@ Each price level in the orderbook shows:
   \item The number of individual orders at that price (on some exchanges)
 \end{itemize}
 
-The orderbook delta is calculate by the difference between the sum of the bid and ask orders at a certain depth.
+The \textbf{orderbook delta} is calculate by the difference between the sum of the bid and ask orders at a certain depth.
 Formular:
 \begin{equation*}
   \Delta_{x\%} = \sum_{i=1}^{x\%} \Delta_{i}
+  \label{eq:orderbook_delta_x}
 \end{equation*}
 
 \begin{itemize}
@@ -101,27 +117,33 @@ Formular:
 
 \subsection{Normal Range}
 
-What I want to test is how price reacts to anomalous orderbook delta movements, particularly in scenarios where unrealistic or clearly outlying values are detected. In cryptocurrency markets, such inefficiencies can be caused by various events, one example is liquidation
- events that interact with passive demand order stacked zones. During these events, the orderbook delta exhibits significant increases, providing a clear signal of market stress. This research will focus on understanding the relationship between rapid delta movements and how price reacts after these events.
-
-\subsection{My Hypothesis}
-
-\begin{itemize}
-  \item I expext realized volatility to increase after an outlier is detected. 
-  \item I expect some kind of reaction from the price after an outlier is detected.
-\end{itemize}
-
+What I want to test is how price reacts to anomalous orderbook delta movements, particularly in scenarios where unrealistic or clearly outlying values are detected. In cryptocurrency markets, such inefficiencies can be caused by various events, one example is liquidation \footnote[1]{A liquidation event in crypot is when traders who borrowed money from an exchange to open a so called leveraged position are forced to sell or buy at a loss.}
+ events that interact with passive demand order stacked zones \footnote[2]{A passive demand order stacked zone is a zone where a lot of orders are stacked at a certain price level.} During these events, the orderbook delta exhibits significant increases, providing a clear signal of market stress. This research will focus on understanding the relationship between rapid delta movements and how price reacts after these events. 
+\newpage
 
 
 \subsection{Outlier Condition}
 
-A value is considered an outlier if:
+
+A outlier is defined when a the Orderbook $\Delta_t$ is outside of the normal range. I defnine the normal rage as the mean $\mu(\Delta)$ plus or minus 2 times the standard deviation $\sigma(\Delta)$. For mean and standard deviation I use a rolling window of 1440 $\Delta$ values. On a timeseries dataset with a interval of 1 minute that is equal to one day.
+
+Equation for outlier defenition:
 
 
 
 \begin{equation}\label{eq: outlier_detection}
   \Delta < \mu(\Delta) - 2\sigma(\Delta) \quad \text{or} \quad \Delta > \mu(\Delta) + 2\sigma(\Delta)    
 \end{equation}
+
+
+ \subsection{My Hypothesis}
+
+\begin{itemize}
+  \item I expext realized volatility to increase after an outlier is detected.
+  \item I expect that I can get a directional bias based on outliers if we combine the outlier signal with a underlying bias.
+\end{itemize}
+
+
 
 \subsection{Bullish and Bearish Outliers version 1}
 What does bullish and bearish even mean? A bullish signal is a signal where think price will go up. A bearish signal is a signal where think price will go down.

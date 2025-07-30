@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  28 JUL 2025 11:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  30 JUL 2025 13:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -368,7 +368,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.50 \newpage
+l.62 \newpage
               [1] (./notes.toc
 
 [2])
@@ -394,23 +394,23 @@ l.50 \newpage
 [10]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 516.
+(hyperref)                than one, level fixed on input line 538.
 
 
 
 [11]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 557.
+(hyperref)                removing `math shift' on input line 579.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 557.
+(hyperref)                removing `math shift' on input line 579.
 
 
 
 [12]
-Overfull \hbox (78.08237pt too wide) in paragraph at lines 600--600
+Overfull \hbox (78.08237pt too wide) in paragraph at lines 622--622
 []  \OT1/cmtt/m/n/12 outlier_mask = (df_temp['outlier_context'] == 's') & (df_temp['trend'] == 'Uptrend')[] 
  []
 
@@ -420,19 +420,19 @@ Overfull \hbox (78.08237pt too wide) in paragraph at lines 600--600
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.640 
+l.662 
       ]
 
 [14
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.682 \newpage
+l.704 \newpage
               ]
-<imgs/swingpoints_emaspread_priceOutliers.png, id=362, 867.24pt x 722.7pt>
+<imgs/swingpoints_emaspread_priceOutliers.png, id=369, 867.24pt x 722.7pt>
 File: imgs/swingpoints_emaspread_priceOutliers.png Graphic file (type png)
 <use imgs/swingpoints_emaspread_priceOutliers.png>
-Package pdftex.def Info: imgs/swingpoints_emaspread_priceOutliers.png  used on input line 688.
+Package pdftex.def Info: imgs/swingpoints_emaspread_priceOutliers.png  used on input line 710.
 (pdftex.def)             Requested size: 452.9679pt x 377.47131pt.
 
 
@@ -440,17 +440,17 @@ Package pdftex.def Info: imgs/swingpoints_emaspread_priceOutliers.png  used on i
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.699 \newpage
+l.721 \newpage
                <./imgs/swingpoints_emaspread_priceOutliers.png>]
-<imgs/plotting_of_my_idea.png, id=375, 1569.865pt x 803.0pt>
+<imgs/plotting_of_my_idea.png, id=380, 1569.865pt x 803.0pt>
 File: imgs/plotting_of_my_idea.png Graphic file (type png)
 <use imgs/plotting_of_my_idea.png>
-Package pdftex.def Info: imgs/plotting_of_my_idea.png  used on input line 739.
+Package pdftex.def Info: imgs/plotting_of_my_idea.png  used on input line 761.
 (pdftex.def)             Requested size: 452.9679pt x 231.68777pt.
-<imgs/v2_plotting my idea.png, id=376, 1569.865pt x 803.0pt>
+<imgs/v2_plotting my idea.png, id=381, 1569.865pt x 803.0pt>
 File: imgs/v2_plotting my idea.png Graphic file (type png)
 <use imgs/v2_plotting my idea.png>
-Package pdftex.def Info: imgs/v2_plotting my idea.png  used on input line 744.
+Package pdftex.def Info: imgs/v2_plotting my idea.png  used on input line 766.
 (pdftex.def)             Requested size: 452.9679pt x 231.68777pt.
 
 
@@ -460,12 +460,12 @@ Package pdftex.def Info: imgs/v2_plotting my idea.png  used on input line 744.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.757 
+l.779 
       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.757 
+l.779 
        <./imgs/plotting_of_my_idea.png> <./imgs/v2_plotting my idea.png>]
 
 [18]
@@ -473,7 +473,7 @@ l.757
 [19]
 
 [20]
-Overfull \hbox (10.15733pt too wide) in paragraph at lines 898--898
+Overfull \hbox (10.15733pt too wide) in paragraph at lines 920--920
 []        \OT1/cmtt/m/n/12 exits=exits_after_n_bars(outlier_mask, n=params['holding_period']),[] 
  []
 
@@ -487,12 +487,12 @@ Overfull \hbox (10.15733pt too wide) in paragraph at lines 898--898
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1001 \newpage
+l.1023 \newpage
                ]
-<imgs/Bullish_outliers_inside_of_uptrend.png, id=427, 867.24pt x 578.16pt>
+<imgs/Bullish_outliers_inside_of_uptrend.png, id=431, 867.24pt x 578.16pt>
 File: imgs/Bullish_outliers_inside_of_uptrend.png Graphic file (type png)
 <use imgs/Bullish_outliers_inside_of_uptrend.png>
-Package pdftex.def Info: imgs/Bullish_outliers_inside_of_uptrend.png  used on input line 1012.
+Package pdftex.def Info: imgs/Bullish_outliers_inside_of_uptrend.png  used on input line 1034.
 (pdftex.def)             Requested size: 452.9679pt x 301.97705pt.
 
 
@@ -500,7 +500,7 @@ Package pdftex.def Info: imgs/Bullish_outliers_inside_of_uptrend.png  used on in
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1039 \newpage
+l.1061 \newpage
                 <./imgs/Bullish_outliers_inside_of_uptrend.png>]
 
 [25] (./notes.aux)
@@ -509,21 +509,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: FB6FF5DC5F014475BECAF89FF15FB512;9535.
+(rerunfilecheck)             Checksum: 46DDC95A24B15764DAE8D2E83DB0D66E;9535.
  ) 
 Here is how much of TeX's memory you used:
- 10191 strings out of 473190
- 158046 string characters out of 5715801
- 567699 words of memory out of 5000000
- 33213 multiletter control sequences out of 15000+600000
+ 10196 strings out of 473190
+ 158150 string characters out of 5715801
+ 567755 words of memory out of 5000000
+ 33216 multiletter control sequences out of 15000+600000
  571213 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,10n,79p,931b,497s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on notes.pdf (26 pages, 821544 bytes).
+Output written on notes.pdf (26 pages, 823772 bytes).
 PDF statistics:
- 542 PDF objects out of 1000 (max. 8388607)
- 468 compressed objects within 5 object streams
- 102 named destinations out of 1000 (max. 500000)
+ 547 PDF objects out of 1000 (max. 8388607)
+ 473 compressed objects within 5 object streams
+ 104 named destinations out of 1000 (max. 500000)
  429 words of extra memory for PDF output out of 10000 (max. 10000000)
 
