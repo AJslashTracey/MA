@@ -146,7 +146,7 @@ Equation for outlier defenition:
 
 
 \subsection{Bullish and Bearish Outliers version 1}
-What does bullish and bearish even mean? A bullish signal is a signal where think price will go up. A bearish signal is a signal where think price will go down.
+What does bullish and bearish even mean? A bullish signal is a signal where we anticipate price will go up. A bearish signal is a signal where think price will go down.
 
 Now I defnined a a bullish outlier as bullish if he has a certain z-score value and a bearish outlier as a bearish if he has a certain z-score value.
 
@@ -377,8 +377,8 @@ To check Statistical evidence
 
 \section{Optimising for best Z-Score thresold for outliers}
 
-As state inside of \eqref{eq: outlier_detection} we use a Z-Score thresold of 2 to detect outliers. I now want to 
-see if by any chance there is a better Thresold value  
+As stated inside of \eqref{eq: outlier_detection} we use a Z-Score thresold of 2 to detect outliers. I now want to 
+see if by any chance there is a value where ther realized volatility is higher than if we use 2 as a thresold.
 
 To compare the outliers Volatility with the non outliers volatility I will use the following formular:
 
@@ -537,7 +537,7 @@ Ranging is defined as a period where price is not making higher highs and higher
 
 \subsubsection{Trend identification version 1}
 
-To see in what kind of regime we are we first have to search for swing points. A swing point is a local extrema of a certain period. So a swing low is a local minimum and a swing high is a local maximum. Local is just that it is inside of our lookbackperiod.
+To see in what kind of regime we currently are we first have to search for swing points. A swing point is a local extrema of a certain period. So a swing low is a local minimum and a swing high is a local maximum. Local is just that it is inside of our lookbackperiod.
 
 \textbf{Swing point} identification code:
 
