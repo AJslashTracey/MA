@@ -1058,7 +1058,46 @@ Results from this backtest: \ref{fig:bullish_outliers_inside_of_uptrend}
 
 
 
+\newpage
+\section{Algorithms Implementation}
 
+
+\subsection{Outlier detection version 2}
+After not finding any edge with the normal z-score outlier detection I decided to implement a new outlier detection logic.
+
+starting of by loading data 
+
+\begin{verbatim}
+  file_path = returnFilePath()
+\end{verbatim}
+
+
+
+
+Since I want to be able to do walk forward analysis I defined a function which returns the file path of the data for different timespans.
+
+\textbf{core outlier detection using IQR Method}
+\begin{verbatim}
+  delta5_15 = df15['delta5']
+  roll = delta5_15.rolling(window, min_periods=window // 4)
+  #window is a parameter inside of function
+  #calculating rolling quartiles
+  q1 = roll.quantile(0.25).shift(1) #first quartile
+  q3 = roll.quantile(0.75).shift(1) #third quartile
+  iqr = q3 - q1 # interquartile range
+
+  #calculating bounds
+  lower_bound = q1 - 1.5 * iqr
+  upper_bound = q3 + 1.5 * iqr
+ 
+  #identifying outliers
+  outliers = (delta5_15 < lower_bound) | (delta5_15 > upper_bound)
+\end{verbatim}
+
+
+\newpage
+\subsection{Strategy 3}
+So this was the third strategy I tested. I was testing on a simple logic. If the price on the 1h timeframe closed above the 50 period EMA and the $\Delta_5$ of the orderbook was positive we would enter a buy position if price was in a range of $0.05\%$ of the $EMA_50$.
 
 
 
