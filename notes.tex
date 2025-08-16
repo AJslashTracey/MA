@@ -1087,12 +1087,44 @@ Since I want to be able to do walk forward analysis I defined a function which r
   iqr = q3 - q1 # interquartile range
 
   #calculating bounds
-  lower_bound = q1 - 1.5 * iqr
-  upper_bound = q3 + 1.5 * iqr
+  lower_bound = q1 - z_value * iqr
+  upper_bound = q3 +  z_value * iqr
  
+
   #identifying outliers
   outliers = (delta5_15 < lower_bound) | (delta5_15 > upper_bound)
 \end{verbatim}
+
+
+The IQR method divides data into for equal groups.  
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{imgs/IQR_method.png}
+  \caption{IQR method}
+  \label{fig:IQR_method}
+\end{figure}
+
+
+
+For my usecase the IQR method is better fitting than the z-score method. 
+
+
+
+
+\textbf{Problems with z-score threshold}
+
+If the data is skewed or has fat tails the z-score method will be biased. The IQR method is more robust to outliers and is not sensitive to the distribution of the data. In simple words if the market is volatile the z-score method will be biased. The standard deviation be higher than it should and the mean will be affected too by strong volatility.
+
+
+
+
+
+
+
+
+
+
+
 
 
 \newpage
