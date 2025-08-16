@@ -1094,9 +1094,8 @@ An outlier is now defined as a value which falls outside of the interquartile ra
 Outlier defenition:
 
 \begin{equation*}
-  \Delta_t < Q1-z*(IQR) \quad \text{or} \quad \Delta_T >Q3+z*(IQR)
+  \Delta_t < Q1-z\cdot(IQR) \quad \text{or} \quad \Delta_T >Q3+z\cdot(IQR)
 \end{equation*}
-
 \newpage
 \textbf{IQR method python implementation}
 \begin{verbatim}
@@ -1119,7 +1118,6 @@ Outlier defenition:
 
 
 
-For my usecase the IQR method is better fitting than the z-score method. 
 
 
 

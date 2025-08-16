@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  16 AUG 2025 10:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  16 AUG 2025 13:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -513,18 +513,18 @@ Package pdftex.def Info: imgs/IQR-visualisation.png  used on input line 1075.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1100 \newpage
+l.1099 \newpage
                 <./imgs/IQR-visualisation.png>]
 
 [26]
-Overfull \hbox (47.20735pt too wide) in paragraph at lines 1155--1155
+Overfull \hbox (47.20735pt too wide) in paragraph at lines 1153--1153
 []  \OT1/cmtt/m/n/12 entries = (df_temp['outlier_context'] == 's') & (df_temp['trend'] == 'Uptrend')[] 
  []
 
 <imgs/tradesVisualised.png, id=481, 768.8725pt x 635.37375pt>
 File: imgs/tradesVisualised.png Graphic file (type png)
 <use imgs/tradesVisualised.png>
-Package pdftex.def Info: imgs/tradesVisualised.png  used on input line 1161.
+Package pdftex.def Info: imgs/tradesVisualised.png  used on input line 1159.
 (pdftex.def)             Requested size: 317.07614pt x 262.02704pt.
 
 
@@ -532,12 +532,12 @@ Package pdftex.def Info: imgs/tradesVisualised.png  used on input line 1161.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1170 
+l.1168 
         <./imgs/tradesVisualised.png>]
 <imgs/async_pos_handeling.png, id=489, 1606.0pt x 1003.75pt>
 File: imgs/async_pos_handeling.png Graphic file (type png)
 <use imgs/async_pos_handeling.png>
-Package pdftex.def Info: imgs/async_pos_handeling.png  used on input line 1176.
+Package pdftex.def Info: imgs/async_pos_handeling.png  used on input line 1174.
 (pdftex.def)             Requested size: 317.07614pt x 198.17336pt.
 
 
@@ -545,7 +545,7 @@ Package pdftex.def Info: imgs/async_pos_handeling.png  used on input line 1176.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1187 \newpage
+l.1185 \newpage
                 <./imgs/async_pos_handeling.png>]
 
 [29]
@@ -567,7 +567,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  69i,10n,79p,931b,497s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on notes.pdf (31 pages, 964384 bytes).
+Output written on notes.pdf (31 pages, 964190 bytes).
 PDF statistics:
  612 PDF objects out of 1000 (max. 8388607)
  526 compressed objects within 6 object streams
