@@ -1063,20 +1063,42 @@ Results from this backtest: \ref{fig:bullish_outliers_inside_of_uptrend}
 
 
 \subsection{Outlier detection version 2}
-After not finding any edge with the normal z-score outlier detection I decided to implement a new outlier detection logic.
-
-starting of by loading data 
-
-\begin{verbatim}
-  file_path = returnFilePath()
-\end{verbatim}
+After not finding any edge with the normal z-score outlier detection I decided to implement a new outlier \footnote{an extrem high or low value compared to other values inside of the dataset} detection logic.
 
 
 
 
-Since I want to be able to do walk forward analysis I defined a function which returns the file path of the data for different timespans.
+The IQR method divides data into for equal groups.  
 
-\textbf{core outlier detection using IQR Method}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{imgs/IQR-visualisation.png}
+  \caption{IQR method}
+  \label{fig:IQR_method}
+\end{figure}
+
+
+
+\begin{itemize}
+  \item $Q_2$ (median): The middle value that divides the entire dataset into two equal halves
+  \item $Q_1$ (first quartile): The median of the lower half of the data (values below $Q_2$)
+  \item $Q_3$ (third quartile): The median of the upper half of the data (values above $Q_2$)
+\end{itemize}
+
+Each quartile represents 25\% of the data, making it easy to identify the middle 50\% of values (between $Q_1$ and $Q_3$).
+
+
+An outlier is now defined as a value which falls outside of the interquartile range mutlitpled by a factor $z$ in my case $z = 2$. IQR is defined as $IQR = Q_3 - Q_1$.
+
+
+Outlier defenition:
+
+\begin{equation*}
+  \Delta_t < Q1-z*(IQR) \quad \text{or} \quad \Delta_T >Q3+z*(IQR)
+\end{equation*}
+
+\newpage
+\textbf{IQR method python implementation}
 \begin{verbatim}
   delta5_15 = df15['delta5']
   roll = delta5_15.rolling(window, min_periods=window // 4)
@@ -1094,16 +1116,6 @@ Since I want to be able to do walk forward analysis I defined a function which r
   #identifying outliers
   outliers = (delta5_15 < lower_bound) | (delta5_15 > upper_bound)
 \end{verbatim}
-
-
-The IQR method divides data into for equal groups.  
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\textwidth]{imgs/IQR-visualisation.png}
-  \caption{IQR method}
-  \label{fig:IQR_method}
-\end{figure}
 
 
 
