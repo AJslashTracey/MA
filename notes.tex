@@ -1139,7 +1139,7 @@ If the data is skewed or has fat tails the z-score method will be biased. The IQ
 Now since my strategy allows mutliple positions open at the same time the infrastructure turns out to be a bit more complex. If we open two positions on the $BTC/USD$ pair with a size of 1000\$ we end up having one positions with a size of 2000\$. 
 
 
-\textbf{Vectorbt implementation}
+\textbf{Vectorbt backtest implementation}
 \begin{verbatim}
   entries = (df_temp['outlier_context'] == 's') & (df_temp['trend'] == 'Uptrend')  
   exits = exits_after_n_bars(entries, n=120) #120 minutes after entry
