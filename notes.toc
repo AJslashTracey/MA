@@ -43,7 +43,8 @@
 \contentsline {section}{\numberline {10}Algorithms Implementation}{25}{section.10}%
 \contentsline {subsection}{\numberline {10.1}Outlier detection version 2}{25}{subsection.10.1}%
 \contentsline {section}{\numberline {11}Algorithmic infrastructure implementation}{27}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Strategy 3}{29}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.1}Handeling trades asynchronously}{28}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Strategy 3}{29}{subsection.11.2}%
 \contentsline {section}{\numberline {12}sources}{30}{section.12}%
 \contentsline {subsection}{\numberline {12.1}\href {https://x.com/HangukQuant/status/1930603876069335120}{How good or random is your trading}}{30}{subsection.12.1}%
 \contentsline {subsection}{\numberline {12.2}\href {https://x.com/abetrade/status/1941613701150188008}{Tweets}}{30}{subsection.12.2}%

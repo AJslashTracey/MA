@@ -1155,14 +1155,20 @@ Now since my strategy allows mutliple positions open at the same time the infras
 \end{verbatim}
 
 
-\textbf{Trades}
-
+As you can see in the figure \ref{fig:trades} there are times where multiple positions are open at the same time.
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{imgs/tradesVisualised.png}
+  \includegraphics[width=0.7\textwidth]{imgs/tradesVisualised.png}
   \caption{Trades}
   \label{fig:trades}
 \end{figure}
+
+
+
+\subsection{Handeling trades asynchronously}
+I decided to handle the issues of multiple positions with different exit times by using an asynchronous approach. Every positions is handled in a seperate python thread. The thread just sells the exact amount of one single position which is $10\%$ of the portfolio. The maximum of open positions is set to 20.
+
+
 
 
 
