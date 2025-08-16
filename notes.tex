@@ -1169,6 +1169,18 @@ As you can see in the figure \ref{fig:trades} there are times where multiple pos
 I decided to handle the issues of multiple positions with different exit times by using an asynchronous approach. Every positions is handled in a seperate python thread. The thread just sells the exact amount of one single position which is $10\%$ of the portfolio. The maximum of open positions is set to 20.
 
 
+The algorithm uses a class \footnote{A class in Python is a blueprint for creating objects. It defines a set of attributes and methods that an object of that class will have.} called AsyncPositionManager. The position manager initializes is initialized as part of the singalloop which is responsable to check every minute if an entry signal is detected. If an entry signal is detected the position manager will open a position which is handled inside of an asynchronous position task that runs independently.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.7\textwidth]{imgs/async_pos_handeling.png}
+  \caption{AsyncPositionManager}
+  \label{fig:asyncPositionManager}
+\end{figure}
+
+
+
+
 
 
 
@@ -1176,6 +1188,9 @@ I decided to handle the issues of multiple positions with different exit times b
 \newpage
 \subsection{Strategy 3}
 So this was the third strategy I tested. I was testing on a simple logic. If the price on the 1h timeframe closed above the 50 period EMA and the $\Delta_5$ of the orderbook was positive we would enter a buy position if price was in a range of $0.05\%$ of the $EMA_50$.
+
+
+
 
 
 
