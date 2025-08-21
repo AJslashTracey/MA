@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  16 AUG 2025 13:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.3)  21 AUG 2025 21:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -429,7 +429,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has 
                                                   \__shipout_drop_firstpage_...
 l.709 \newpage
               ]
-<imgs/swingpoints_emaspread_priceOutliers.png, id=395, 867.24pt x 722.7pt>
+<imgs/swingpoints_emaspread_priceOutliers.png, id=420, 867.24pt x 722.7pt>
 File: imgs/swingpoints_emaspread_priceOutliers.png Graphic file (type png)
 <use imgs/swingpoints_emaspread_priceOutliers.png>
 Package pdftex.def Info: imgs/swingpoints_emaspread_priceOutliers.png  used on input line 715.
@@ -442,12 +442,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has
                                                   \__shipout_drop_firstpage_...
 l.726 \newpage
                <./imgs/swingpoints_emaspread_priceOutliers.png>]
-<imgs/plotting_of_my_idea.png, id=406, 1569.865pt x 803.0pt>
+<imgs/plotting_of_my_idea.png, id=431, 1569.865pt x 803.0pt>
 File: imgs/plotting_of_my_idea.png Graphic file (type png)
 <use imgs/plotting_of_my_idea.png>
 Package pdftex.def Info: imgs/plotting_of_my_idea.png  used on input line 766.
 (pdftex.def)             Requested size: 452.9679pt x 231.68777pt.
-<imgs/v2_plotting my idea.png, id=407, 1569.865pt x 803.0pt>
+<imgs/v2_plotting my idea.png, id=432, 1569.865pt x 803.0pt>
 File: imgs/v2_plotting my idea.png Graphic file (type png)
 <use imgs/v2_plotting my idea.png>
 Package pdftex.def Info: imgs/v2_plotting my idea.png  used on input line 771.
@@ -489,7 +489,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has 
                                                   \__shipout_drop_firstpage_...
 l.1028 \newpage
                ]
-<imgs/Bullish_outliers_inside_of_uptrend.png, id=457, 867.24pt x 578.16pt>
+<imgs/Bullish_outliers_inside_of_uptrend.png, id=482, 867.24pt x 578.16pt>
 File: imgs/Bullish_outliers_inside_of_uptrend.png Graphic file (type png)
 <use imgs/Bullish_outliers_inside_of_uptrend.png>
 Package pdftex.def Info: imgs/Bullish_outliers_inside_of_uptrend.png  used on input line 1039.
@@ -502,7 +502,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has
                                                   \__shipout_drop_firstpage_...
 l.1061 \newpage
                 <./imgs/Bullish_outliers_inside_of_uptrend.png>]
-<imgs/IQR-visualisation.png, id=468, 1606.0pt x 401.5pt>
+<imgs/IQR-visualisation.png, id=493, 1606.0pt x 401.5pt>
 File: imgs/IQR-visualisation.png Graphic file (type png)
 <use imgs/IQR-visualisation.png>
 Package pdftex.def Info: imgs/IQR-visualisation.png  used on input line 1075.
@@ -521,7 +521,7 @@ Overfull \hbox (47.20735pt too wide) in paragraph at lines 1153--1153
 []  \OT1/cmtt/m/n/12 entries = (df_temp['outlier_context'] == 's') & (df_temp['trend'] == 'Uptrend')[] 
  []
 
-<imgs/tradesVisualised.png, id=481, 768.8725pt x 635.37375pt>
+<imgs/tradesVisualised.png, id=506, 768.8725pt x 635.37375pt>
 File: imgs/tradesVisualised.png Graphic file (type png)
 <use imgs/tradesVisualised.png>
 Package pdftex.def Info: imgs/tradesVisualised.png  used on input line 1159.
@@ -534,7 +534,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has
                                                   \__shipout_drop_firstpage_...
 l.1168 
         <./imgs/tradesVisualised.png>]
-<imgs/async_pos_handeling.png, id=489, 1606.0pt x 1003.75pt>
+<imgs/async_pos_handeling.png, id=514, 1606.0pt x 1003.75pt>
 File: imgs/async_pos_handeling.png Graphic file (type png)
 <use imgs/async_pos_handeling.png>
 Package pdftex.def Info: imgs/async_pos_handeling.png  used on input line 1174.
@@ -550,27 +550,33 @@ l.1185 \newpage
 
 [29]
 
-[30] (./notes.aux)
+[30]
+
+[31]
+
+[32]
+
+[33] (./notes.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `notes.out' has not changed.
-(rerunfilecheck)             Checksum: B4C3A2E479988D7BEE104898E99D53C9;10502.
+(rerunfilecheck)             Checksum: 39B6FD688EEA79AE5B0DCC3C537E5195;11667.
  ) 
 Here is how much of TeX's memory you used:
- 10240 strings out of 473190
- 159122 string characters out of 5715801
- 567867 words of memory out of 5000000
- 33245 multiletter control sequences out of 15000+600000
+ 10258 strings out of 473190
+ 159368 string characters out of 5715801
+ 567873 words of memory out of 5000000
+ 33250 multiletter control sequences out of 15000+600000
  571213 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,10n,79p,931b,497s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on notes.pdf (31 pages, 964190 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on notes.pdf (34 pages, 980349 bytes).
 PDF statistics:
- 612 PDF objects out of 1000 (max. 8388607)
- 526 compressed objects within 6 object streams
- 119 named destinations out of 1000 (max. 500000)
- 484 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 665 PDF objects out of 1000 (max. 8388607)
+ 574 compressed objects within 6 object streams
+ 132 named destinations out of 1000 (max. 500000)
+ 524 words of extra memory for PDF output out of 10000 (max. 10000000)
 

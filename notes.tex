@@ -1187,6 +1187,83 @@ The algorithm uses a class \footnote{A class in Python is a blueprint for creati
 So this was the third strategy I tested. I was testing on a simple logic. If the price on the 1h timeframe closed above the 50 period EMA and the $\Delta_5$ of the orderbook was positive we would enter a buy position if price was in a range of $0.05\%$ of the $EMA_50$.
 
 
+\newpage
+\section{Code implementation for data creation}
+
+
+I chose to create my own dataset because it offers a key advantage: it allows me to experiment with ideas and patterns that are less likely to have been explored before. This increases the chance of discovering something new that might be missed when using more commonly available datasets.
+
+There are platforms that offer order book delta data for free, but only for discretionary trading (i.e. they only display the data in a chart and do not provide it as a downloadable time series). My idea was to create a Python script which hits the API in one-minute intervals and stores the data inside a Postgres database. I have been hosting the data mining script on my PaaS since March 11, 2025 \href{https://customchart-production.up.railway.app/#}{Live database connection}.
+
+The creation of the time series was done through a public exchange API\footnote[1]{API stands for Application Programming Interface. It is a tool that allows programs to request and receive specific data from external services—in this case, used to fetch real-time Bitcoin price and order book data from the Coinbase crypto exchange.}, with data fetched in one-minute intervals and stored inside a database on a PaaS\footnote[2]{PaaS stands for Platform as a Service. It is a cloud computing model which gives developers a platform to host their applications so that they are globally accessible on the internet and run 24/7}.
+
+
+In my dataset, I calculate the 1\%, 2.5\%, and 5\% delta of the order book. Additionally, I include the current Bitcoin price and the corresponding timestamp. The program I wrote collects data by sending API requests to the Coinbase Exchange API at one minute intervals. It retrieves both the current Bitcoin price and a full snapshot of the order book at that moment. A complete snapshot is necessary to calculate order book deltas at different percentage depths accurately.
+
+
+
+The order book delta is calculated by summing the total value of bid orders $n\%$ below the current price ($P_t$) and subtracting the total value of ask orders that are $n\%$ above the current price ($P_t$).
+\begin{equation*}
+    \Delta_{OB} = \sum_{i=1}^{n} V_{bid_i} - \sum_{i=1}^{n} V_{ask_i}
+\end{equation*}
+
+
+The main problem I faced here is that price time series in trading are usually constructed so that each data point represents the closing price of a fixed time interval (e.g. every minute at \texttt{xx:00}). If data points are missing or misaligned (e.g. recorded at \texttt{xx:00:15} instead of \texttt{xx:00:00}), then the time series becomes irregular and any backtest conducted on it would be flawed.
+A few key things flow together here which make it difficult to get a perfectly aligned timeseries. As python runs in a single threaded \footnote[3]{A python program runs by executing line after line.  Using the thread} 
+
+
+\subsection{Handling Time Series Alignment in High-Frequency Data Collection}
+
+The implementation addresses a critical challenge in high-frequency trading data collection: ensuring precise temporal alignment of price data points. The primary technical constraint is the inherent latency of the Coinbase Exchange API, which introduces approximately 100ms of delay per request. This delay, while minimal for general purposes, becomes significant when constructing accurately time-aligned price series.
+
+\subsubsection{Core Challenges}
+\begin{itemize}
+    \item API request latency (~100ms) causing timestamp misalignment
+    \item Need for regular intervals (xx:00:00) versus actual recording times (xx:00:15)
+    \item Risk of missing data points affecting backtest validity
+\end{itemize}
+
+\subsubsection{Solution Implementation}
+The solution implements a two-layer approach to handle these challenges:
+
+\begin{enumerate}
+    \item \textbf{Continuous Data Collection Layer}
+    \begin{itemize}
+        \item Implements parallel API requests using ThreadPoolExecutor
+        \item Maintains a bounded queue (maxsize=1000) to buffer data points
+        \item Collects data at 2-second intervals to ensure sufficient sampling density
+    \end{itemize}
+
+    \item \textbf{Time Series Alignment Layer}
+    \begin{itemize}
+        \item Aligns timestamps to 10-second boundaries:
+        \begin{verbatim}
+        current_timestamp = current_timestamp.replace(
+            second=(current_timestamp.second // 10) * 10,
+            microsecond=0
+        )
+        \end{verbatim}
+        \item Tracks collection latency for each data point:
+        \begin{verbatim}
+        collection_latency = (current_timestamp - 
+                            last_data.timestamp).total_seconds()
+        \end{verbatim}
+        \item Flags interpolated data points when latency exceeds threshold:
+        \begin{verbatim}
+        is_interpolated = collection_latency > 10
+        \end{verbatim}
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection{Data Quality Assurance}
+The system maintains data quality through several mechanisms:
+\begin{itemize}
+    \item Records collection latency in the database for each data point
+    \item Marks data points as interpolated when timing constraints are violated
+    \item Provides transparency for backtest validation by tracking data quality metrics
+\end{itemize}
+
+This implementation ensures that while API latency cannot be eliminated, its effects on the time series are documented and trackable, allowing for more accurate backtesting by either filtering out or appropriately handling interpolated data points.
 
 
 

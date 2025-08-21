@@ -45,12 +45,17 @@
 \contentsline {section}{\numberline {11}Algorithmic infrastructure implementation}{27}{section.11}%
 \contentsline {subsection}{\numberline {11.1}Handeling trades asynchronously}{28}{subsection.11.1}%
 \contentsline {subsection}{\numberline {11.2}Strategy 3}{29}{subsection.11.2}%
-\contentsline {section}{\numberline {12}sources}{30}{section.12}%
-\contentsline {subsection}{\numberline {12.1}\href {https://x.com/HangukQuant/status/1930603876069335120}{How good or random is your trading}}{30}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}\href {https://x.com/abetrade/status/1941613701150188008}{Tweets}}{30}{subsection.12.2}%
-\contentsline {subsection}{\numberline {12.3}\href {https://trdr.io/}{TRDR} This platform allow you to use different kind of metrics on different Timeseries datasets (BTC/USD Price, orderbookdelta and Open Interest}{30}{subsection.12.3}%
-\contentsline {subsection}{\numberline {12.4}\href {https://github.com/neurotrader888/TrendLineAutomation}{Trend line automation}}{30}{subsection.12.4}%
-\contentsline {subsection}{\numberline {12.5}\href {https://github.com/polakowo/vectorbt}{Vectorbt github documentation respository.}}{30}{subsection.12.5}%
-\contentsline {subsection}{\numberline {12.6}\href {https://github.com/AJslashTracey/deep_research_chatGPT_03}{Deep research by ChatGPT}}{30}{subsection.12.6}%
-\contentsline {subsection}{\numberline {12.7}\href {https://www.r-5.org/files/books/trading/charts/market-profile/James_Dalton-Markets_in_Profile-EN.pdf}{Markets in profile -- James Dalton}}{30}{subsection.12.7}%
-\contentsline {subsection}{\numberline {12.8}\href {https://x.com/i/grok/share/q9fAogSBPA92zR0lgXd4q9OZT}{Do retail traders stande a chance?}}{30}{subsection.12.8}%
+\contentsline {section}{\numberline {12}Code implementation for data creation}{30}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Handling Time Series Alignment in High-Frequency Data Collection}{31}{subsection.12.1}%
+\contentsline {subsubsection}{\numberline {12.1.1}Core Challenges}{31}{subsubsection.12.1.1}%
+\contentsline {subsubsection}{\numberline {12.1.2}Solution Implementation}{31}{subsubsection.12.1.2}%
+\contentsline {subsubsection}{\numberline {12.1.3}Data Quality Assurance}{32}{subsubsection.12.1.3}%
+\contentsline {section}{\numberline {13}sources}{33}{section.13}%
+\contentsline {subsection}{\numberline {13.1}\href {https://x.com/HangukQuant/status/1930603876069335120}{How good or random is your trading}}{33}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}\href {https://x.com/abetrade/status/1941613701150188008}{Tweets}}{33}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}\href {https://trdr.io/}{TRDR} This platform allow you to use different kind of metrics on different Timeseries datasets (BTC/USD Price, orderbookdelta and Open Interest}{33}{subsection.13.3}%
+\contentsline {subsection}{\numberline {13.4}\href {https://github.com/neurotrader888/TrendLineAutomation}{Trend line automation}}{33}{subsection.13.4}%
+\contentsline {subsection}{\numberline {13.5}\href {https://github.com/polakowo/vectorbt}{Vectorbt github documentation respository.}}{33}{subsection.13.5}%
+\contentsline {subsection}{\numberline {13.6}\href {https://github.com/AJslashTracey/deep_research_chatGPT_03}{Deep research by ChatGPT}}{33}{subsection.13.6}%
+\contentsline {subsection}{\numberline {13.7}\href {https://www.r-5.org/files/books/trading/charts/market-profile/James_Dalton-Markets_in_Profile-EN.pdf}{Markets in profile -- James Dalton}}{33}{subsection.13.7}%
+\contentsline {subsection}{\numberline {13.8}\href {https://x.com/i/grok/share/q9fAogSBPA92zR0lgXd4q9OZT}{Do retail traders stande a chance?}}{33}{subsection.13.8}%
