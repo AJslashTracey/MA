@@ -1,5 +1,5 @@
 \contentsline {section}{\numberline {1}Outlier Detection Using Mean and Standard Deviation (Z-Score Based Outlier Detection)}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Orderbook Delta defenition}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.1}Orderbook Delta definition}{4}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Normal Range}{4}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}Outlier Condition}{5}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}My Hypothesis}{5}{subsection.1.4}%
@@ -12,9 +12,9 @@
 \contentsline {subsection}{\numberline {2.1}Dictionary of Terms}{7}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}In Python code}{7}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Statistical evidence and results}{8}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Optimising for best Z-Score thresold for outliers}{9}{section.3}%
+\contentsline {section}{\numberline {3}Optimising for best Z-Score threshold for outliers}{9}{section.3}%
 \contentsline {section}{\numberline {4}Measuring avearge return after price outlier detection}{10}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Formulars}{10}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}Formulas}{10}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Dictionary of Terms}{10}{subsection.4.2}%
 \contentsline {section}{\numberline {5}Underlying strategy Bias}{11}{section.5}%
 \contentsline {subsubsection}{\numberline {5.0.1}Trend identification version 1}{11}{subsubsection.5.0.1}%
