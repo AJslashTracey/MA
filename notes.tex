@@ -52,7 +52,7 @@
 
 \begin{center}
 \begin{abstract}
-  This document documents the mathematical and statistical background of the research and testing I conducted for my strategy development. Explination of the formulars I used and the different versions of my algorithms.
+  This document documents the mathematical and statistical background of the research and testing I conducted for my strategy development. Explanation of the formulas I used and the different versions of my algorithms.
 \end{abstract}
 \end{center}
 
@@ -85,7 +85,7 @@
 \section{Outlier Detection Using Mean and Standard Deviation (Z-Score Based Outlier Detection)}\label{sec:outlier_detection}
 
 
-\subsection{Orderbook Delta defenition}
+\subsection{Orderbook Delta definition}
 The orderbook is a real-time electronic list of all pending buy (bid) and sell (ask) orders for a specific asset, organized by price level. It represents the current market depth and shows:
 
 \begin{itemize}
@@ -102,7 +102,7 @@ Each price level in the orderbook shows:
 \end{itemize}
 
 The \textbf{orderbook delta} is calculate by the difference between the sum of the bid and ask orders at a certain depth.
-Formular:
+Formula:
 \begin{equation*}
   \Delta_{x\%} = \sum_{i=1}^{x\%} \Delta_{i}
   \label{eq:orderbook_delta_x}
@@ -125,9 +125,9 @@ What I want to test is how price reacts to anomalous orderbook delta movements, 
 \subsection{Outlier Condition}
 
 
-A outlier is defined when a the Orderbook $\Delta_t$ is outside of the normal range. I defnine the normal rage as the mean $\mu(\Delta)$ plus or minus 2 times the standard deviation $\sigma(\Delta)$. For mean and standard deviation I use a rolling window of 1440 $\Delta$ values. On a timeseries dataset with a interval of 1 minute that is equal to one day.
+A outlier is defined when a the Orderbook $\Delta_t$ is outside of the normal range. I define the normal rage as the mean $\mu(\Delta)$ plus or minus 2 times the standard deviation $\sigma(\Delta)$. For mean and standard deviation I use a rolling window of 1440 $\Delta$ values. On a timeseries dataset with a interval of 1 minute that is equal to one day.
 
-Equation for outlier defenition:
+Equation for outlier definition:
 
 
 
@@ -139,7 +139,7 @@ Equation for outlier defenition:
  \subsection{My Hypothesis}
 
 \begin{itemize}
-  \item I expext realized volatility to increase after an outlier is detected.
+  \item I expect realized volatility to increase after an outlier is detected.
   \item I expect that I can get a directional bias based on outliers if we combine the outlier signal with a underlying bias.
 \end{itemize}
 
@@ -148,7 +148,7 @@ Equation for outlier defenition:
 \subsection{Bullish and Bearish Outliers version 1}
 What does bullish and bearish even mean? A bullish signal is a signal where we anticipate price will go up. A bearish signal is a signal where think price will go down.
 
-Now I defnined a a bullish outlier as bullish if he has a certain z-score value and a bearish outlier as a bearish if he has a certain z-score value.
+Now I defined a a bullish outlier as bullish if he has a certain z-score value and a bearish outlier as a bearish if he has a certain z-score value.
 
 The mean is calculated is calculate by making a rolling window of the last $1440$ $\Delta$ values. (Basically a moving average of the last 1440 $\Delta$ values)
 Same period is applied for the standard deviation.
@@ -250,7 +250,7 @@ and shows how many standard deviations $\Delta_t$ is away from current mean
 
 \section{Measuring Volatility After Outlier Detection}
 
-The first Idea I had was to measure the volatility of the price after an outlier is detected. Volatility is a measure of how much price changes in eighter direction over a certain period of time. 
+The first Idea I had was to measure the volatility of the price after an outlier is detected. Volatility is a measure of how much price changes in either direction over a certain period of time. 
 Using the following formular:
 
 
@@ -375,10 +375,10 @@ To check Statistical evidence
 
 \newpage
 
-\section{Optimising for best Z-Score thresold for outliers}
+\section{Optimising for best Z-Score threshold for outliers}
 
-As stated inside of \eqref{eq: outlier_detection} we use a Z-Score thresold of 2 to detect outliers. I now want to 
-see if by any chance there is a value where ther realized volatility is higher than if we use 2 as a thresold.
+As stated inside of \eqref{eq: outlier_detection} we use a Z-Score threshold of 2 to detect outliers. I now want to 
+see if by any chance there is a value where ther realized volatility is higher than if we use 2 as a threshold.
 
 To compare the outliers Volatility with the non outliers volatility I will use the following formular:
 
@@ -387,8 +387,8 @@ U(z) =\frac{ \overline{\sigma}^{(15)}_{\rm out}}{\overline{\sigma}^{(15)}_{\rm n
 \end{equation}
 
 
-First I run an optimization for the thresholds of the Z-Score to find the best thresold value for the outliers on a 45 days dataset.
-After that I compare the result with a 107880 minutes dataset. Where I also run an optimization for the thresholds of the Z-Score to find the best thresold value for the outliers.
+First I run an optimization for the thresholds of the Z-Score to find the best threshold value for the outliers on a 45 days dataset.
+After that I compare the result with a 107880 minutes dataset. Where I also run an optimization for the thresholds of the Z-Score to find the best threshold value for the outliers.
 
 
 Top 3 $z$-values with largest volatility uplift 69811-minutes sample
@@ -467,7 +467,7 @@ Top 3 $z$-values with largest volatility uplift (Walk forward $v2$)
 
 
 
-\subsection{Formulars}
+\subsection{Formulas}
 \begin{align}
 \intertext{Once a $\Delta_t$ Outlier is detected we calculate the 15-min forward return of \underline{BTC/USD} price}
 \mathrm{Ret}^{(15)}_t
@@ -677,7 +677,7 @@ There are three main steps to find an edge.
 \begin{itemize}
   \item Copying other strategies
   \item Finding an edge by yourself
-  \item Build a systematich version of your disgresionary trading.
+  \item Build a systematich version of your discretionary trading.
 \end{itemize}
 
 
@@ -726,7 +726,7 @@ Here I visulised the swing points, the EMA spread and the 100 outliers with the 
 \newpage
 \section{From outliers to strategy}
 \subsection{Progress description}
-I had a pretty hard time going from developing a logic for the outliers of the Delta. Finding that volatility increases after outliers was a good first find which didn't take long and the process was pretty straight forward. But finding some defenition condtion is meet directional bias was very difficult. By directional bias I mean a price direction which is not random after some kind of condition. It was pretty clear from the begging on that the outliers by there selfe won't offer any kind of directional bias
+I had a pretty hard time going from developing a logic for the outliers of the Delta. Finding that volatility increases after outliers was a good first find which didn't take long and the process was pretty straight forward. But finding some definition condtion is meet directional bias was very difficult. By directional bias I mean a price direction which is not random after some kind of condition. It was pretty clear from the beginning on that the outliers by there selfe won't offer any kind of directional bias
 
 
 An outlier is defined as:
@@ -755,7 +755,7 @@ Parameters of the swing\textunderscore points function:
 \end{itemize}
 
 
-We basically got through the time series dataset and look back $n$ $P_t$ values. The highest and lowest points inside of that specific lookback period are the swing points. After that we detetermine if price is making higher highs or lower lows. We check this by storeing the last swing points and wait till we are eighter making a higher high or a lower low.
+We basically got through the time series dataset and look back $n$ $P_t$ values. The highest and lowest points inside of that specific lookback period are the swing points. After that we detetermine if price is making higher highs or lower lows. We check this by storeing the last swing points and wait till we are either making a higher high or a lower low.
 
 
 
@@ -1091,7 +1091,7 @@ Each quartile represents 25\% of the data, making it easy to identify the middle
 An outlier is now defined as a value which falls outside of the interquartile range mutlitpled by a factor $z$ in my case $z = 2$. IQR is defined as $IQR = Q_3 - Q_1$.
 
 
-Outlier defenition:
+Outlier definition:
 
 \begin{equation*}
   \Delta_t < Q1-z\cdot(IQR) \quad \text{or} \quad \Delta_T >Q3+z\cdot(IQR)
@@ -1134,7 +1134,7 @@ If the data is skewed or has fat tails the z-score method will be biased. The IQ
 
 \newpage
 \section{Algorithmic infrastructure implementation}
-Now since my strategy allows mutliple positions open at the same time the infrastructure turns out to be a bit more complex. If we open two positions on the $BTC/USD$ pair with a size of 1000\$ we end up having one positions with a size of 2000\$. 
+Now since my strategy allows multiple positions open at the same time the infrastructure turns out to be a bit more complex. If we open two positions on the $BTC/USD$ pair with a size of 1000\$ we end up having one positions with a size of 2000\$. 
 
 
 \textbf{Vectorbt backtest implementation}
@@ -1164,10 +1164,10 @@ As you can see in the figure \ref{fig:trades} there are times where multiple pos
 
 
 \subsection{Handeling trades asynchronously}
-I decided to handle the issues of multiple positions with different exit times by using an asynchronous approach. Every positions is handled in a seperate python thread. The thread just sells the exact amount of one single position which is $10\%$ of the portfolio. The maximum of open positions is set to 20.
+I decided to handle the issues of multiple positions with different exit times by using an asynchronous approach. Every positions is handled in a separate python thread. The thread just sells the exact amount of one single position which is $10\%$ of the portfolio. The maximum of open positions is set to 20.
 
 
-The algorithm uses a class \footnote{A class in Python is a blueprint for creating objects. It defines a set of attributes and methods that an object of that class will have.} called AsyncPositionManager. The position manager initializes is initialized as part of the singalloop which is responsable to check every minute if an entry signal is detected. If an entry signal is detected the position manager will open a position which is handled inside of an asynchronous position task that runs independently.
+The algorithm uses a class \footnote{A class in Python is a blueprint for creating objects. It defines a set of attributes and methods that an object of that class will have.} called AsyncPositionManager. The position manager initializes is initialized as part of the signal loop which is responsible to check every minute if an entry signal is detected. If an entry signal is detected the position manager will open a position which is handled inside of an asynchronous position task that runs independently.
 
 \begin{figure}[H]
   \centering
@@ -1276,18 +1276,18 @@ This implementation ensures that while API latency cannot be eliminated, its eff
 Twitter article about random walk theory and how to test if a strategy is random or not. 
 %\subsection{\href{https://github.com/polakowo/vectorbt}{Testing 1000 strategies at the same time (via Monte Carlo)}}
 \subsection{\href{https://x.com/abetrade/status/1941613701150188008}{Tweets}}
-A lot of my ideas come from thiy guys Tweets, to research into this. He is a disgresionary trade what means he trades based on his own decisions and has a mental framework to trade. I learned what an orderbook delta is from him.
+A lot of my ideas come from thiy guys Tweets, to research into this. He is a discretionary trade what means he trades based on his own decisions and has a mental framework to trade. I learned what an orderbook delta is from him.
 \subsection{\href{https://trdr.io/}{TRDR} This platform allow you to use different kind of metrics on different Timeseries datasets (BTC/USD Price, orderbookdelta  and Open Interest}his platform allow you to use different kind of metrics on different Timeseries datasets like: BTC/USD Price orderbookdelta  and Open Interest
 \subsection{\href{https://github.com/neurotrader888/TrendLineAutomation}{Trend line automation}} Used this for the $v3$ version of my trend identification system
 \subsection{\href{https://github.com/polakowo/vectorbt}{Vectorbt github documentation respository.}} I implemented some ideas from this repository for my backtesting framework and used vectorbt for the fees and slippage implementations
 
 
 \subsection{\href{https://github.com/AJslashTracey/deep_research_chatGPT_03}{Deep research by ChatGPT}}
-The OpenAI subscription enables you use deepsearch function from chatGPT I would say this tool is probably useful for research but I didn't find any value from this besides finding out about new indicators. The only thing finding I made from these two pdfs was the Aroon indicator which I implemented in the second verions of my trend indentification system $v2$
+The OpenAI subscription enables you use deepsearch function from chatGPT I would say this tool is probably useful for research but I didn't find any value from this besides finding out about new indicators. The only thing finding I made from these two pdfs was the Aroon indicator which I implemented in the second verions of my trend identification system $v2$
 
 
 \subsection{\href{https://www.r-5.org/files/books/trading/charts/market-profile/James_Dalton-Markets_in_Profile-EN.pdf}{Markets in profile -- James Dalton}}
-Altho this book is for a disgresionary trading approach it taught me a lot about the Efficient Market Hypothesis and trading psychology.
+Altho this book is for a discretionary trading approach it taught me a lot about the Efficient Market Hypothesis and trading psychology.
 
 \subsection{\href{https://x.com/i/grok/share/q9fAogSBPA92zR0lgXd4q9OZT}{Do retail traders stande a chance?}}
 
