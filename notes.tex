@@ -989,7 +989,7 @@ I only tested this on a short sample of data because I just had started my data 
     \midrule
     \multicolumn{2}{c}{\textbf{General}} \\
     \midrule
-    Start                         & 2025-03-12 00:00:01 \\
+    Start                         & 2024-03-12 00:00:01 \\
     End                           & 2025-03-17 07:24:01 \\
     Period (minutes)              & 7,636 \\
     \midrule
@@ -1193,7 +1193,7 @@ So this was the third strategy I tested. I was testing on a simple logic. If the
 
 I chose to create my own dataset because it offers a key advantage: it allows me to experiment with ideas and patterns that are less likely to have been explored before. This increases the chance of discovering something new that might be missed when using more commonly available datasets.
 
-There are platforms that offer order book delta data for free, but only for discretionary trading (i.e. they only display the data in a chart and do not provide it as a downloadable time series). My idea was to create a Python script which hits the API in one-minute intervals and stores the data inside a Postgres database. I have been hosting the data mining script on my PaaS since March 11, 2025 \href{https://customchart-production.up.railway.app/#}{Live database connection}.
+There are platforms that offer order book delta data for free, but only for discretionary trading (i.e. they only display the data in a chart and do not provide it as a downloadable time series). My idea was to create a Python script which hits the API in one-minute intervals and stores the data inside a Postgres database. I have been hosting the data mining script on my PaaS since March 11, 2024 \href{https://customchart-production.up.railway.app/#}{Live database connection}.
 
 The creation of the time series was done through a public exchange API\footnote[1]{API stands for Application Programming Interface. It is a tool that allows programs to request and receive specific data from external services—in this case, used to fetch real-time Bitcoin price and order book data from the Coinbase crypto exchange.}, with data fetched in one-minute intervals and stored inside a database on a PaaS\footnote[2]{PaaS stands for Platform as a Service. It is a cloud computing model which gives developers a platform to host their applications so that they are globally accessible on the internet and run 24/7}.
 
