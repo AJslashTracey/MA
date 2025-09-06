@@ -13,3 +13,6 @@ MA/
 ├── archieve/       # Historical documentation and research
 └── build/          # Build artifacts
 ```
+
+
+(This notation is very messy and was just used to write my thoughts somewhere during my research process in order that I do not lose my mind and keep the results)
